@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/banner.png" alt="MAKE TEXT GREAT AGAIN — Trump-style writing skill. Boring text → TREMENDOUS!" width="100%">
+  <img width="1916" height="821" alt="MAKE TEXT GREAT AGAIN — Trump-style writing skill. Boring text → TREMENDOUS!" width="100%" src="https://github.com/user-attachments/assets/31394bf9-3127-47fd-afa4-724009ddcbe2" />
 </p>
 
 # 🇺🇸 MAKE TEXT GREAT AGAIN!
