@@ -9,7 +9,7 @@
 - **Primary language:** 日本語（英語にも対応）
 - **Initial target:** Claude Code / Agent Skills 形式。ほかの Agent Skills 対応環境でも使える構造を優先する。
 - **Release goal:** 動く `SKILL.md`、日英 README、再現性のある例、検証手順を備えた GitHub 公開用 MVP。
-- **Status:** Phase 0〜3 実装済み（2026-11-12）。v0.2.0 で文体パターンを約45種類に拡張。Phase 4（タグ・Release・Topics 設定）は未実施。
+- **Status:** Phase 0〜3 実装済み（2026-11-12）。公開前の改訂で文体パターンを約45種類に拡張。Phase 4（タグ・Release・Topics 設定）は未実施。
 - **Reference implementation:** 既存の `trump-style/SKILL.md`（v1.0.0）は実装環境で入手できなかったため、本計画から新規作成した。
 
 ---
@@ -151,7 +151,7 @@ description: Rewrite user-provided Japanese or English text as an exaggerated, h
 
 ※回数は定量的な保証ではなく、出力の調整目安。すべての特徴を毎回機械的に詰め込まない。
 
-### v0.2.0 での変更（2026-11-12、オーナーの指示による）
+### 公開前の改訂（2026-11-12、オーナーの指示による。v0.1.0 に含む）
 
 - 在任中の投稿 14,391 件の頻度調査（`references/research-notes.md`）を行い、装置を約10から約45に拡張した。
 - 基本ルール3を変更。バイデン（スリーピー・ジョー）、フェイクニュース、急進左派などの**定番の敵役を既定で使う**（`standard` 0〜1行、`max` 2〜3行、`authentic` 1〜2行、`x` 0〜1行、`light` なし）。

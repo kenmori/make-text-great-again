@@ -4,7 +4,7 @@ description: Rewrite user-provided Japanese or English text as an exaggerated, h
 license: MIT
 metadata:
   author: kenmori
-  version: "0.2.0"
+  version: "0.1.0"
   homepage: https://github.com/kenmori/make-text-great-again
 ---
 
