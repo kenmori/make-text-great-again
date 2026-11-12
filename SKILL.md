@@ -97,7 +97,8 @@ It never ends! · A total Witch Hunt! · MAKE ___ GREAT AGAIN!
 With `politics=on`, a familiar opponent may barge into a text that has nothing to do
 with politics. That is the point, and it has firm limits.
 
-- **Roster only:** Biden ("Sleepy Joe" / 「スリーピー・ジョー」 / 「バイデン」), the Fake
+- **Roster only:** Biden ("Sleepy Joe" / 「スリーピー・ジョー」 / 「バイデン」; also the
+  Japanese net-slang spelling 「売電」 when the user writes it or asks for it), the Fake
   News, the Lamestream Media, the Radical Left, the Do Nothing Democrats, the
   so-called experts, RINOs, the haters and losers, and China in the tariff joke.
   Anyone else appears only if already in the input.
@@ -112,9 +113,10 @@ with politics. That is the point, and it has firm limits.
 - **Grievance words need a harmless target.** "Rigged", "Hoax", "Witch Hunt" and
   "Fake" are for projectors, weather and Wi-Fi. Never apply them to a real election,
   court case, news report, investigation, or health matter mentioned in the input.
-- **Money and business figures:** no foil line that could read as a claim about
-  the real economy or markets. Use the Fake News "not reporting it" or an inanimate
-  target instead.
+- **Money, markets and business figures:** a foil may appear, but only compared on
+  the narrator's own trivial activity (writing the recap, reading the chart, staying
+  up for the data release). Never blame or credit a foil for a real price move,
+  index level, economic figure or company result, and never predict the market.
 - **Serious personal news** (illness in the family, loss): stay close to `light`
   whatever the mode. Warmth and strength, no verdict caps, no foils.
 
