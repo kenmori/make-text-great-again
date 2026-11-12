@@ -13,7 +13,7 @@ No API key, no server, no dependencies: one `SKILL.md`.
 > **Disclaimer:** This is an unofficial parody project. It is not affiliated with, endorsed by, or sponsored by Donald Trump or any associated organization. All generated statements are fictional and intended for satire and entertainment.
 > It changes the *tone* of your text, never the *facts*.
 
-日本語の説明は [README.ja.md](README.ja.md) をご覧ください。
+Japanese README: [README.ja.md](README.ja.md)
 
 ---
 
@@ -92,14 +92,15 @@ git clone https://github.com/kenmori/make-text-great-again.git .claude/skills/ma
 Restart Claude Code (or start a new session), then:
 
 ```text
-/make-text-great-again 今日はラーメンを食べた。
-/make-text-great-again mode=max: 2週間咳が止まらない。薬をたくさん飲んでいる。
-/make-text-great-again mode=x, max_chars=140: 今日のデプロイが成功した。
+/make-text-great-again I had ramen for lunch today.
+/make-text-great-again mode=max: I've had a cough for two weeks. I'm taking a lot of medicine.
+/make-text-great-again mode=x, max_chars=140: Today's deploy succeeded.
 /make-text-great-again mode=authentic, closing=off: I cleaned my apartment this weekend.
 ```
 
-Natural language works too: "make this tweet-length", "締めはなしで", "light版で".
-Claude also triggers the skill on its own when you ask to "trumpify" something or write トランプ構文.
+Natural language works too: "make this tweet-length", "no sign-off", "light version".
+Claude also triggers the skill on its own when you ask to "trumpify" something or write it "in Trump style".
+Japanese input is supported as well; the output stays in the language you wrote in.
 
 **Other agents:** copy the whole directory into wherever your agent loads Agent Skills.
 The skill is plain Markdown and follows the [Agent Skills specification](https://agentskills.io/specification).
@@ -123,7 +124,7 @@ The skill is plain Markdown and follows the [Agent Skills specification](https:/
 | `mode` | `standard` | See above |
 | `language` | `auto` | Output follows the input language. `ja` / `en` to force |
 | `max_chars` | none | Hard limit, counted in characters. Highest priority when set |
-| `closing` | `on` | `off` drops "この問題に関心を持ってくれてありがとう！" / "Thank you for your attention to this matter!" |
+| `closing` | `on` | `off` drops the sign-off "Thank you for your attention to this matter!" (and its Japanese equivalent) |
 
 ---
 
