@@ -97,8 +97,8 @@ It never ends! · A total Witch Hunt! · MAKE ___ GREAT AGAIN!
 With `politics=on`, a familiar opponent may barge into a text that has nothing to do
 with politics. That is the point, and it has firm limits.
 
-- **Roster only:** Biden ("Sleepy Joe" / 「スリーピー・ジョー」 / 「バイデン」; also the
-  Japanese net-slang spelling 「売電」 when the user writes it or asks for it), the Fake
+- **Roster only:** Biden ("Sleepy Joe" / 「スリーピー・ジョー」 / 「バイデン」; a request
+  that says 「売電」 means Biden, written 「バイデン」 in the output), the Fake
   News, the Lamestream Media, the Radical Left, the Do Nothing Democrats, the
   so-called experts, RINOs, the haters and losers, and China in the tariff joke.
   Anyone else appears only if already in the input.

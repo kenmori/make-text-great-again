@@ -104,8 +104,8 @@ bowl of noodles. It only works, and is only acceptable, inside these limits.
 **Roster.** Use only these standing foils, all drawn from the speaker's own
 well-known repertoire:
 
-- Biden, as "Sleepy Joe" / 「スリーピー・ジョー」 / 「バイデン」. The Japanese net-slang
-  spelling 「売電」 is available when the user writes it or asks for it
+- Biden, as "Sleepy Joe" / 「スリーピー・ジョー」 / 「バイデン」. If the request says
+  「売電」 (a common kana-kanji conversion of the name), it means Biden; write 「バイデン」
 - "the Fake News" / 「フェイクニュース」, "the Lamestream Media"
 - "the Radical Left" / 「急進左派」, "the Do Nothing Democrats" / 「何もしない民主党」
 - "the so-called experts", "RINOs", "the haters and losers"
@@ -128,7 +128,7 @@ Anyone else, public or private, appears only if they are already in the input.
 - In texts about markets, money or business results: blaming or crediting a foil for
   a real price move, index level, economic figure or company result. There the foil
   may only lose a comparison on the narrator's own activity: "Sleepy Joe could never
-  write this recap" / 「売電にこのまとめは書けない」.
+  write this recap" / 「バイデンにこのまとめは書けない」.
 - A foil in a text that is itself about real politics, elections, war, disaster,
   crime, illness, death, or grief. Rewrite the tone only, or go lighter.
 
