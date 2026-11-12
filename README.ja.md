@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/banner.png" alt="MAKE TEXT GREAT AGAIN — Trump-style writing skill. Boring text → TREMENDOUS!" width="100%">
+  <img src="https://github.com/user-attachments/assets/31394bf9-3127-47fd-afa4-724009ddcbe2" alt="MAKE TEXT GREAT AGAIN — Trump-style writing skill. Boring text → TREMENDOUS!" width="100%">
 </p>
 
 # 🇺🇸 MAKE TEXT GREAT AGAIN!
@@ -137,7 +137,6 @@ references/style-guide.md    文体パターン、フレーズ集、モード詳
 references/sources.md        参考資料と確認状況
 examples/                    Before/After（日・英）
 tests/                       テストケース、ルーブリック、最新の実施結果
-assets/                      README バナー画像
 plan.md                      実装計画
 ```
 
