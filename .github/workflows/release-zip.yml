@@ -1,0 +1,40 @@
+name: Attach skill ZIP to release
+
+# Builds make-text-great-again.zip (the format claude.ai accepts under
+# Customize > Skills) and attaches it to the release.
+
+on:
+  release:
+    types: [published]
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: "Existing release tag to attach the ZIP to (for example v0.3.0)"
+        required: true
+
+permissions:
+  contents: write
+
+jobs:
+  zip:
+    runs-on: ubuntu-latest
+    env:
+      TAG: ${{ github.event.release.tag_name || inputs.tag }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ env.TAG }}
+      - name: Build ZIP
+        run: |
+          if [ -x scripts/build-zip.sh ]; then
+            scripts/build-zip.sh "$PWD/make-text-great-again.zip"
+          else
+            mkdir -p pkg/make-text-great-again
+            cp SKILL.md LICENSE pkg/make-text-great-again/
+            cp -R references examples tests pkg/make-text-great-again/
+            (cd pkg && zip -q -r -X ../make-text-great-again.zip make-text-great-again)
+          fi
+      - name: Upload to release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh release upload "$TAG" make-text-great-again.zip --clobber --repo "$GITHUB_REPOSITORY"

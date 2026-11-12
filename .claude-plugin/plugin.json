@@ -1,0 +1,12 @@
+{
+  "name": "make-text-great-again",
+  "description": "Rewrite Japanese or English text as an over-the-top Trump-style parody (トランプ構文). Unofficial parody; keeps your facts.",
+  "author": {
+    "name": "kenmori",
+    "url": "https://github.com/kenmori"
+  },
+  "homepage": "https://github.com/kenmori/make-text-great-again",
+  "repository": "https://github.com/kenmori/make-text-great-again",
+  "license": "MIT",
+  "keywords": ["parody", "humor", "writing", "japanese", "agent-skills"]
+}

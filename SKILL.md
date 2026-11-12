@@ -4,7 +4,7 @@ description: Rewrite user-provided Japanese or English text as an exaggerated, h
 license: MIT
 metadata:
   author: kenmori
-  version: "0.3.0"
+  version: "0.4.0"
   homepage: https://github.com/kenmori/make-text-great-again
 ---
 
@@ -32,7 +32,7 @@ the user to re-type in a specific syntax.
 | `mode`      | `standard` | Intensity and flavor: `light`, `standard`, `max`, `authentic`, `x` |
 | `language`  | `auto`     | Output language. `auto` = same language as the input. Explicit `ja` / `en` overrides. |
 | `max_chars` | none       | Hard upper bound on output length (characters, counting everything). When set, it is the **highest-priority** constraint. |
-| `closing`   | `on`       | Whether to end with a sign-off. `off` suppresses every closer and finale. |
+| `closing`   | `on`       | Whether to end with a sign-off. `off` suppresses every closer and finale: the last sentence is a plain statement, not a sign-off, verdict fragment ("Not good!") or slogan. |
 | `politics`  | `on`       | Whether the standing political foils (Biden as "Sleepy Joe", the Fake News, the Radical Left…) may appear as comic scapegoats. `off` keeps all targets fictional or inanimate. |
 | `output`    | `text`     | `text` = output only the rewritten text. Add commentary only if the user asks for it. |
 

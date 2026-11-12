@@ -1,0 +1,17 @@
+{
+  "name": "kenmori",
+  "owner": {
+    "name": "kenmori",
+    "url": "https://github.com/kenmori"
+  },
+  "metadata": {
+    "description": "Skills by kenmori"
+  },
+  "plugins": [
+    {
+      "name": "make-text-great-again",
+      "source": "./",
+      "description": "Rewrite Japanese or English text as an over-the-top Trump-style parody (トランプ構文). Unofficial parody; keeps your facts."
+    }
+  ]
+}

@@ -72,21 +72,54 @@ More in [`examples/japanese.md`](examples/japanese.md) and [`examples/english.md
 
 ---
 
-## Quick Start (Claude Code)
+## Install
 
-Install for yourself (available in every project):
+Pick one. All three give you the same skill.
+
+### 1. Claude Code plugin (no clone)
+
+Inside Claude Code:
+
+```text
+/plugin install make-text-great-again --marketplace kenmori/make-text-great-again
+```
+
+On versions before 2.1.275, use two steps:
+
+```text
+/plugin marketplace add kenmori/make-text-great-again
+/plugin install make-text-great-again@kenmori
+```
+
+To update later: `/plugin marketplace update kenmori`.
+
+### 2. Git clone
+
+For yourself (available in every project):
 
 ```bash
 git clone https://github.com/kenmori/make-text-great-again.git ~/.claude/skills/make-text-great-again
 ```
 
-Or install into one project (commit it to share with your team):
+Or into one project (commit it to share with your team):
 
 ```bash
 git clone https://github.com/kenmori/make-text-great-again.git .claude/skills/make-text-great-again
 ```
 
-Restart Claude Code (or start a new session), then:
+To update later: `git -C ~/.claude/skills/make-text-great-again pull`.
+
+### 3. claude.ai (ZIP upload)
+
+1. Download [`make-text-great-again.zip`](https://github.com/kenmori/make-text-great-again/releases/latest/download/make-text-great-again.zip) from the latest release.
+2. In claude.ai open **Customize → Skills → + → Upload a skill** and choose the ZIP.
+3. Ask Claude to "trumpify" any text.
+
+Code execution must be enabled for skills on claude.ai. You can also build the ZIP yourself with `scripts/build-zip.sh`.
+
+## Use
+
+In Claude Code, start a new session, then:
 
 ```text
 /make-text-great-again I had ramen for lunch today.
@@ -98,6 +131,8 @@ Restart Claude Code (or start a new session), then:
 Natural language works too: "make this tweet-length", "no sign-off", "light version", "no politics".
 Claude also triggers the skill on its own when you ask to "trumpify" something or write it "in Trump style".
 Japanese input is supported as well; the output stays in the language you wrote in.
+
+With the plugin install the skill also answers to `/make-text-great-again:make-text-great-again`.
 
 **Other agents:** copy the whole directory into wherever your agent loads Agent Skills.
 The skill is plain Markdown and follows the [Agent Skills specification](https://agentskills.io/specification).
@@ -189,7 +224,7 @@ See [`SKILL.md`](SKILL.md) for the full rules and [`references/style-guide.md`](
 
 ## Requirements
 
-- An agent that supports Agent Skills (tested target: Claude Code).
+- An agent that supports Agent Skills. Tested with Claude Code 2.1.322, as a plugin and as a cloned skill.
 - Nothing else. No API keys beyond what your agent already uses.
 
 ## Repository layout
@@ -201,6 +236,8 @@ references/research-notes.md  frequency study of 14,391 posts plus 2025 and 2026
 references/sources.md      references and their access status
 examples/                  Before/After samples (ja / en)
 tests/                     test cases, rubric, latest results
+scripts/build-zip.sh       builds the ZIP for claude.ai
+.claude-plugin/            plugin and marketplace manifests for Claude Code
 plan.md                    implementation plan
 ```
 

@@ -78,21 +78,54 @@ English README: [README.md](README.md)
 
 ---
 
-## クイックスタート（Claude Code）
+## インストール
 
-自分用にインストール（すべてのプロジェクトで使える）:
+次の3つのどれでも、同じスキルが使えます。
+
+### 1. Claude Code のプラグイン（clone 不要）
+
+Claude Code の中で実行します。
+
+```text
+/plugin install make-text-great-again --marketplace kenmori/make-text-great-again
+```
+
+バージョン 2.1.275 より前の場合は2段階で行います。
+
+```text
+/plugin marketplace add kenmori/make-text-great-again
+/plugin install make-text-great-again@kenmori
+```
+
+更新するとき: `/plugin marketplace update kenmori`
+
+### 2. git clone
+
+自分用（すべてのプロジェクトで使える）:
 
 ```bash
 git clone https://github.com/kenmori/make-text-great-again.git ~/.claude/skills/make-text-great-again
 ```
 
-プロジェクト用にインストール（コミットすればチームで共有できる）:
+プロジェクト用（コミットすればチームで共有できる）:
 
 ```bash
 git clone https://github.com/kenmori/make-text-great-again.git .claude/skills/make-text-great-again
 ```
 
-Claude Code を再起動（または新しいセッションを開始）して:
+更新するとき: `git -C ~/.claude/skills/make-text-great-again pull`
+
+### 3. claude.ai（ZIP をアップロード）
+
+1. 最新リリースから [`make-text-great-again.zip`](https://github.com/kenmori/make-text-great-again/releases/latest/download/make-text-great-again.zip) をダウンロードします。
+2. claude.ai の **カスタマイズ → スキル → ＋ → スキルをアップロード** で ZIP を選びます。
+3. 「この文章をトランプ構文にして」と頼みます。
+
+claude.ai でスキルを使うには、コード実行が有効になっている必要があります。ZIP は `scripts/build-zip.sh` で自分でも作れます。
+
+## 使い方
+
+Claude Code で新しいセッションを開始して:
 
 ```text
 /make-text-great-again 今日はラーメンを食べた。
@@ -103,6 +136,8 @@ Claude Code を再起動（または新しいセッションを開始）して:
 
 自然文でも指定できます。「140文字以内で」「締めはなしで」「light版で」「政治ネタなしで」など。
 「トランプ構文にして」「トランプ風に」と頼むだけでも Claude が自動でこの Skill を使います。
+
+プラグインで入れた場合は `/make-text-great-again:make-text-great-again` でも呼び出せます。
 
 **ほかのエージェント:** このディレクトリごと、エージェントが Agent Skills を読み込む場所にコピーしてください。
 Skill は Markdown のみで、[Agent Skills 仕様](https://agentskills.io/specification)に準拠しています。
@@ -190,7 +225,7 @@ Skill は Markdown のみで、[Agent Skills 仕様](https://agentskills.io/spec
 
 ## 必要なもの
 
-- Agent Skills 対応のエージェント（検証対象: Claude Code）
+- Agent Skills 対応のエージェント。Claude Code 2.1.322 で、プラグインと clone の両方の動作を確認済み。
 - それ以外は不要。エージェント自身が使うもの以外の API キーはいりません。
 
 ## リポジトリ構成
@@ -202,6 +237,8 @@ references/research-notes.md 投稿14,391件の頻度調査と2025年・2026年�
 references/sources.md        参考資料と確認状況
 examples/                    Before/After（日・英）
 tests/                       テストケース、ルーブリック、最新の実施結果
+scripts/build-zip.sh         claude.ai 用 ZIP の作成
+.claude-plugin/              Claude Code 用のプラグイン・マーケットプレイス定義
 plan.md                      実装計画
 ```
 

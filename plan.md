@@ -9,7 +9,7 @@
 - **Primary language:** 日本語（英語にも対応）
 - **Initial target:** Claude Code / Agent Skills 形式。ほかの Agent Skills 対応環境でも使える構造を優先する。
 - **Release goal:** 動く `SKILL.md`、日英 README、再現性のある例、検証手順を備えた GitHub 公開用 MVP。
-- **Status:** v0.3.0 公開済み（2026-11-12）。Phase 0〜4 の主要項目は完了。未完了は各フェーズのチェック欄を参照（実機での起動確認、X投稿向け紹介文、Issue ラベルの作成）。
+- **Status:** v0.3.0 公開済み（2026-11-12）。その後の変更（下記「v0.3.0 公開後の変更」）は未リリース。未完了は各フェーズのチェック欄を参照（X投稿向け紹介文、Issue ラベルの作成）。
 - **Reference implementation:** 既存の `trump-style/SKILL.md`（v1.0.0）は実装環境で入手できなかったため、本計画から新規作成した。
 
 ---
@@ -32,7 +32,7 @@
 - [x] 日本語と英語を扱える。既定は入力言語を維持（日本語入力なら日本語）。
 - [x] 元の出来事・数値・人物・時系列を捏造せず、誇張部分は明確なパロディとして扱う。
 - [x] README に Before/After 例を最低3本掲載する。
-- [ ] ローカル導入と実際の起動例を掲載し、手順が検証済みである。（掲載済み。Claude Code 再起動後の実起動確認は未実施）
+- [x] ローカル導入と実際の起動例を掲載し、手順が検証済みである。（Claude Code 2.1.322 で実機テスト済み。`tests/results.md`）
 - [x] テストケース最低12件を実施し、重大な失敗がない。
 - [x] ライセンス、免責・非公式パロディである旨、Contribution 方針が明記されている。
 
@@ -174,6 +174,14 @@ description: Rewrite user-provided Japanese or English text as an exaggerated, h
 - 締めの定型「この問題に関心を持ってくれてありがとう！」が 2025年の素材で実際に確認できた（17件中3件、いずれも厳粛な発表・警告の末尾）。
 - 「どうなるか見てみよう」を話し言葉の装置と締めの候補に明記。
 
+### v0.3.0 公開後の変更（2026-11-12、未リリース。メタデータ上は 0.4.0）
+
+- Claude Code のプラグインとして導入できるようにした（`.claude-plugin/plugin.json` と `marketplace.json`）。clone なしで `/plugin install` できる。
+- claude.ai 用の ZIP を作る `scripts/build-zip.sh` と、Release に ZIP を添付する GitHub Actions を追加した。
+- Claude Code 2.1.322 で実機テストを実施（23件）。結果は `tests/results.md`。
+- `closing=off` のとき、最後の文を判定語で終えないよう説明を明確化した。
+- 英語版 README から日本語の見本を削除した。
+
 ### 変換フロー
 
 1. 原文から **誰が・何を・いつ・どうしたか** を抽出する。
@@ -282,7 +290,7 @@ Turn boring text into outrageous Trump-style parody in seconds.
 
 - [x] 英語 `README.md` を作る。
 - [x] 日本語 `README.ja.md` を作る。
-- [ ] インストール・実行例を実環境で確認する。（git clone で有効な Skill ディレクトリになることは確認済み。Claude Code 上での `/make-text-great-again` の実起動は未確認）
+- [x] インストール・実行例を実環境で確認する。（Claude Code 2.1.322 で、プラグインと単体スキルの両方の起動を確認）
 - [x] MIT ライセンス案を採用するか確認して `LICENSE` を追加する。
 - [x] `CONTRIBUTING.md`、免責・クレジットを追加する。
 - [ ] X投稿向けの紹介文（日本語・英語）を用意する。（未作成）
