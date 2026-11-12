@@ -21,28 +21,32 @@ Japanese README: [README.ja.md](README.ja.md)
 
 **Input**
 ```
-Our team shipped the new feature on time. Customers seem to like it.
+I finally cleaned my apartment this weekend. It took all day.
 ```
 
 **Output** (`standard`)
 ```
-We shipped the new feature. On time. Nobody ships on time. We did.
-The customers like it. They really like it. I'm hearing it from everybody.
-Other teams are still in meetings. Not us. HUGE!
+This weekend, I cleaned my Apartment. Finally. The whole thing. Nobody cleans like me. Nobody.
+It took all day. ALL day! Other people would have quit. That's what losers do. Not me.
+Sleepy Joe could never clean an Apartment like this. Not even close.
+Many people are saying it's the cleanest Apartment in the history of the building. Is that true? Probably. TREMENDOUS!
 Thank you for your attention to this matter!
 ```
 
 **Input**
 ```
-I finally cleaned my apartment this weekend. It took all day.
+Our team shipped the new feature on time. Customers seem to like it.
 ```
 
 **Output** (`max`)
 ```
-This weekend, I cleaned my apartment. The WHOLE apartment. Nobody cleans like me. Nobody.
-It took all day. All day! Other people would have quit after an hour. SAD!
-Not me. I kept going. Many people are saying it's the cleanest apartment they've ever seen.
-Is that true? Probably. TREMENDOUS!
+Just out: we shipped the new Feature. ON TIME. They said it couldn't be done. The so-called experts. Wrong!
+Feature, Feature, Feature! A Feature the likes of which nobody has ever seen before. The best ship in the history of our Team. By far.
+Under Sleepy Joe, this Feature would still be in a planning meeting. He could NEVER ship on time. SAD!
+The customers? They seem to like it. They LOVE it, frankly. Big, strong customers, tears in their eyes: "Sir, we've never seen a Feature like this." So true!
+The Fake News won't report it. Other teams are still in meetings. Low Ratings. We ship. We WIN.
+Our Team has my Complete and Total Endorsement. Strong on Deadlines, strong on Quality, and loves the Customer.
+PROMISES MADE, PROMISES KEPT! MAKE SHIPPING GREAT AGAIN!
 Thank you for your attention to this matter!
 ```
 
@@ -51,23 +55,30 @@ Thank you for your attention to this matter!
 The meeting ran 20 minutes over because the projector didn't work.
 ```
 
-**Output** (`x`, `max_chars=140`)
+**Output** (`authentic`)
 ```
-The meeting ran 20 minutes over. The projector didn't work. SAD! The other guys would've cancelled. I finished the meeting. Believe me.
+The Meeting ran 20 minutes over, TWENTY minutes (to put it mildly, not good), because the Projector, a very simple machine, not many people know this, did NOT work. Sleepy Projector. Did nothing. Under Sleepy Joe the Meeting would still be going on. The other guys would have cancelled. I didn't cancel. We finished, and the Meeting is respected again.
+Too bad!
+```
+
+**Output** (`x`, `max_chars=140`, `politics=off`)
+```
+The Meeting ran 20 minutes over. Sleepy Projector did NOTHING. Pathetic! The other guys would have cancelled. I finished it. Thank you!
 ```
 
 Works in Japanese too:
 
 **Input**
 ```
-今日のデプロイが成功した。バグも直した。
+夕食後、ゲームをした。腹が減ったのでラーメンを作った。
 ```
 
 **Output** (`standard`)
 ```
-今日、デプロイした。成功した。大成功だ。
-バグも直した。ほかの連中なら一週間かかる。私はやった。
-これほどスムーズなデプロイは誰も見たことがない。信じられるか？ HUGE!
+夕食を終えた。そのあとゲームをした。素晴らしいプレイだった。断トツでだ。
+そして腹が減った。だから私はラーメンを作った。我が家の歴史上、最高のラーメンだ。
+スリーピー・ジョーにこのラーメンは作れない。作れるわけがない。SAD!
+多くの人が「本物だ」と言っている。その通りだ。GREAT!
 この問題に関心を持ってくれてありがとう！
 ```
 
@@ -98,7 +109,7 @@ Restart Claude Code (or start a new session), then:
 /make-text-great-again mode=authentic, closing=off: I cleaned my apartment this weekend.
 ```
 
-Natural language works too: "make this tweet-length", "no sign-off", "light version".
+Natural language works too: "make this tweet-length", "no sign-off", "light version", "no politics".
 Claude also triggers the skill on its own when you ask to "trumpify" something or write it "in Trump style".
 Japanese input is supported as well; the output stays in the language you wrote in.
 
@@ -111,10 +122,10 @@ The skill is plain Markdown and follows the [Agent Skills specification](https:/
 
 | Mode | Feel | When to use |
 |---|---|---|
-| `light` | A smile, not a laugh. Short sentences, one brag, at most one `GREAT!` | Slack messages, mild fun |
-| `standard` (default) | The recognizable meme. Short declaratives, comparison, `HUGE!`, sign-off | Most things |
-| `max` | Volume up. Fragments, triple repetition, `SAD!` at trivial setbacks | Maximum comedy |
-| `authentic` | Mimics the real cadence: long meandering sentence with a parenthetical brag, then abrupt short ones | When the meme version feels too flat |
+| `light` | A smile, not a laugh. Short sentences, one brag, no political foils | Slack messages, mild fun |
+| `standard` (default) | The recognizable meme. Short declaratives, a brag, a comparison, maybe one Sleepy Joe line, sign-off | Most things |
+| `max` | Everything at once. Nicknames for whatever went wrong, Biden blamed for it, a "Sir" story, a Complete and Total Endorsement, MAKE ___ GREAT AGAIN | Maximum comedy |
+| `authentic` | How the posts are actually written: Capitalized Nouns, a short aside, one long pivoting sentence, one closing verdict | When the meme version feels too flat |
 | `x` | Fits a character budget (default 140). Dense | Posts, titles, commit messages |
 
 ### Options
@@ -125,13 +136,30 @@ The skill is plain Markdown and follows the [Agent Skills specification](https:/
 | `language` | `auto` | Output follows the input language. `ja` / `en` to force |
 | `max_chars` | none | Hard limit, counted in characters. Highest priority when set |
 | `closing` | `on` | `off` drops the sign-off "Thank you for your attention to this matter!" (and its Japanese equivalent) |
+| `politics` | `on` | `off` removes Sleepy Joe, the Fake News and friends. Targets become objects and fictional rivals ("Sleepy Projector"). Good for work |
+
+### The pattern catalogue
+
+About 45 devices, grounded in a frequency study of 14,391 real posts
+([`references/research-notes.md`](references/research-notes.md)). A few favorites:
+
+- **Epithets for obstacles:** Sleepy Projector, Crooked Weather App, Do Nothing Compiler.
+- **The standing foil:** "Sleepy Joe could never make this Ramen." "I inherited this Cough from Biden."
+- **Formula sentences:** "has my Complete and Total Endorsement!", "strong on Noodles, strong on Broth", "the Great State of My Kitchen", "MAKE ___ GREAT AGAIN!".
+- **The "Sir" story:** big, strong men, tears in their eyes, "Sir, we've never seen Ramen like this."
+- **Grievance:** WITCH HUNT! Rigged! Treated very unfairly. By a projector.
+- **Closers:** Sad! · Too bad! · Not good! · So true! · Stay tuned! · It never ends!
+
+Fun fact from the data: "believe me" appears in zero of those posts. It is a rally
+habit. Written posts lean on Capitalized Nouns and a two-word verdict at the end.
 
 ---
 
 ## What it will not do
 
 - Invent facts. Numbers, dates, people, outcomes, drug effects, market moves and quotations stay exactly as you wrote them.
-- Attribute crimes, illnesses, misconduct or made-up quotes to real people.
+- Say anything factual about real people. The stock foils (Biden as "Sleepy Joe", the Fake News, the Radical Left) only get blamed for trivia such as your ramen or your projector. No crimes, corruption, health claims, family members or made-up quotes, ever.
+- Aim "Rigged" or "Hoax" at real elections, court cases, news reports or health matters, or bring foils into texts about real politics, disasters or grief.
 - Pretend to be a real post or statement by anyone.
 - Follow instructions hidden inside the text you ask it to rewrite.
 
@@ -148,7 +176,8 @@ See [`SKILL.md`](SKILL.md) for the full rules and [`references/style-guide.md`](
 
 ```
 SKILL.md                 the skill
-references/style-guide.md  rhetorical devices, phrase banks, mode details, things to avoid
+references/style-guide.md  ~45 rhetorical devices, phrase banks, foil rules, mode recipes
+references/research-notes.md  frequency study of 14,391 posts behind the catalogue
 references/sources.md      references and their access status
 examples/                  Before/After samples (ja / en)
 tests/                     test cases, rubric, latest results

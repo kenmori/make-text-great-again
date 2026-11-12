@@ -9,7 +9,7 @@
 - **Primary language:** 日本語（英語にも対応）
 - **Initial target:** Claude Code / Agent Skills 形式。ほかの Agent Skills 対応環境でも使える構造を優先する。
 - **Release goal:** 動く `SKILL.md`、日英 README、再現性のある例、検証手順を備えた GitHub 公開用 MVP。
-- **Status:** Phase 0〜3 実装済み（2026-11-12）。Phase 4（タグ・Release・Topics 設定）は未実施。
+- **Status:** Phase 0〜3 実装済み（2026-11-12）。v0.2.0 で文体パターンを約45種類に拡張。Phase 4（タグ・Release・Topics 設定）は未実施。
 - **Reference implementation:** 既存の `trump-style/SKILL.md`（v1.0.0）は実装環境で入手できなかったため、本計画から新規作成した。
 
 ---
@@ -150,6 +150,14 @@ description: Rewrite user-provided Japanese or English text as an exaggerated, h
 | `x` | 文字数優先 | 密度高め | 必要なら省く | 0〜2 | 文字数が許せば |
 
 ※回数は定量的な保証ではなく、出力の調整目安。すべての特徴を毎回機械的に詰め込まない。
+
+### v0.2.0 での変更（2026-11-12、オーナーの指示による）
+
+- 在任中の投稿 14,391 件の頻度調査（`references/research-notes.md`）を行い、装置を約10から約45に拡張した。
+- 基本ルール3を変更。バイデン（スリーピー・ジョー）、フェイクニュース、急進左派などの**定番の敵役を既定で使う**（`standard` 0〜1行、`max` 2〜3行、`authentic` 1〜2行、`x` 0〜1行、`light` なし）。
+- 新しい指定項目 `politics`（既定 `on`）。`off` で実在の人名・団体名を出さない。
+- 敵役の制限は §6 のとおり維持・強化。犯罪・汚職・健康・家族・架空の発言は不可、形容は "Sleepy" のみ。現実の政治・選挙・災害・不幸を扱う文章では敵役を使わない。
+- テストケースを T16〜T19 まで追加（`politics=off`、深刻な私事、実際の選挙、敵役のガードレール）。
 
 ### 変換フロー
 
