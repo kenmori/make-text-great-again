@@ -140,7 +140,8 @@ The skill is plain Markdown and follows the [Agent Skills specification](https:/
 
 ### The pattern catalogue
 
-About 45 devices, grounded in a frequency study of 14,391 real posts
+About 65 devices, grounded in a frequency study of 14,391 real posts from 2017–2021
+and a sample of 43 endorsement posts from November 2026
 ([`references/research-notes.md`](references/research-notes.md)). A few favorites:
 
 - **Epithets for obstacles:** Sleepy Projector, Crooked Weather App, Do Nothing Compiler.
@@ -149,6 +150,34 @@ About 45 devices, grounded in a frequency study of 14,391 real posts
 - **The "Sir" story:** big, strong men, tears in their eyes, "Sir, we've never seen Ramen like this."
 - **Grievance:** WITCH HUNT! Rigged! Treated very unfairly. By a projector.
 - **Closers:** Sad! · Too bad! · Not good! · So true! · Stay tuned! · It never ends!
+- **Three-adjective verdicts:** "Slow, Sleepy, and Soggy!"
+- **The litany:** "will fight tirelessly to Boil the Water, Promote MADE IN MY KITCHEN, Unleash Noodle DOMINANCE, and Protect our always under siege Lunch Break."
+
+### Endorse anything
+
+Ask for an endorsement and the skill uses the full six-step template of a real
+endorsement post, pointed at a linter, a ramen shop, or a pull request:
+
+```text
+/make-text-great-again mode=max: I recommend switching our team to the new linter. It catches bugs early and runs fast. Write it as an endorsement.
+```
+
+```
+It is my Great Honor to endorse the new Linter, a tremendous Tool running to be the next Linter of our Great Team, a Team I love and WON BIG with (BY FAR)!
+
+The new Linter catches Bugs early, and runs FAST. A Proven Record of Success — it is a WINNER!
+
+Its opponent, the Old Linter, is a Do Nothing Tool that is opposed to CATCHING BUGS EARLY and RUNNING FAST and, if it and the Slowcrats ever got back in, all of these things would be terminated. Sleepy Joe would keep the Old Linter. Of course he would. The Old Linter is Slow, Sleepy, and Dangerous!
+
+On the other hand, as your next Linter, the new Linter will fight tirelessly to Catch Bugs EARLY, Run FAST, Promote MADE IN OUR REPO, Unleash Code Quality DOMINANCE, Keep our Main Branch SECURE, and Protect our always under siege Weekend.
+
+The new Linter has my Complete and Total Endorsement. GET OUT AND SWITCH — IT WILL NEVER LET YOU DOWN!
+Your Favorite Engineer
+```
+
+The opponent is always an object or an invented rival, never a real product,
+company or person. The skill does not write endorsements for real candidates
+or elections.
 
 Fun fact from the data: "believe me" appears in zero of those posts. It is a rally
 habit. Written posts lean on Capitalized Nouns and a two-word verdict at the end.
@@ -176,8 +205,8 @@ See [`SKILL.md`](SKILL.md) for the full rules and [`references/style-guide.md`](
 
 ```
 SKILL.md                 the skill
-references/style-guide.md  ~45 rhetorical devices, phrase banks, foil rules, mode recipes
-references/research-notes.md  frequency study of 14,391 posts behind the catalogue
+references/style-guide.md  ~65 rhetorical devices, phrase banks, foil rules, mode recipes
+references/research-notes.md  frequency study of 14,391 posts plus a 2026 endorsement sample
 references/sources.md      references and their access status
 examples/                  Before/After samples (ja / en)
 tests/                     test cases, rubric, latest results

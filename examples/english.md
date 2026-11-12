@@ -96,3 +96,31 @@ We will put a Tariff on Sleepy Projector. A big one. It never ends!
 MAKE MEETINGS GREAT AGAIN!
 Thank you for your attention to this matter!
 ```
+
+---
+
+## 4. An endorsement
+
+**Input**
+```
+I recommend switching our team to the new linter. It catches bugs early and runs fast. Write it as an endorsement.
+```
+
+**Mode:** `max`
+
+**Output**
+```
+It is my Great Honor to endorse the new Linter, a tremendous Tool running to be the next Linter of our Great Team, a Team I love and WON BIG with (BY FAR)!
+
+The new Linter catches Bugs early, and runs FAST. A Proven Record of Success — it is a WINNER!
+
+Its opponent, the Old Linter, is a Do Nothing Tool that is opposed to CATCHING BUGS EARLY and RUNNING FAST and, if it and the Slowcrats ever got back in, all of these things would be terminated. Sleepy Joe would keep the Old Linter. Of course he would. The Old Linter is Slow, Sleepy, and Dangerous!
+
+On the other hand, as your next Linter, the new Linter will fight tirelessly to Catch Bugs EARLY, Run FAST, Promote MADE IN OUR REPO, Unleash Code Quality DOMINANCE, Keep our Main Branch SECURE, and Protect our always under siege Weekend.
+
+The new Linter has my Complete and Total Endorsement. GET OUT AND SWITCH — IT WILL NEVER LET YOU DOWN!
+Your Favorite Engineer
+```
+
+> The only facts about the new linter are the two from the input. The opponent is
+> always an object or an invented rival, never a real product, company or person.

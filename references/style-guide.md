@@ -4,8 +4,10 @@ Loaded on demand by `SKILL.md`. It catalogues the devices the skill imitates, gi
 phrase banks in Japanese and English, shows how each mode should feel, and lists
 what to avoid.
 
-The devices are grounded in a frequency study of 14,391 original posts
-(`research-notes.md`). Counts in brackets are posts containing the pattern.
+The devices are grounded in a frequency study of 14,391 original posts from
+2017–2021 and a sample of 43 endorsement posts from November 2026
+(`research-notes.md`). Counts in brackets are posts in the first corpus that contain
+the pattern; "[2026]" marks habits seen in the second sample.
 Everything here is written in our own words; no real post is reproduced.
 
 **How to use this file:** pick devices that fit the content. A good output uses
@@ -44,6 +46,10 @@ same device twice in a row, and rotate closers, epithets and frames between runs
 | B10 | **Short aside** | Three-word parenthetical that inflates or winks. In 10% of posts. | 「（断トツで）」「（控えめに言って）」「（いつものことだが）」「（冗談だ！）」「（信じられるか？）」 | "(by far)" "(to put it mildly)" "(as usual)" "(just kidding!)" "(do you believe this?)" |
 | B11 | **Working hard** | [working hard 94] | 「懸命に働いている！」 | "Working hard!" |
 | B12 | **Respect** | The world's opinion of the narrator. [respect 240] | 「キッチンは再び尊敬されている。」 | "The Kitchen is respected again." |
+| B13 | **Self-insertion** | While praising something else, cut in with your own victory there. [2026] | 「駅前、私が愛し、何度も大勝した場所だ。」 | "the Break Room, a place I love and WON BIG" |
+| B14 | **Bracketed boast** | A capitalized boast in brackets, mid-sentence, with its own `!`. [2026] | 「（断トツで）！」「（しかも最も尊敬されている一人だ！）」 | "(BY FAR)!" "(and one of the most respected of them all!)" |
+| B15 | **Dash and afterthought** | A dash, then one more win in capitals. [2026] | 「称賛に満ちた経歴だ。そして WINS だ！」 | "a career full of praise — and WINS!" |
+| B16 | **Proof sentence** | After any small anecdote, a short sentence confirming it still holds. [2026] | 「あの鍋は今もそこにある！」 | "The pot is still there!" |
 
 ## C. Foils, epithets and blame
 
@@ -65,6 +71,9 @@ Read section F before using C4–C6.
 | C11 | **Low ratings** | Dismiss a rival by its audience. | 「あの店は視聴率が低い。誰も見ていない。」 | "Low Ratings. Nobody watches." |
 | C12 | **Tariffs and deals** | Every problem has a trade solution. [tariff 183] | 「カップ麺には関税をかける。大きな関税だ。」「いい DEAL だ。」 | "We will put a Tariff on instant noodles. A big one." "GREAT DEAL!" |
 | C13 | **They are laughing at us** | | 「世界は我々を笑っていた。もう笑っていない。」 | "They were laughing at us. Not anymore." |
+| C14 | **If they ever got in** | The rival's victory would end everything good just listed. [2026] | 「もしカップ麺の連中が勝てば、これらすべてが打ち切られる。」 | "If the Instant Noodles ever got in, all of these things would be terminated." |
+| C15 | **Insulting respelling** | Misspell the obstacle's name as a jab. **Objects and fictional rivals only.** [2026] | 「プロジェク"鈍"ー」「カップ"麺倒"」 | "the Slowjector", "the Slowcrats" |
+| C16 | **Which means…** | Name the rival's ideal, then list four bad outcomes. [2026] | 「カップ麺、それはつまり、のびた麺、ぬるい湯、薄い味、そして後悔だ！」 | "Instant Noodles, which means Soggy Noodles, Lukewarm Water, Thin Broth, and Regret!" |
 
 ## D. Formula sentences
 
@@ -80,6 +89,17 @@ These are fixed templates. Slot in words from the input.
 | D6 | **Will never let you down** [29] | 「私は決して皆さんを失望させない！」 | "I will never let you down!" |
 | D7 | **The best is yet to come** [17] | 「最高の瞬間はこれからだ！」 | "THE BEST IS YET TO COME!" |
 | D8 | **Stay tuned / we'll see** | 「続報を待て！」「どうなるか見てみよう。」 | "Stay tuned!" "We'll see what happens." |
+| D9 | **Great Honor opener** [2026] | 「〜を推薦できることは、私の大いなる名誉だ。」 | "It is my Great Honor to endorse …" |
+| D10 | **Three-adjective verdict** [2026] Three adjectives, ideally alliterative, then `!`. Negative for the obstacle, positive for the hero. | 「無謀で、過激で、危険だ！」「若く、強く、賢い！」 | "Slow, Sleepy, and Soggy!" "Young, Strong, and Smart!" |
+| D11 | **Always under siege** [2026] One fixed epithet welded inside a noun phrase, repeated every time the noun appears. | 「常に包囲されている我々の昼休み」 | "our always under siege Lunch Break" |
+| D12 | **Say it, then say it in caps** [2026] | 「今やとても清潔なキッチン、CLEAN だ」 | "my now very clean Kitchen, CLEAN" |
+| D13 | **The litany** [2026] "will fight tirelessly to" plus six to ten capitalized verb phrases, each with one all-caps word. Build it from actions in the input and abstract virtues. | 「たゆまず戦い続ける。お湯を沸かし、麺をゆで、MADE IN 我が家を掲げ、麺の DOMINANCE を解き放ち、台所の LAW AND ORDER を守る。」 | "will fight tirelessly to Boil the Water, Cook the Noodles, Promote MADE IN MY KITCHEN, Unleash Noodle DOMINANCE, and Ensure LAW AND ORDER at the Table." |
+| D14 | **With us from the very beginning** [2026] For things and for the narrator. For a real person only if the input says so. | 「最初からずっと我々と共にあった。」 | "has been with us from the very beginning" |
+| D15 | **Credential stack** [2026] A run of capitalized titles before the name, taken from the input, plus stock honorifics. | 「非常に尊敬され、とても人気のある、勝利の実績を持つラーメン屋」 | "A Highly Respected and very popular Engineer, a Proven Leader — a WINNER!" |
+| D16 | **Quoted honorific** [2026] A flattering nickname in quotation marks before the name. | 「"デプロイ" 田中」「"RAMEN" 私」 | "Pipeline" Dana, "Captain" Compiler |
+| D17 | **Scare-quoted plain word** [2026] Put one ordinary word in quotation marks for no reason. | 「勝利が "てんこ盛り" の経歴」 | a career "loaded up" with wins |
+| D18 | **Go-and-do closer** [2026] Imperative in capitals, a dash, the promise. | 「今すぐ食べに行け。決して皆さんを失望させない！」 | "GET OUT AND EAT THERE — IT WILL NEVER LET YOU DOWN!" |
+| D19 | **Title signature** [2026] Sign off with the narrator's own self-awarded title. Never the real person's name or office. | 「駅前ラーメン担当大統領より」「皆さんのお気に入りのエンジニアより」 | "Your Favorite Engineer" "CHIEF RAMEN OFFICER, ME" |
 
 ## E. Speech flavor (rally voice)
 
@@ -226,6 +246,9 @@ a formula sentence (D), a triple or echo (A5/A6), a grievance word for any setba
 (C8/C9), a "Sir" story or chorus (E3/E2), three or four verdict words, and a finale
 (D4 or the default sign-off, or both). 3–4× the input length.
 
+When the input recommends or praises a person, place, product or tool, `max` may
+use the endorsement structure in section K instead.
+
 ### `authentic` — 6–9 devices, written-post voice
 Follow the corpus: Capitalized Nouns (A3), caps on small intensifiers (A4), one
 short aside (B10), a "which I" clause (B7), an epithet (C2 or C4), one long
@@ -265,8 +288,13 @@ Trim order: repetition → foil → comparison → closer. Count every character
 - Any real person outside the roster who is not in the input.
 
 **Impersonation**
-- Signing as the real person, adding "— Donald J. Trump", a handle, a date line,
-  or a platform mock-up. The output is a parody in the user's own voice.
+- Signing as the real person, adding "— Donald J. Trump", "President" with the
+  real name, a handle, a date line, or a platform mock-up. The output is a parody
+  in the user's own voice. A title signature (D19) uses the narrator's own
+  joke title only.
+- Borrowing the content of real endorsement posts: their policy claims, their
+  statements about real candidates, their remarks about groups of people. Only
+  the skeleton is used.
 - Copying real posts. Use the patterns, not the posts.
 
 **Tone**
@@ -277,3 +305,34 @@ Trim order: repetition → foil → comparison → closer. Count every character
 - Every device in every sentence. It stops being funny.
 - Two sign-offs, unless `max` pairs the default sign-off with a D4 finale.
 - An exclamation mark on every sentence.
+
+---
+
+## K. The endorsement structure
+
+A whole-text skeleton, taken from the 2026 sample, for praising anything: a ramen
+shop, a library, a colleague, a pull request. Use it when the user asks for an
+endorsement (「推薦文で」, "endorse this"), or in `max` when the input itself
+recommends or praises something.
+
+| Step | What it does | JA | EN |
+|---|---|---|---|
+| 1. Honor opener (D9) + self-insertion (B13) + bracketed boast (B14) | Announce the endorsement, then make it about yourself. | 「駅前の『麺屋たなか』を推薦できることは、私の大いなる名誉だ。駅前、私が愛し、何度も大勝した場所だ（断トツで）！」 | "It is my Great Honor to endorse the new Linter, a tremendous Tool for our Great Team, a Team I love and WON BIG with (BY FAR)!" |
+| 2. Credential stack (D15) + facts from the input | Every real fact from the input goes here, unchanged. | 「非常に尊敬され、とても人気のあるラーメン屋だ。スープは濃厚。店主は親切。」 | "The new Linter catches Bugs early, and runs FAST. A Proven Record of Success — it is a WINNER!" |
+| 3. Loyalty line (D14) | Skip for real people unless the input supports it. | 「最初からずっと我々と共にあった。」 | "It has been with us from the very beginning." |
+| 4. Opponent paragraph (C2, C14, C16, D10) | Invent a rival that is **an object or plainly fictional**. It opposes each good thing in step 2. | 「対立候補の『ねぼすけカップ麺』は、濃厚なスープに反対し、親切な店主にも反対している。もしカップ麺の連中が勝てば、これらすべてが打ち切られる。無謀で、過激で、危険だ！」 | "Its opponent, the Old Linter, is opposed to CATCHING BUGS EARLY and RUNNING FAST and, if it and the Slowcrats ever got back in, all of these things would be terminated. Slow, Sleepy, and Dangerous!" |
+| 5. Pivot + litany (D13, D11, D12) | "On the other hand," then the long list. | 「一方、『麺屋たなか』は、たゆまず戦い続ける。スープを濃厚に保ち、親切を推進し、MADE IN 駅前を掲げ、麺の DOMINANCE を解き放ち、常に包囲されている我々の胃袋を守り抜く。」 | "On the other hand, the new Linter will fight tirelessly to Catch Bugs EARLY, Run FAST, Promote MADE IN OUR REPO, Unleash Code Quality DOMINANCE, and Protect our always under siege Weekend." |
+| 6. Endorsement (D1) + go-and-do closer (D18) + optional title signature (D19) | | 「『麺屋たなか』を完全かつ全面的に支持する。今すぐ食べに行け。決して皆さんを失望させない！ 駅前ラーメン担当大統領より」 | "The new Linter has my Complete and Total Endorsement. GET OUT AND SWITCH — IT WILL NEVER LET YOU DOWN! Your Favorite Engineer" |
+
+**Limits specific to this structure**
+
+- The thing being endorsed keeps exactly the qualities the input gives it. The
+  litany may add abstract virtues and joke slogans, not new concrete facts.
+- The opponent is never a real person, company, product or shop, even when the
+  input names a real competitor. Use an object, a generic category, or an
+  obviously invented rival. If the input compares two real things, drop step 4.
+- Do not use this structure for real candidates, real elections or real
+  political causes. For those, rewrite the tone only and add nothing.
+- A standing foil (section F) may appear once, as usual: "Sleepy Joe would keep
+  the Old Linter."
+- `closing=off` removes step 6's closer and signature but keeps the endorsement sentence.

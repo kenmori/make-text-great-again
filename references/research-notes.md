@@ -11,7 +11,8 @@ style guide is grounded in counts instead of memory of the meme.
 - **Method:** plain counting with a short script: closing sentences, capitalized
   runs, opening words, parentheticals, epithet + name pairs, n-grams, and a list
   of candidate phrases. Counts below are "posts containing the phrase".
-- **Not in the corpus:** posts after January 2021. Later habits (the sign-off
+- **Not in the corpus:** posts after January 2021. A second, small sample from
+  November 2026 is described separately below. Other later habits (the sign-off
   "Thank you for your attention to this matter!", very long all-caps posts) are
   noted from general public observation and marked as such.
 - No post is reproduced here. Only short recurring phrases and their counts.
@@ -133,7 +134,69 @@ These are **spoken** habits from rallies and interviews, or older posts. They ar
 still recognizable and the skill keeps them, but as speech flavor. Written posts
 lean on capitalized nouns, epithets, formula sentences, and a short verdict at the end.
 
-## Later habits (general observation, not in this corpus)
+## 2026 sample: the endorsement template
+
+A second sample: 43 posts from the same account, all dated 2026-11-04 (election
+day), read from screenshots supplied by the repository owner. Small and
+one-sided by construction: every one of the 43 is a candidate endorsement.
+It says nothing about how other kinds of posts are written, but it shows one
+formula in full, and how fixed that formula has become. Median length is far
+above the 2017–2021 corpus: these are four-paragraph posts.
+
+**The skeleton, in order**
+
+1. **Honor opener.** "It is my Great Honor to endorse …", or a status line:
+   "… is doing an incredible job representing the wonderful people of …".
+   The people of the district are always "incredible", "wonderful",
+   "tremendous", "fantastic" or "amazing".
+2. **Self-insertion.** The place is "a place I love and WON BIG", often with the
+   years listed and a bracketed "(BY FAR)!".
+3. **Credential stack.** A run of capitalized titles before the name:
+   "A Brave …, successful …, and now, as …". Generational claims
+   ("A Fifth Generation …"), "Highly Respected and very popular", "a Proven
+   Leader", "a Proven Record of Success — He is a WINNER!", a career
+   "loaded up" with accolades.
+4. **Loyalty line.** "has been with us from the very beginning", "MAGA all the
+   way", "has always been at my side".
+5. **Opponent paragraph.** "His opponent, …, is a Radical Left …" followed by a
+   list of things the opponent is "opposed to" or "wants", the conditional "if he
+   and the … ever got in, all of these things will be terminated", and a
+   three-adjective verdict.
+6. **Pivot.** "On the other hand, as your next …," or "In contrast,".
+7. **The litany.** "will fight tirelessly to" plus eight to ten capitalized verb
+   phrases in a row, each with one word in full capitals (DOMINANCE, SECURE,
+   LAW AND ORDER, MADE IN THE U.S.A., PEACE THROUGH STRENGTH).
+8. **Closer.** "… has my Complete and Total Endorsement to be the next …. GET OUT
+   AND VOTE FOR … — HE WILL NEVER LET YOU DOWN!" All 43 end on the
+   never-let-you-down line. About half add a signature of title and full name
+   in capitals.
+
+**Recurring small habits**
+
+- A fixed epithet welded inside a noun phrase and never varied: "our always
+  under siege …".
+- Saying a word, then saying it again in capitals: "our now very Secure Border, SECURE".
+- A positive nickname in quotation marks before the first name.
+- Scare quotes around one ordinary word: a career "loaded up" with wins, a
+  somewhat "controversial" sign, the Republican "ticket".
+- A bracketed boast mid-sentence: "(and one of the most respected of them all!)".
+- A dash and a capitalized afterthought: "with accolades — and WINS!".
+- A short proof sentence after an anecdote: "The sign is still there!".
+- Positive three-adjective verdicts as well as negative ones: "Young, Strong, and Smart!".
+- Insulting respellings of an opponent's name or party.
+- "…, which means" followed by a list of four bad outcomes.
+- "my friend, the Great …" for allies; "everyone is very proud of, as am I".
+- Epithet + name is still in use in 2026 ("Crazy …", "Radical Left Lunatic").
+- Typos survive posting: missing spaces and commas in the pasted template.
+
+**What the skill takes from this, and what it does not**
+
+The skill borrows the skeleton and the small habits. It does not borrow the
+content: the policy claims, the statements about real candidates, and the
+remarks about groups of people stay out. In parody the "candidate" is a ramen
+shop or a linter, and the "opponent" is instant noodles.
+
+## Later habits (general observation, not in either sample)
 
 - Sign-off "Thank you for your attention to this matter!" on formal-sounding posts.
 - Long posts with whole sentences in capitals.

@@ -4,7 +4,7 @@ description: Rewrite user-provided Japanese or English text as an exaggerated, h
 license: MIT
 metadata:
   author: kenmori
-  version: "0.1.0"
+  version: "0.2.0"
   homepage: https://github.com/kenmori/make-text-great-again
 ---
 
@@ -69,18 +69,29 @@ phrasings: `references/style-guide.md`.
   "the likes of which nobody has ever seen" · "by far" / "not even close" · record and
   ratings talk without invented figures · "nobody knows more about X than me" ·
   "your favorite Engineer (me!)" · "which I found, by the way" · "I was right, as
-  usual" · short asides "(to put it mildly)" 「（控えめに言って）」.
+  usual" · short asides "(to put it mildly)" 「（控えめに言って）」 · self-insertion
+  while praising something else ("the Break Room, a place I love and WON BIG",
+  「駅前、私が愛し、大勝した場所だ」) · bracketed boasts "(BY FAR)!" · a dash and an
+  afterthought ("— and WINS!") · a proof sentence ("The pot is still there!").
 - **Foils and blame:** the vague inferior "them" · an **epithet for the obstacle**
   ("Sleepy Projector", 「ねぼすけプロジェクター」, "Do Nothing Compiler") · "so-called
   experts" · the **standing foil** ("Sleepy Joe could never make this Ramen",
   「これはバイデンのせいだ」) · "inherited a mess" · "would never have happened if I
   were in charge" · the Fake News pre-emptively doubting it · WITCH HUNT / Hoax /
   Rigged for any criticism or bad luck · "treated very unfairly" · winners and
-  losers · tariffs and deals as the cure for everything.
+  losers · tariffs and deals as the cure for everything · "if the Instant Noodles
+  ever got in, all of this would be terminated" · insulting respellings of an
+  object's name ("the Slowjector") · "…, which means" plus four bad outcomes.
 - **Formula sentences:** "has my Complete and Total Endorsement!" 「完全かつ全面的に
   支持する！」 · "strong on X, strong on Y, and loves Z" · "the Great State of …"
   「偉大なる埼玉県」 · "MAKE ___ GREAT AGAIN!" · "PROMISES MADE, PROMISES KEPT!" ·
-  "Stay tuned!" 「続報を待て！」.
+  "Stay tuned!" 「続報を待て！」 · three-adjective verdicts ("Slow, Sleepy, and Soggy!"
+  「無謀で、過激で、危険だ！」) · a fixed epithet inside a noun phrase ("our always
+  under siege Lunch Break") · say it, then say it in caps ("my now very clean
+  Kitchen, CLEAN") · the litany ("will fight tirelessly to Boil the Water, Promote
+  MADE IN MY KITCHEN, Unleash Noodle DOMINANCE…") · quoted honorifics ("Pipeline"
+  Dana) · the go-and-do closer ("GET OUT AND EAT THERE — IT WILL NEVER LET YOU
+  DOWN!").
 - **Speech flavor:** "Believe me." 「本当だ。」 · "Many people are saying it." ·
   the "Sir" story (big, strong, anonymous men in tears: 「サー、こんなラーメンは見た
   ことがありません」) · the weave (drift off, snap back) · self-answered questions
@@ -91,6 +102,25 @@ phrasings: `references/style-guide.md`.
 Rotate alternatives when they fit better or space is tight: Thank you! · Enjoy! ·
 Sad! · Wow! · Too bad! · Not good! · So true! · Stay tuned! · Working hard! ·
 It never ends! · A total Witch Hunt! · MAKE ___ GREAT AGAIN!
+
+## The endorsement structure
+
+When the user asks for an endorsement (「推薦文で」, "endorse this"), or in `max` when
+the input recommends or praises a person, place, product or tool, use the
+six-step skeleton in `references/style-guide.md`, section K:
+
+1. "It is my Great Honor to endorse …" plus a self-insertion and "(BY FAR)!".
+2. A stack of capitalized credentials carrying every fact from the input.
+3. "has been with us from the very beginning" (for a real person, only if the input says so).
+4. An opponent paragraph about an **inanimate or plainly fictional** rival that
+   opposes each good thing, ending in a three-adjective verdict.
+5. "On the other hand," and the litany.
+6. "has my Complete and Total Endorsement" plus the go-and-do closer, optionally
+   signed with the narrator's own joke title ("Your Favorite Engineer").
+
+The opponent is never a real person, company, product or shop, even if the input
+names a competitor. Never use this structure for real candidates, elections or
+political causes, and never borrow the policy content of real endorsement posts.
 
 ## Using the standing foils
 
@@ -145,7 +175,8 @@ with politics. That is the point, and it has firm limits.
 ## Hard rules
 
 - **Parody, not impersonation.** Never present output as a real statement by Donald
-  Trump or anyone else. No signature, handle, date line, or platform mock-up. If the
+  Trump or anyone else. No real-name signature, "President" with the real name,
+  handle, date line, or platform mock-up. A joke title for the narrator is fine. If the
   user asks for something that looks like a genuine post or quote, decline that part
   and offer the clearly labeled parody instead.
 - **No invented facts.** Keep the original events, numbers, dates, people, and
@@ -168,8 +199,9 @@ with politics. That is the point, and it has firm limits.
 
 ## Reference material
 
-- `references/style-guide.md` — full device catalogue (about 45 devices), foil rules,
-  closer and epithet banks, per-mode recipes, things to avoid.
-- `references/research-notes.md` — frequency study of 14,391 posts behind the catalogue.
+- `references/style-guide.md` — full device catalogue (about 65 devices), foil rules,
+  closer and epithet banks, per-mode recipes, the endorsement structure, things to avoid.
+- `references/research-notes.md` — frequency study of 14,391 posts from 2017–2021 and a
+  sample of 43 endorsement posts from November 2026.
 - `examples/japanese.md`, `examples/english.md` — Before/After samples per mode.
 - `tests/cases.md`, `tests/checklist.md` — test inputs and the quality rubric.
