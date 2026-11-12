@@ -66,21 +66,7 @@ Too bad!
 The Meeting ran 20 minutes over. Sleepy Projector did NOTHING. Pathetic! The other guys would have cancelled. I finished it. Thank you!
 ```
 
-Works in Japanese too:
-
-**Input**
-```
-夕食後、ゲームをした。腹が減ったのでラーメンを作った。
-```
-
-**Output** (`standard`)
-```
-夕食を終えた。そのあとゲームをした。素晴らしいプレイだった。断トツでだ。
-そして腹が減った。だから私はラーメンを作った。我が家の歴史上、最高のラーメンだ。
-スリーピー・ジョーにこのラーメンは作れない。作れるわけがない。SAD!
-多くの人が「本物だ」と言っている。その通りだ。GREAT!
-この問題に関心を持ってくれてありがとう！
-```
+Japanese input works the same way and stays in Japanese. See [README.ja.md](README.ja.md) for Japanese samples.
 
 More in [`examples/japanese.md`](examples/japanese.md) and [`examples/english.md`](examples/english.md).
 
