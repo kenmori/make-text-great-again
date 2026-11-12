@@ -9,7 +9,7 @@
 - **Primary language:** 日本語（英語にも対応）
 - **Initial target:** Claude Code / Agent Skills 形式。ほかの Agent Skills 対応環境でも使える構造を優先する。
 - **Release goal:** 動く `SKILL.md`、日英 README、再現性のある例、検証手順を備えた GitHub 公開用 MVP。
-- **Status:** v0.3.0 公開済み（2026-11-12）。その後の変更（下記「v0.3.0 公開後の変更」）は未リリース。未完了は各フェーズのチェック欄を参照（X投稿向け紹介文、Issue ラベルの作成）。
+- **Status:** v0.4.0 公開済み（2026-11-12）。未完了は各フェーズのチェック欄を参照（X投稿向け紹介文、Issue ラベルの作成）。
 - **Reference implementation:** 既存の `trump-style/SKILL.md`（v1.0.0）は実装環境で入手できなかったため、本計画から新規作成した。
 
 ---
@@ -174,7 +174,7 @@ description: Rewrite user-provided Japanese or English text as an exaggerated, h
 - 締めの定型「この問題に関心を持ってくれてありがとう！」が 2025年の素材で実際に確認できた（17件中3件、いずれも厳粛な発表・警告の末尾）。
 - 「どうなるか見てみよう」を話し言葉の装置と締めの候補に明記。
 
-### v0.3.0 公開後の変更（2026-11-12、未リリース。メタデータ上は 0.4.0）
+### v0.4.0 の変更（2026-11-12、公開済み）
 
 - Claude Code のプラグインとして導入できるようにした（`.claude-plugin/plugin.json` と `marketplace.json`）。clone なしで `/plugin install` できる。
 - claude.ai 用の ZIP を作る `scripts/build-zip.sh` と、Release に ZIP を添付する GitHub Actions を追加した。
