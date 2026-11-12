@@ -9,7 +9,7 @@
 - **Primary language:** 日本語（英語にも対応）
 - **Initial target:** Claude Code / Agent Skills 形式。ほかの Agent Skills 対応環境でも使える構造を優先する。
 - **Release goal:** 動く `SKILL.md`、日英 README、再現性のある例、検証手順を備えた GitHub 公開用 MVP。
-- **Status:** Phase 0〜3 実装済み（2026-11-12）。公開前の改訂で文体パターンを約45種類に拡張。Phase 4（タグ・Release・Topics 設定）は未実施。
+- **Status:** v0.1.0 公開済み（2026-11-12）。Phase 0〜4 の主要項目は完了。未完了は各フェーズのチェック欄を参照（実機での起動確認、X投稿向け紹介文、Issue ラベルの作成）。
 - **Reference implementation:** 既存の `trump-style/SKILL.md`（v1.0.0）は実装環境で入手できなかったため、本計画から新規作成した。
 
 ---
@@ -233,57 +233,57 @@ Turn boring text into outrageous Trump-style parody in seconds.
 
 ### Phase 0 — 既存資産の移行
 
-- [ ] 既存 `trump-style/SKILL.md` の仕様を確認する。
-- [ ] 引き継ぐルール・更新するルールを整理する。
-- [ ] リポジトリ名を `make-text-great-again` に統一する。
-- [ ] 本人投稿・研究の出典は `references/sources.md` に移し、取得可否を明記する。
+- [ ] 既存 `trump-style/SKILL.md` の仕様を確認する。（実装環境で入手できず未実施。本計画から新規作成した）
+- [ ] 引き継ぐルール・更新するルールを整理する。（同上のため対象なし）
+- [x] リポジトリ名を `make-text-great-again` に統一する。
+- [x] 本人投稿・研究の出典は `references/sources.md` に移し、取得可否を明記する。
 
 **成果物:** 変更点の一覧。
 
 ### Phase 1 — Skill MVP
 
-- [ ] 正しい YAML frontmatter を持つ `SKILL.md` を作成する。
-- [ ] 5モード、既定言語、字数指定、締め切替の指示を明文化する。
-- [ ] 出力の意味保持とパロディの境界を明文化する。
-- [ ] 外部サービス不要で使えるプロンプト型にする。
-- [ ] 詳細な規則を `references/style-guide.md` に分割する。
-- [ ] `skills-ref validate` 等で検証可能な場合は実施する（導入済みでない場合は無理に依存を追加しない）。
+- [x] 正しい YAML frontmatter を持つ `SKILL.md` を作成する。
+- [x] 5モード、既定言語、字数指定、締め切替の指示を明文化する。
+- [x] 出力の意味保持とパロディの境界を明文化する。
+- [x] 外部サービス不要で使えるプロンプト型にする。
+- [x] 詳細な規則を `references/style-guide.md` に分割する。
+- [x] `skills-ref validate` 等で検証可能な場合は実施する（導入済みでない場合は無理に依存を追加しない）。（`agentskills validate` で合格）
 
 **成果物:** Skill と関連リファレンス。
 
 ### Phase 2 — サンプルとテスト
 
-- [ ] 日本語 Before/After を3件以上作る。
-- [ ] 英語 Before/After を2件以上作る。
-- [ ] 少なくとも12ケースで想定される出力を点検する。
-- [ ] `light` と `max` の違いが明確に出るか確認する。
-- [ ] `authentic` が「常に短文」とはならず、括弧・脱線・大文字を適度に含むか確認する。
-- [ ] `x` が明示された字数を守るか確認する。
-- [ ] いずれも原文の事実を大きく変えないか確認する。
+- [x] 日本語 Before/After を3件以上作る。
+- [x] 英語 Before/After を2件以上作る。
+- [x] 少なくとも12ケースで想定される出力を点検する。（20ケース。作成者による自己採点。`tests/results.md`）
+- [x] `light` と `max` の違いが明確に出るか確認する。
+- [x] `authentic` が「常に短文」とはならず、括弧・脱線・大文字を適度に含むか確認する。
+- [x] `x` が明示された字数を守るか確認する。
+- [x] いずれも原文の事実を大きく変えないか確認する。
 
 **成果物:** `examples/*`, `tests/*`、テスト実施結果。
 
 ### Phase 3 — 公開用ドキュメント
 
-- [ ] 英語 `README.md` を作る。
-- [ ] 日本語 `README.ja.md` を作る。
-- [ ] インストール・実行例を実環境で確認する。
-- [ ] MIT ライセンス案を採用するか確認して `LICENSE` を追加する。
-- [ ] `CONTRIBUTING.md`、免責・クレジットを追加する。
-- [ ] X投稿向けの紹介文（日本語・英語）を用意する。
+- [x] 英語 `README.md` を作る。
+- [x] 日本語 `README.ja.md` を作る。
+- [ ] インストール・実行例を実環境で確認する。（git clone で有効な Skill ディレクトリになることは確認済み。Claude Code 上での `/make-text-great-again` の実起動は未確認）
+- [x] MIT ライセンス案を採用するか確認して `LICENSE` を追加する。
+- [x] `CONTRIBUTING.md`、免責・クレジットを追加する。
+- [ ] X投稿向けの紹介文（日本語・英語）を用意する。（未作成）
 
 **成果物:** 公開できる README 一式。
 
 ### Phase 4 — 公開・改善
 
-- [ ] GitHub上のリポジトリ名、説明、topics、既存名称との衝突を確認する。
-- [ ] リポジトリを公開する（ユーザーの明示的な指示・権限のある環境で実施）。
-- [ ] 初回タグ `v0.1.0` を付ける。
-- [ ] GitHub Release に一言の説明と使用例を載せる。
-- [ ] Issues に `good first issue`、`example request` 等の案内を設ける。
-- [ ] README 内の表示・リンク・導入手順が実際に動くことを再確認する。
+- [x] GitHub上のリポジトリ名、説明、topics、既存名称との衝突を確認する。（同名リポジトリなし。類似名は `thomasvrgn/make-your-text-great-again` の1件のみ。About 説明と topics はオーナーが設定）
+- [x] リポジトリを公開する（ユーザーの明示的な指示・権限のある環境で実施）。（public。デフォルトブランチは `main`）
+- [x] 初回タグ `v0.1.0` を付ける。（2026-11-12）
+- [x] GitHub Release に一言の説明と使用例を載せる。（https://github.com/kenmori/make-text-great-again/releases/tag/v0.1.0）
+- [ ] Issues に `good first issue`、`example request` 等の案内を設ける。（`CONTRIBUTING.md` にラベルの説明を記載済み。GitHub 上のラベル作成は未実施）
+- [ ] README 内の表示・リンク・導入手順が実際に動くことを再確認する。（相対リンクと git clone 手順は確認済み。バナー画像の表示と Claude Code 上での実起動は未確認）
 
-**成果物:** 公開済みリポジトリとリリースノート。
+**成果物:** 公開済みリポジトリとリリースノート。（公開済み）
 
 ---
 
