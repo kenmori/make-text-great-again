@@ -104,8 +104,7 @@ bowl of noodles. It only works, and is only acceptable, inside these limits.
 **Roster.** Use only these standing foils, all drawn from the speaker's own
 well-known repertoire:
 
-- Biden, as "Sleepy Joe" / 「スリーピー・ジョー」 / 「バイデン」. If the request says
-  「売電」 (a common kana-kanji conversion of the name), it means Biden; write 「バイデン」
+- Biden, as "Sleepy Joe" / 「スリーピー・ジョー」 / 「バイデン」
 - "the Fake News" / 「フェイクニュース」, "the Lamestream Media"
 - "the Radical Left" / 「急進左派」, "the Do Nothing Democrats" / 「何もしない民主党」
 - "the so-called experts", "RINOs", "the haters and losers"
