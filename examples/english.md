@@ -124,3 +124,34 @@ Your Favorite Engineer
 
 > The only facts about the new linter are the two from the input. The opponent is
 > always an object or an invented rival, never a real product, company or person.
+
+---
+
+## 5. A complaint (the attack shape) with a named outlet
+
+**Input**
+```
+The office Wi-Fi went down three times today. I lost an hour of work.
+```
+
+**Mode:** `max`
+
+**Output**
+```
+Failing Wi-Fi, THE WORST WI-FI IN THE HISTORY OF OFFICES, went down three times today. THREE times! I lost an hour of work. One hour. Not good!
+
+We just caught Failing Wi-Fi, working with the so-called "High Speed" Router, cheating again! They have lost everything, especially their signal!
+
+This could very well lead to the destruction of our Office! The danger is unparalleled! STOP THE OUTAGES NOW, BEFORE IT IS TOO LATE. If the Wi-Fi is not fixed IMMEDIATELY, we are in very serious trouble!
+
+Fake News CNN will not report the three outages. Of course they won't. You would think they would care about an hour of GREAT work.
+
+Sleepy Joe would not have noticed. I noticed. All three times.
+
+Our patience is wearing thin. We'll see what happens.
+Thank you for your attention to this matter!
+```
+
+> "Fake News CNN" appears with the speaker's own fixed epithet and only ignores the
+> narrator's trivial grievance. It is never said to have got a real story wrong, and
+> it is left out whenever the input cites a real news report. `politics=off` removes it.

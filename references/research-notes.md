@@ -11,10 +11,9 @@ style guide is grounded in counts instead of memory of the meme.
 - **Method:** plain counting with a short script: closing sentences, capitalized
   runs, opening words, parentheticals, epithet + name pairs, n-grams, and a list
   of candidate phrases. Counts below are "posts containing the phrase".
-- **Not in the corpus:** posts after January 2021. A second, small sample from
-  November 2026 is described separately below. Other later habits (the sign-off
-  "Thank you for your attention to this matter!", very long all-caps posts) are
-  noted from general public observation and marked as such.
+- **Not in the corpus:** posts after January 2021. Two small later samples, from
+  2025 and from November 2026, are described separately below. Anything else about
+  later habits is general public observation and marked as such.
 - No post is reproduced here. Only short recurring phrases and their counts.
 
 ## Shape of a post
@@ -196,9 +195,78 @@ content: the policy claims, the statements about real candidates, and the
 remarks about groups of people stay out. In parody the "candidate" is a ramen
 shop or a linter, and the "opponent" is instant noodles.
 
-## Later habits (general observation, not in either sample)
+## 2025 sample: announcements, attacks and decrees
 
-- Sign-off "Thank you for your attention to this matter!" on formal-sounding posts.
+A third sample: 17 posts dated March to June 2025 (one undated), read from
+screenshots supplied by the repository owner. Unlike the 2026 sample it is mixed:
+announcements, attacks on news outlets and opponents, policy boasts, one
+endorsement, one image-only post. Too small to count frequencies; useful for
+seeing post types the first corpus under-represents.
+
+**Post types seen**
+
+| Type | Posts | Shape |
+|---|---|---|
+| Formal announcement | 5 | "BREAKING NEWS: I am pleased to announce that…" or "Just completed…". Long, calm, capitalized nouns, ends on a promise or the sign-off. |
+| Attack on an outlet or opponents | 5 | Epithet + name in the first line, a grievance, a sarcastic turn, a short all-caps verdict. |
+| All-caps decree | 2 | One to three sentences, entirely in capitals, "MUST", ends with `!`. |
+| Policy boast | 2 | A parallel list of good news, bracketed demands, blame for predecessors. |
+| Pep talk | 1 | Three "Don't be…!" imperatives, a coined insult, a promise of GREATNESS. |
+| Endorsement | 1 | The 2026 template in an earlier, shorter form. |
+| Image only | 1 | No text. |
+
+**The sign-off is confirmed.** "Thank you for your attention to this matter" closes
+3 of the 17, each a solemn announcement or warning, once followed by a signature
+of title and name. In the 2017–2021 corpus the phrase appears once. It is a
+habit of the later period, and it belongs to the formal register: the contrast
+with the content is the joke.
+
+**News outlets as foils.** Two posts name outlets with their fixed epithets:
+"Fake News CNN" and "the Failing New York Times". This matches the first
+corpus, where `CNN` appears in 201 posts, `Fake News CNN` in 29 and
+`Failing New York Times` in 42. Typical moves: the outlets "teamed up", tried to
+"demean" a success, are "getting slammed by the public", and "you would think
+they would be proud". Other outlets get one-off labels in scare quotes.
+
+**Habits not seen in the first corpus, or much stronger here**
+
+- "BREAKING NEWS:" as the first words of one's own announcement.
+- "At my direction," before any achievement.
+- Nobody-before-me frame: for a long time everyone knew about the problem, "but
+  NONE of them were able to do anything about it. I am proud to be the President that…".
+- Grand naming: a capitalized, scare-quoted official name for a thing
+  ("THE ONE, BIG, BEAUTIFUL BILL", an "Infinite Life" Agreement, there is no end!).
+- A euphemism followed by a blunt gloss in brackets with its own `!`: "take him out (kill!)".
+- Bracketed demands and bracketed definitions: "(the slow moving Fed should cut
+  rates!)", a coined insult followed by "(A new party based on Weak and Stupid people!)".
+- Credibility assertion: "it went very well… If it wasn't, I would say so now,
+  rather than later."
+- "Sorry, but it's my job to…. THAT'S WHAT I GOT ELECTED TO DO."
+- A name, then a superlative appositive in capitals: "…, THE WORST … IN THE HISTORY OF …,".
+- "They have lost everything, especially their minds!"
+- Scare quotes that demote a title: the so-called "Supreme Leader", our past "leaders".
+- Ominous hedges: "at least not for now", "Our patience is wearing thin."
+- The catastrophe ladder: "could very well lead to the destruction of our
+  Country!" → "The danger is unparalleled!" → "STOP … NOW, BEFORE IT IS TOO LATE." →
+  "If … do not fix this … IMMEDIATELY, our Country is in very serious trouble!"
+- Sarcastic thanks: thanking someone for giving the villains "such a wonderful place to live".
+- Total verdicts as closers: "TOTAL OBLITERATION!", "COMPLETELY DESTROYED!".
+- Trailing escalation and trailing abundance: "and probably worse!", "and much more!".
+- After the victory, the next demand: "NOW IS THE TIME FOR PEACE!", "Let the
+  process begin!", "send this Bill to my desk AS SOON AS POSSIBLE! There is no time to waste."
+- "There is not another … in the World that could have done this."
+- Parallel good-news list: "… are down, … are down, … are down, there is NO …".
+- Triple of a topic name as a label for a grievance ("Russia, Russia, Russia").
+- Third-person self with "by all accounts".
+
+**What the skill takes from this, and what it does not**
+
+As with the 2026 sample, only the shapes. The subjects of these posts are wars,
+immigration, courts and named officials. None of that content is reused, and the
+skill does not apply these shapes to such subjects.
+
+## Later habits (general observation, not in any sample)
+
 - Long posts with whole sentences in capitals.
 - "…the likes of which nobody has ever seen before" as an all-purpose amplifier.
 - "would never have happened if I were President" as the standard counterfactual.

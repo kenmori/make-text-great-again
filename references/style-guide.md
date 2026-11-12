@@ -5,9 +5,10 @@ phrase banks in Japanese and English, shows how each mode should feel, and lists
 what to avoid.
 
 The devices are grounded in a frequency study of 14,391 original posts from
-2017–2021 and a sample of 43 endorsement posts from November 2026
-(`research-notes.md`). Counts in brackets are posts in the first corpus that contain
-the pattern; "[2026]" marks habits seen in the second sample.
+2017–2021, a sample of 17 mixed posts from 2025, and a sample of 43 endorsement
+posts from November 2026 (`research-notes.md`). Counts in brackets are posts in the
+first corpus that contain the pattern; "[2025]" and "[2026]" mark habits seen in
+the later samples.
 Everything here is written in our own words; no real post is reproduced.
 
 **How to use this file:** pick devices that fit the content. A good output uses
@@ -29,6 +30,9 @@ same device twice in a row, and rotate closers, epithets and frames between runs
 | A7 | **Ellipsis continuation** | Long thoughts break with "…." and resume. In 20.6% of posts. `authentic` only. | 「……そして私はラーメンを作った。」 | "….and then I made the Ramen." |
 | A8 | **News-flash opener** | Report your own life like breaking news. [Just out 48 · Heading to 82 · Just landed in 38] | 「たった今、夕食を終えた。」「速報：腹が減った。」 | "Just finished dinner." "Just out: I am hungry." |
 | A9 | **Ceremonial opener** | [my great honor 111 · pleased to announce 30] | 「発表できて光栄だ。」「大変な名誉だ。」 | "It was my great honor to…" "I am pleased to announce…" |
+| A10 | **BREAKING NEWS** | Open your own announcement as a news flash. [2025] | 「速報：ラーメンが完成したことを発表できてうれしい。」 | "BREAKING NEWS: I am pleased to announce that the Ramen is ready." |
+| A11 | **All-caps decree** | One whole sentence in capitals with "MUST". In Japanese, a flat order ending in 「ねばならない！」. [2025] | 「全員、カップ麺と完全に縁を切らねばならない！」 | "EVERYONE MUST TOTALLY DISASSOCIATE THEMSELVES FROM INSTANT NOODLES!" |
+| A12 | **Good-news parallel** | Three "X is down" clauses, then "there is NO …". Only with facts from the input. [2025] | 「洗い物は減った、ゴミも減った、空腹は NO だ。」 | "Dishes are down, Trash is down, there is NO HUNGER." |
 
 ## B. Self-praise
 
@@ -49,6 +53,13 @@ same device twice in a row, and rotate closers, epithets and frames between runs
 | B13 | **Self-insertion** | While praising something else, cut in with your own victory there. [2026] | 「駅前、私が愛し、何度も大勝した場所だ。」 | "the Break Room, a place I love and WON BIG" |
 | B14 | **Bracketed boast** | A capitalized boast in brackets, mid-sentence, with its own `!`. [2026] | 「（断トツで）！」「（しかも最も尊敬されている一人だ！）」 | "(BY FAR)!" "(and one of the most respected of them all!)" |
 | B15 | **Dash and afterthought** | A dash, then one more win in capitals. [2026] | 「称賛に満ちた経歴だ。そして WINS だ！」 | "a career full of praise — and WINS!" |
+| B17 | **Nobody before me** | Everyone knew about the problem for ages; none could act; the narrator did. [2025] | 「何十年も、誰もがこの流し台の問題を知っていた。だが誰も何もできなかった。私がやった。」 | "For decades people have known about this Sink, but NONE of them were able to do anything about it. I am proud to be the one who did." |
+| B18 | **At my direction** | Credit before the fact. [2025] | 「私の指示で、お湯が沸いた。」 | "At my direction, the Water was boiled." |
+| B19 | **I would say so** | Vouch for your own report. [2025] | 「とてもうまくいった。そうでなければ、今そう言っている。」 | "It went very well. If it didn't, I would say so now, rather than later." |
+| B20 | **What I got elected to do** | Apologize for nothing, then claim a mandate. [2025] | 「悪いが、これが私の仕事だ。私はそのために選ばれた。」 | "Sorry, but it's my job to cook this Ramen. THAT'S WHAT I GOT ELECTED TO DO." |
+| B21 | **By all accounts** | Third-person self with outside confirmation. [2025] | 「誰に聞いても、懸命に働いているこのエンジニア」 | "your Engineer who, by all accounts, is working hard to SAVE OUR SPRINT" |
+| B22 | **Not another in the World** | [2025] | 「これができる台所は、世界にほかにない。」 | "There is not another Kitchen in the World that could have done this." |
+| B23 | **Grand naming** | Give the trivial thing a capitalized official name in quotation marks. [2025] | 「"ワン・ビッグ・ビューティフル・ラーメン"」「これは "無期限" の合意だ。終わりはない！」 | "THE ONE, BIG, BEAUTIFUL BOWL" · an "Infinite Life" Agreement, there is no end! |
 | B16 | **Proof sentence** | After any small anecdote, a short sentence confirming it still holds. [2026] | 「あの鍋は今もそこにある！」 | "The pot is still there!" |
 
 ## C. Foils, epithets and blame
@@ -73,6 +84,16 @@ Read section F before using C4–C6.
 | C13 | **They are laughing at us** | | 「世界は我々を笑っていた。もう笑っていない。」 | "They were laughing at us. Not anymore." |
 | C14 | **If they ever got in** | The rival's victory would end everything good just listed. [2026] | 「もしカップ麺の連中が勝てば、これらすべてが打ち切られる。」 | "If the Instant Noodles ever got in, all of these things would be terminated." |
 | C15 | **Insulting respelling** | Misspell the obstacle's name as a jab. **Objects and fictional rivals only.** [2026] | 「プロジェク"鈍"ー」「カップ"麺倒"」 | "the Slowjector", "the Slowcrats" |
+| C17 | **Caught working together** | Two obstacles are in league. **Objects only.** [2025] | 「ねぼすけプロジェクターが、落ち目の Wi-Fi と組んで、またズルをしているのを捕まえた！」 | "We just caught the Sleepy Projector, working with Failing Wi-Fi, cheating again!" |
+| C18 | **Getting slammed** | The rival is losing public favor, in capitals. [2025] | 「カップ麺は世間から猛烈に叩かれている！」 | "The Old Linter is GETTING SLAMMED BY THE PUBLIC!" |
+| C19 | **You would think they'd be proud** | Wounded disbelief at the doubters. [2025] | 「誇りに思うべきところを、足を引っ張ろうとしている。」 | "You would think they would be proud of this Ramen, instead of trying to make it look bad." |
+| C20 | **Coined insult with a definition** | Invent a word for the doubters and define it in brackets. Fictional groups only. [2025] | 「"カップ麺派"（弱くて腹ぺこな人々の新しい派閥だ！）になるな。」 | "Don't be a NOODLEPHOBE (a new group based on Weak and Hungry people!)." |
+| C21 | **Lost everything, especially…** | **Objects only.** [2025] | 「あのプリンターはすべてを失った。特に正気を！」 | "The Printer has lost everything, especially its mind!" |
+| C22 | **Past "leaders"** | Blame scare-quoted predecessors. [2025] | 「過去の "担当者" たちのせいだ。」 | "Our past "managers" are to blame for allowing this, and so much else." |
+| C23 | **Catastrophe ladder** | Escalate a nuisance in three rungs: ruin, deadline, ultimatum. [2025] | 「これは我が家の崩壊につながりかねない！ 手遅れになる前に、今すぐ止めろ。直ちに直さなければ、我々は非常に深刻な事態に陥る！」 | "This could very well lead to the destruction of our Kitchen! STOP IT NOW, BEFORE IT IS TOO LATE. If the Sink is not fixed IMMEDIATELY, we are in very serious trouble!" |
+| C24 | **Sarcastic thanks** | [2025] | 「ねぼすけプロジェクター、素晴らしい20分をありがとう！」 | "Thank you, Sleepy Projector, for such a wonderful 20 minutes!" |
+| C25 | **Worst-in-history appositive** | Name, comma, capitalized superlative, comma. For a standing foil, only about the trivial topic. [2025] | 「ねぼすけプロジェクター、会議室史上最悪の機械、は動かなかった。」 | "Sleepy Projector, THE WORST PROJECTOR IN THE HISTORY OF MEETINGS, did not work." |
+| C26 | **Demoted title** | "so-called" plus a title in quotation marks. Objects and fictional rivals. [2025] | 「いわゆる "高速" Wi-Fi」 | the so-called "High Speed" Wi-Fi |
 | C16 | **Which means…** | Name the rival's ideal, then list four bad outcomes. [2026] | 「カップ麺、それはつまり、のびた麺、ぬるい湯、薄い味、そして後悔だ！」 | "Instant Noodles, which means Soggy Noodles, Lukewarm Water, Thin Broth, and Regret!" |
 
 ## D. Formula sentences
@@ -99,6 +120,14 @@ These are fixed templates. Slot in words from the input.
 | D16 | **Quoted honorific** [2026] A flattering nickname in quotation marks before the name. | 「"デプロイ" 田中」「"RAMEN" 私」 | "Pipeline" Dana, "Captain" Compiler |
 | D17 | **Scare-quoted plain word** [2026] Put one ordinary word in quotation marks for no reason. | 「勝利が "てんこ盛り" の経歴」 | a career "loaded up" with wins |
 | D18 | **Go-and-do closer** [2026] Imperative in capitals, a dash, the promise. | 「今すぐ食べに行け。決して皆さんを失望させない！」 | "GET OUT AND EAT THERE — IT WILL NEVER LET YOU DOWN!" |
+| D20 | **Blunt gloss** [2025] A polite verb, then the blunt one in brackets with `!`. | 「麺を片付ける（食べる！）」 | "finish the Noodles (eat!)" |
+| D21 | **Bracketed demand** [2025] | 「（のろまなやかんはもっと早く沸くべきだ！）」 | "(the slow moving Kettle should boil faster!)" |
+| D22 | **Ominous hedge** [2025] | 「少なくとも今のところは。」「我慢の限界が近い。」 | "At least not for now." "Our patience is wearing thin." |
+| D23 | **Pep talk** [2025] Two or three "Don't be…!" orders, then three virtues and a promise. | 「弱気になるな！ 空腹に負けるな！ 強く、勇敢に、辛抱強くあれ。そうすれば GREATNESS が待っている！」 | "Don't be Weak! Don't be Hungry! Be Strong, Courageous, and Patient, and GREATNESS will be the result!" |
+| D24 | **Total verdict** [2025] For anything finished, eaten or fixed. | 「完全に殲滅した！ TOTAL OBLITERATION!」 | "The Ramen is COMPLETELY DESTROYED! TOTAL OBLITERATION!" |
+| D25 | **And probably worse / and much more** [2025] Trail off upward. | 「そして、おそらくもっとひどい！」「ほかにもたくさんある！」 | "…, and probably worse!" "…, and much more!" |
+| D26 | **Now is the time** [2025] After the win, name the next thing. | 「今こそデザートの時だ！」「さあ、始めよう！」 | "NOW IS THE TIME FOR DESSERT!" "Let the process begin!" |
+| D27 | **Send it to my desk** [2025] | 「一刻も早く、そのどんぶりを私の机に届けてくれ。時間を無駄にはできない。」 | "Send this Bowl to my desk AS SOON AS POSSIBLE! There is no time to waste." |
 | D19 | **Title signature** [2026] Sign off with the narrator's own self-awarded title. Never the real person's name or office. | 「駅前ラーメン担当大統領より」「皆さんのお気に入りのエンジニアより」 | "Your Favorite Engineer" "CHIEF RAMEN OFFICER, ME" |
 
 ## E. Speech flavor (rally voice)
@@ -113,6 +142,7 @@ Rare in written posts, but instantly recognizable. Use in `authentic` and `max`.
 | E4 | **The weave** | Drift to a side topic, then snap back. | 「ところで鍋の話をしよう。いい鍋だ。……話を戻す。」 | "And by the way, the pot, great pot, but that's another story." |
 | E5 | **Question, self-answered** | 「誰ができる？ 私だ。」「本当か？ 本当だ。」 | "Who else could do it? Nobody." "Is that true? Probably." |
 | E6 | **Reader address** | 「考えてみてほしい。」「覚えておいてほしい。」 | "Think about it." "Remember," |
+| E7 | **We'll see what happens** | The all-purpose non-answer about the future. A press-conference habit, rare in written posts [6]. Good after any plan, forecast or unfinished business. | 「どうなるか見てみよう。」「うまくいくかもしれない。いかないかもしれない。どうなるか見てみよう。」 | "We'll see what happens." "Maybe it works, maybe it doesn't. We'll see what happens." |
 
 ---
 
@@ -126,6 +156,9 @@ well-known repertoire:
 
 - Biden, as "Sleepy Joe" / 「スリーピー・ジョー」 / 「バイデン」
 - "the Fake News" / 「フェイクニュース」, "the Lamestream Media"
+- Two named outlets, always with their fixed epithets: "Fake News CNN" /
+  「フェイクニュースCNN」 and "the Failing New York Times" /
+  「落ち目のニューヨーク・タイムズ」 [CNN 201 · Failing New York Times 42]
 - "the Radical Left" / 「急進左派」, "the Do Nothing Democrats" / 「何もしない民主党」
 - "the so-called experts", "RINOs", "the haters and losers"
 - "China" in the tariff and deal joke (C12) only
@@ -137,6 +170,13 @@ Anyone else, public or private, appears only if they are already in the input.
 - Absurd blame for the trivial setback, or "inherited" framing.
 - The counterfactual: it would never have happened under the narrator.
 - The epithet "Sleepy". No other epithet for a real person.
+
+**Named outlets: what they may do.** They may fail to report the narrator's
+trivial triumph, be imagined downplaying it ("Fake News CNN will say it was only
+Ramen"), "team up" against it, and be "getting slammed by the public" over it.
+They may not be said to have got any real story wrong, and no journalist is named.
+If the input cites or mentions a real news report, from these outlets or any other,
+they do not appear at all and nothing in the output calls that report fake.
 
 **Never.**
 - Accusations that could be read as fact: crimes, corruption, fraud, cheating.
@@ -155,8 +195,8 @@ Anyone else, public or private, appears only if they are already in the input.
 `authentic`: one or two. `x`: at most one, first thing cut when space is short.
 
 **Off switch.** When the user says `politics=off`, "政治ネタなし", "no politics",
-or the context is clearly a workplace, use C1–C3 and C7–C13 with fictional or
-object targets only, and no names.
+or the context is clearly a workplace, use fictional or object targets only, and
+no names of people, parties or news outlets.
 
 ---
 
@@ -175,6 +215,10 @@ object targets only, and no names.
 | Not good! | 良くない！ | Setback |
 | So true! | その通りだ！ | After the chorus agrees |
 | Stay tuned! | 続報を待て！ | Unfinished business |
+| We'll see what happens. | どうなるか見てみよう。 | Plans, forecasts, anything uncertain |
+| TOTAL OBLITERATION! | 完全に殲滅した！ | Something finished, eaten or fixed |
+| NOW IS THE TIME FOR ___! | 今こそ〜の時だ！ | After a win |
+| Let the process begin! | さあ、始めよう！ | Starting something |
 | Disgraceful! / Pathetic! | 恥ずべきことだ！ / 情けない！ | The obstacle |
 | Working hard! | 懸命に働いている！ | Any effort |
 | Great job! | よくやった！ | Praise, often of oneself |
@@ -247,7 +291,11 @@ a formula sentence (D), a triple or echo (A5/A6), a grievance word for any setba
 (D4 or the default sign-off, or both). 3–4× the input length.
 
 When the input recommends or praises a person, place, product or tool, `max` may
-use the endorsement structure in section K instead.
+use the endorsement structure in section K instead. When the input reports news of
+the narrator's own doing (finished, shipped, fixed, decided), `max` and `authentic`
+may use the announcement shape: A10, B18, B17, B23, a D26 demand, then the sign-off.
+When the input is a complaint, they may use the attack shape: C25 or C17 in the
+first line, C19, C23, then a D24 or A11 verdict.
 
 ### `authentic` — 6–9 devices, written-post voice
 Follow the corpus: Capitalized Nouns (A3), caps on small intensifiers (A4), one

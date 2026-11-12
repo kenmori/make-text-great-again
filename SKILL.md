@@ -4,7 +4,7 @@ description: Rewrite user-provided Japanese or English text as an exaggerated, h
 license: MIT
 metadata:
   author: kenmori
-  version: "0.2.0"
+  version: "0.3.0"
   homepage: https://github.com/kenmori/make-text-great-again
 ---
 
@@ -64,7 +64,8 @@ phrasings: `references/style-guide.md`.
   Capitalized Nouns ("my Kitchen", 「私の RAMEN」) · caps on small intensifiers
   (NEVER, NOTHING, VERY, ZERO) · triples ("Noodles, Noodles, Noodles!") ·
   echo-and-upgrade · news-flash and ceremonial openers ("Just finished…",
-  「発表できて光栄だ。」).
+  「発表できて光栄だ。」, "BREAKING NEWS: I am pleased to announce…") · one all-caps
+  decree ("EVERYONE MUST…!" 「全員〜ねばならない！」).
 - **Self-praise:** history frame ("in the history of this Kitchen", 「我が家の歴史上」) ·
   "the likes of which nobody has ever seen" · "by far" / "not even close" · record and
   ratings talk without invented figures · "nobody knows more about X than me" ·
@@ -72,7 +73,11 @@ phrasings: `references/style-guide.md`.
   usual" · short asides "(to put it mildly)" 「（控えめに言って）」 · self-insertion
   while praising something else ("the Break Room, a place I love and WON BIG",
   「駅前、私が愛し、大勝した場所だ」) · bracketed boasts "(BY FAR)!" · a dash and an
-  afterthought ("— and WINS!") · a proof sentence ("The pot is still there!").
+  afterthought ("— and WINS!") · a proof sentence ("The pot is still there!") ·
+  "At my direction," · nobody-before-me ("For decades people knew about this Sink,
+  but NONE of them could do anything. I did.") · grand naming ("THE ONE, BIG,
+  BEAUTIFUL BOWL") · "If it didn't go well, I would say so now" · "Sorry, but it's
+  my job. THAT'S WHAT I GOT ELECTED TO DO." 「悪いが、これが私の仕事だ」.
 - **Foils and blame:** the vague inferior "them" · an **epithet for the obstacle**
   ("Sleepy Projector", 「ねぼすけプロジェクター」, "Do Nothing Compiler") · "so-called
   experts" · the **standing foil** ("Sleepy Joe could never make this Ramen",
@@ -81,7 +86,13 @@ phrasings: `references/style-guide.md`.
   Rigged for any criticism or bad luck · "treated very unfairly" · winners and
   losers · tariffs and deals as the cure for everything · "if the Instant Noodles
   ever got in, all of this would be terminated" · insulting respellings of an
-  object's name ("the Slowjector") · "…, which means" plus four bad outcomes.
+  object's name ("the Slowjector") · "…, which means" plus four bad outcomes ·
+  two obstacles "caught working together, cheating again!" · the rival "GETTING
+  SLAMMED BY THE PUBLIC!" · "you would think they would be proud" · the
+  worst-in-history appositive ("Sleepy Projector, THE WORST PROJECTOR IN THE
+  HISTORY OF MEETINGS,") · the catastrophe ladder ("could very well lead to the
+  destruction of our Kitchen! STOP IT NOW, BEFORE IT IS TOO LATE.") · sarcastic
+  thanks ("Thank you, Sleepy Projector, for such a wonderful 20 minutes!").
 - **Formula sentences:** "has my Complete and Total Endorsement!" 「完全かつ全面的に
   支持する！」 · "strong on X, strong on Y, and loves Z" · "the Great State of …"
   「偉大なる埼玉県」 · "MAKE ___ GREAT AGAIN!" · "PROMISES MADE, PROMISES KEPT!" ·
@@ -91,17 +102,25 @@ phrasings: `references/style-guide.md`.
   Kitchen, CLEAN") · the litany ("will fight tirelessly to Boil the Water, Promote
   MADE IN MY KITCHEN, Unleash Noodle DOMINANCE…") · quoted honorifics ("Pipeline"
   Dana) · the go-and-do closer ("GET OUT AND EAT THERE — IT WILL NEVER LET YOU
-  DOWN!").
+  DOWN!") · a blunt gloss in brackets ("finish the Noodles (eat!)") · the pep talk
+  ("Don't be Weak! Don't be Hungry! Be Strong… and GREATNESS will be the result!") ·
+  total verdicts ("TOTAL OBLITERATION!" 「完全に殲滅した！」) · "and probably worse!" ·
+  "NOW IS THE TIME FOR DESSERT!".
 - **Speech flavor:** "Believe me." 「本当だ。」 · "Many people are saying it." ·
   the "Sir" story (big, strong, anonymous men in tears: 「サー、こんなラーメンは見た
   ことがありません」) · the weave (drift off, snap back) · self-answered questions
-  ("Who else? Nobody.").
+  ("Who else? Nobody.") · "We'll see what happens." 「どうなるか見てみよう。」 after
+  any plan, forecast or unfinished business.
 
 **Closers.** Default sign-off:
 `この問題に関心を持ってくれてありがとう！` / `Thank you for your attention to this matter!`
 Rotate alternatives when they fit better or space is tight: Thank you! · Enjoy! ·
 Sad! · Wow! · Too bad! · Not good! · So true! · Stay tuned! · Working hard! ·
-It never ends! · A total Witch Hunt! · MAKE ___ GREAT AGAIN!
+It never ends! · A total Witch Hunt! · We'll see what happens. · TOTAL
+OBLITERATION! · NOW IS THE TIME FOR ___! · MAKE ___ GREAT AGAIN!
+
+The default sign-off is funniest after a solemn announcement or warning about
+something trivial; that is how the real one is used.
 
 ## The endorsement structure
 
@@ -128,9 +147,15 @@ With `politics=on`, a familiar opponent may barge into a text that has nothing t
 with politics. That is the point, and it has firm limits.
 
 - **Roster only:** Biden ("Sleepy Joe" / 「スリーピー・ジョー」 / 「バイデン」), the Fake
-  News, the Lamestream Media, the Radical Left, the Do Nothing Democrats, the
+  News, the Lamestream Media, two named outlets with their fixed epithets ("Fake
+  News CNN" / 「フェイクニュースCNN」, "the Failing New York Times" /
+  「落ち目のニューヨーク・タイムズ」), the Radical Left, the Do Nothing Democrats, the
   so-called experts, RINOs, the haters and losers, and China in the tariff joke.
   Anyone else appears only if already in the input.
+- **Named outlets** may only ignore, downplay, or "team up" against the narrator's
+  trivial triumph, and be "getting slammed by the public" over it. Never say they
+  got a real story wrong, never name a journalist, and if the input cites or
+  mentions any real news report, leave the outlets out and call nothing fake.
 - **Allowed:** unfavorable comparison on the trivial topic; absurd blame for the
   trivial setback; "inherited"; the counterfactual; the nickname "Sleepy".
 - **Never:** crimes, corruption, fraud or cheating (so no "Crooked" or "Corrupt" for
@@ -199,9 +224,9 @@ with politics. That is the point, and it has firm limits.
 
 ## Reference material
 
-- `references/style-guide.md` — full device catalogue (about 65 devices), foil rules,
+- `references/style-guide.md` — full device catalogue (about 95 devices), foil rules,
   closer and epithet banks, per-mode recipes, the endorsement structure, things to avoid.
-- `references/research-notes.md` — frequency study of 14,391 posts from 2017–2021 and a
-  sample of 43 endorsement posts from November 2026.
+- `references/research-notes.md` — frequency study of 14,391 posts from 2017–2021, plus
+  samples of 17 mixed posts from 2025 and 43 endorsement posts from November 2026.
 - `examples/japanese.md`, `examples/english.md` — Before/After samples per mode.
 - `tests/cases.md`, `tests/checklist.md` — test inputs and the quality rubric.

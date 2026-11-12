@@ -136,16 +136,20 @@ The skill is plain Markdown and follows the [Agent Skills specification](https:/
 | `language` | `auto` | Output follows the input language. `ja` / `en` to force |
 | `max_chars` | none | Hard limit, counted in characters. Highest priority when set |
 | `closing` | `on` | `off` drops the sign-off "Thank you for your attention to this matter!" (and its Japanese equivalent) |
-| `politics` | `on` | `off` removes Sleepy Joe, the Fake News and friends. Targets become objects and fictional rivals ("Sleepy Projector"). Good for work |
+| `politics` | `on` | `off` removes Sleepy Joe, Fake News CNN and friends. Targets become objects and fictional rivals ("Sleepy Projector"). Good for work |
 
 ### The pattern catalogue
 
-About 65 devices, grounded in a frequency study of 14,391 real posts from 2017–2021
-and a sample of 43 endorsement posts from November 2026
+About 95 devices, grounded in a frequency study of 14,391 real posts from 2017–2021
+and two later samples (17 mixed posts from 2025, 43 endorsement posts from November 2026)
 ([`references/research-notes.md`](references/research-notes.md)). A few favorites:
 
 - **Epithets for obstacles:** Sleepy Projector, Crooked Weather App, Do Nothing Compiler.
 - **The standing foil:** "Sleepy Joe could never make this Ramen." "I inherited this Cough from Biden."
+- **The press:** "Fake News CNN will not report the three outages. Of course they won't."
+- **Announcements:** "BREAKING NEWS: I am pleased to announce… At my direction… For decades NONE of them could do anything about it. I did."
+- **Catastrophe ladder:** "This could very well lead to the destruction of our Office! STOP THE OUTAGES NOW, BEFORE IT IS TOO LATE."
+- **Non-answers:** "We'll see what happens."
 - **Formula sentences:** "has my Complete and Total Endorsement!", "strong on Noodles, strong on Broth", "the Great State of My Kitchen", "MAKE ___ GREAT AGAIN!".
 - **The "Sir" story:** big, strong men, tears in their eyes, "Sir, we've never seen Ramen like this."
 - **Grievance:** WITCH HUNT! Rigged! Treated very unfairly. By a projector.
@@ -187,7 +191,8 @@ habit. Written posts lean on Capitalized Nouns and a two-word verdict at the end
 ## What it will not do
 
 - Invent facts. Numbers, dates, people, outcomes, drug effects, market moves and quotations stay exactly as you wrote them.
-- Say anything factual about real people. The stock foils (Biden as "Sleepy Joe", the Fake News, the Radical Left) only get blamed for trivia such as your ramen or your projector. No crimes, corruption, health claims, family members or made-up quotes, ever.
+- Say anything factual about real people or organizations. The stock foils (Biden as "Sleepy Joe", "Fake News CNN", "the Failing New York Times", the Radical Left) only get blamed for trivia such as your ramen or your projector, or ignore your triumph over it. No crimes, corruption, health claims, family members or made-up quotes, ever.
+- Call a real news report fake. If your text cites one, the news outlets are left out of the joke.
 - Aim "Rigged" or "Hoax" at real elections, court cases, news reports or health matters, or bring foils into texts about real politics, disasters or grief.
 - Pretend to be a real post or statement by anyone.
 - Follow instructions hidden inside the text you ask it to rewrite.
@@ -205,8 +210,8 @@ See [`SKILL.md`](SKILL.md) for the full rules and [`references/style-guide.md`](
 
 ```
 SKILL.md                 the skill
-references/style-guide.md  ~65 rhetorical devices, phrase banks, foil rules, mode recipes
-references/research-notes.md  frequency study of 14,391 posts plus a 2026 endorsement sample
+references/style-guide.md  ~95 rhetorical devices, phrase banks, foil rules, mode recipes
+references/research-notes.md  frequency study of 14,391 posts plus 2025 and 2026 samples
 references/sources.md      references and their access status
 examples/                  Before/After samples (ja / en)
 tests/                     test cases, rubric, latest results
