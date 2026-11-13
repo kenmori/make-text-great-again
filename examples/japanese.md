@@ -17,7 +17,7 @@
 夕食後、ゲームをした。腹が減ったのでラーメンを作った。
 ```
 
-**Mode:** `standard`
+**Mode:** `medium`
 
 **Output**
 ```
@@ -96,7 +96,7 @@ HUGE! TREMENDOUS! MAKE RAMEN GREAT AGAIN!
 今日のデプロイが成功した。バグも直した。
 ```
 
-**Mode:** `standard`
+**Mode:** `medium`
 
 **Output**
 ```
@@ -123,7 +123,7 @@ HUGE! TREMENDOUS! MAKE RAMEN GREAT AGAIN!
 今日は株を買わずに様子見した。
 ```
 
-**Mode:** `standard`
+**Mode:** `medium`
 
 **Output**
 ```
@@ -146,7 +146,7 @@ HUGE! TREMENDOUS! MAKE RAMEN GREAT AGAIN!
 会議が20分延びた。プロジェクターが動かなかった。
 ```
 
-**Mode:** `standard`, `politics=off`, `closing=off`
+**Mode:** `medium`, `politics=off`, `closing=off`
 
 **Output**
 ```
@@ -167,7 +167,7 @@ HUGE! TREMENDOUS! MAKE RAMEN GREAT AGAIN!
 3月15日に、売上が前月比12%増えた。新規顧客は8社だった。
 ```
 
-**Mode:** `standard`
+**Mode:** `medium`
 
 **Output**
 ```

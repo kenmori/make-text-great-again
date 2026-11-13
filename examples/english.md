@@ -16,7 +16,7 @@ and nothing factual is claimed about anyone. `politics=off` removes them.
 I finally cleaned my apartment this weekend. It took all day.
 ```
 
-**Mode:** `standard`
+**Mode:** `medium`
 
 **Output**
 ```

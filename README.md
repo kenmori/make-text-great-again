@@ -24,7 +24,7 @@ Japanese README: [README.ja.md](README.ja.md)
 I finally cleaned my apartment this weekend. It took all day.
 ```
 
-**Output** (`standard`)
+**Output** (`medium`)
 ```
 This weekend, I cleaned my Apartment. Finally. The whole thing. Nobody cleans like me. Nobody.
 It took all day. ALL day! Other people would have quit. That's what losers do. Not me.
@@ -123,12 +123,13 @@ In Claude Code, start a new session, then:
 
 ```text
 /make-text-great-again I had ramen for lunch today.
-/make-text-great-again mode=max: I've had a cough for two weeks. I'm taking a lot of medicine.
+/make-text-great-again mode=medium: I've had a cough for two weeks. I'm taking a lot of medicine.
 /make-text-great-again mode=x, max_chars=140: Today's deploy succeeded.
 /make-text-great-again mode=authentic, closing=off: I cleaned my apartment this weekend.
 ```
 
-Natural language works too: "make this tweet-length", "no sign-off", "light version", "no politics".
+It is loud by default. Add `mode=medium` or `mode=light` to turn it down.
+Natural language works too: "tone it down", "make this tweet-length", "no sign-off", "no politics", "another one".
 Claude also triggers the skill on its own when you ask to "trumpify" something or write it "in Trump style".
 Japanese input is supported as well; the output stays in the language you wrote in.
 
@@ -143,9 +144,9 @@ The skill is plain Markdown and follows the [Agent Skills specification](https:/
 
 | Mode | Feel | When to use |
 |---|---|---|
-| `light` | A smile, not a laugh. Short sentences, one brag, no political foils | Slack messages, mild fun |
-| `standard` (default) | The recognizable meme. Short declaratives, a brag, a comparison, maybe one Sleepy Joe line, sign-off | Most things |
-| `max` | Everything at once. Nicknames for whatever went wrong, Biden blamed for it, a "Sir" story, a Complete and Total Endorsement, MAKE ___ GREAT AGAIN | Maximum comedy |
+| `max` (default) | Everything at once. Three to four times the length, nicknames for whatever went wrong, a foil blamed for it, a formula sentence, a finale | Maximum comedy |
+| `medium` | The recognizable meme at normal volume. Short declaratives, a brag, a comparison, a sign-off. `standard` is accepted as the same thing | When `max` is too much |
+| `light` | A smile, not a laugh. About the length of the input, no political foils | Slack messages, mild fun |
 | `authentic` | How the posts are actually written: Capitalized Nouns, a short aside, one long pivoting sentence, one closing verdict | When the meme version feels too flat |
 | `x` | Fits a character budget (default 140). Dense | Posts, titles, commit messages |
 
@@ -153,7 +154,8 @@ The skill is plain Markdown and follows the [Agent Skills specification](https:/
 
 | Option | Default | Notes |
 |---|---|---|
-| `mode` | `standard` | See above |
+| `mode` | `max` | See above |
+| `angle` | auto | The skill picks one of ten angles (Champion, Announcer, Aggrieved, Notifier, Pollster…) so that outputs do not all sound alike. Name one to force it, or say "another" |
 | `language` | `auto` | Output follows the input language. `ja` / `en` to force |
 | `max_chars` | none | Hard limit, counted in characters. Highest priority when set |
 | `closing` | `on` | `off` drops the sign-off "Thank you for your attention to this matter!" (and its Japanese equivalent) |
@@ -214,6 +216,18 @@ mode follows the recent record; the other modes keep the classics.
 
 ---
 
+## Does it beat just asking?
+
+Asking a model to "rewrite this in Trump style" already works. So the repository
+measures what the skill adds (details in [`tests/results.md`](tests/results.md);
+judged by a model, small samples, so read these as tendencies):
+
+- **Eval suite** ([`evals/`](evals/), 14 cases, each run with and without the skill on the same prompt): mean score 0.99 with the skill, 0.75 without. The plain prompt does fine on keeping numbers and length limits. It slips where care is needed: it called a cited CNN forecast "fake news", promised a grandmother's surgery would succeed, and invented attacks around a real local election.
+- **Blind comparison** (12 texts, 36 votes on "which is the better parody"): the skill's output won 27 votes to 9. When it lost, the reason was always length, which the default mode now caps.
+- **Variety**: in the previous version the same handful of phrases appeared in every output. Overlap between outputs fell from 0.50 to 0.20, and no phrase now appears in all of them.
+
+Run the suite yourself with `claude plugin eval .` in a checkout.
+
 ## What it will not do
 
 - Invent facts. Numbers, dates, people, outcomes, drug effects, market moves and quotations stay exactly as you wrote them.
@@ -241,6 +255,7 @@ references/research-notes.md  frequency studies of posts from 2017–2021 and 20
 references/sources.md      references and their access status
 examples/                  Before/After samples (ja / en)
 tests/                     test cases, rubric, latest results
+evals/                     eval suite for `claude plugin eval` (with and without the skill)
 scripts/build-zip.sh       builds the ZIP for claude.ai
 scripts/analyze_posts.py   reproduces the study's counts from your own copy of the posts
 .claude-plugin/            plugin and marketplace manifests for Claude Code

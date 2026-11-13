@@ -12,9 +12,11 @@ from 2024–2026, 17 mixed posts from 2025 and 43 endorsement posts from Novembe
 marks habits measured in the 2024–2026 corpus.
 Everything here is written in our own words; no real post is reproduced.
 
-**How to use this file:** pick devices that fit the content. A good output uses
-4–6 devices in `standard`, 8–12 in `max`. Variety beats volume: never use the
-same device twice in a row, and rotate closers, epithets and frames between runs.
+**How to use this file:** `SKILL.md` chooses an angle for each output; section H
+maps the angles to the patterns below. Variety beats volume: never use the same
+pattern twice in a row, and rotate closers, epithets and frames between runs.
+The examples use ramen, kitchens and projectors only to show the shape. Fill the
+shape with the input's own nouns; do not carry the examples' nouns into an output.
 
 ---
 
@@ -216,7 +218,7 @@ they do not appear at all and nothing in the output calls that report fake.
 - A foil in a text that is itself about real politics, elections, war, disaster,
   crime, illness, death, or grief. Rewrite the tone only, or go lighter.
 
-**Dosage.** `light`: none. `standard`: at most one line. `max`: two or three.
+**Dosage.** `light`: none. `medium`: at most one line. `max`: two or three.
 `authentic`: one or two. `x`: at most one, first thing cut when space is short.
 
 **Off switch.** When the user says `politics=off`, "政治ネタなし", "no politics",
@@ -302,36 +304,38 @@ JA: 「たった今、」「速報：」「これから〜へ向かう。」「�
 
 ---
 
-## H. Mode recipes
+## H. Modes and angles
 
-### `light` — 2–3 devices
-A1, one of B1/B3/B10, at most one verdict word. No foils. Sign-off optional but usual.
-About the length of the input.
+The default mode is `max`. `medium` (also accepted as `standard`), `light`,
+`authentic` and `x` turn it down or reshape it. How many patterns each mode uses,
+and how the **angle** for an output is chosen, is defined in `SKILL.md`. This file
+is the pantry the angles draw on: when an angle's own patterns feel worn, swap in
+others from the same row below.
 
-### `standard` — 4–6 devices
-A1 + A6, one self-praise (B), one comparison (C1 or C2), one of E2/E5, one or two
-verdict words, sign-off. One foil line (C4 or C5) is allowed and encouraged when the
-input has a setback or an achievement to compare. 1.5–2.5× the input length.
+| Angle | Core patterns | Good substitutes |
+|---|---|---|
+| Champion | B5, A5, C4, E3, D4 | B3, B6, B24, B25, D10 (positive) |
+| Announcer | A10, B18, B17, B23, D26, C7 | A9, B22, D27, B27 |
+| Winner | B4, C10, C13, B12, C12, D5 | B1, B8, D7, C18 |
+| Aggrieved | C2, C25, C9, C8, C23, C5 | C17, C21, C24, C26, D22 |
+| Storyteller | E1, B9, E4, C32, C29, E5, E7 | E2, E6, B7, C31, B16 |
+| Briefer | A17, A12, B19, B28, C22, D25 | B21, C19, D8 |
+| Notifier | A14, A11, C30, B27, D22, D19 | A13, C14, D30 |
+| Pollster | D28, B26, C34, B29, C7 (named outlet) | A15, C20, D29 |
+| Endorser | D9, B13, D15, D10, D13, D1, D18 | B14, D11, D12, D14, D16, C16 |
+| Greeter | C27, B30, C24, D31, D29 | A16, C33, D23 |
 
-### `max` — 8–12 devices
-Everything louder. Must include: an obstacle epithet (C2), a foil line (C4/C5/C6),
-a formula sentence (D), a triple or echo (A5/A6), a grievance word for any setback
-(C8/C9), a "Sir" story or chorus (E3/E2), three or four verdict words, and a finale
-(D4 or the default sign-off, or both). 3–4× the input length.
+**The rationed staples.** B1 (history frame), B2 (never seen), B5 (nobody knows
+more), B10 "(to put it mildly)", E1 "believe me" and E3 (the "Sir" story) are the
+patterns a writer reaches for first, which is why outputs converge on them. Use at
+most two of them in one output.
 
-When the input recommends or praises a person, place, product or tool, `max` may
-use the endorsement structure in section K instead. When the input reports news of
-the narrator's own doing (finished, shipped, fixed, decided), `max` and `authentic`
-may use the announcement shape: A10, B18, B17, B23, a D26 demand, then the sign-off.
-When the input is a complaint, they may use the attack shape: C25 or C17 in the
-first line, C19, C23, then a D24 or A11 verdict.
+### `authentic`
 
-### `authentic` — 6–9 devices, written-post voice
-Follow the corpus: Capitalized Nouns (A3), caps on small intensifiers (A4), one
-short aside (B10), a "which I" clause (B7), an epithet (C2 or C4), one long
+Written-post voice, whatever the angle: Capitalized Nouns (A3), caps on small
+intensifiers (A4), one short aside (B10 or B14), a "which I" clause (B7), one long
 sentence with a mid-course pivot, then two short ones, and **one** closing verdict.
-Fewer exclamation marks than `max`: one or two in the whole text.
-May use A7 ellipsis continuation for long inputs.
+One or two exclamation marks in the whole text.
 
 Follow the recent record (2024–2026) rather than the older meme:
 - No "Sad!". It does not appear once in 330 recent posts. Prefer a current closer:
@@ -342,7 +346,8 @@ Follow the recent record (2024–2026) rather than the older meme:
   announcement. That is the only place the real one appears. Elsewhere end on a
   verdict or a joke title signature (D19).
 
-### `x` — as many as fit
+### `x`
+
 Budget first (default 140). Priority: facts → one self-praise → one epithet or foil →
 one verdict word → short closer ("Thank you!" beats the long sign-off when tight).
 Trim order: repetition → foil → comparison → closer. Count every character.
