@@ -9,7 +9,7 @@
 - **Primary language:** 日本語（英語にも対応）
 - **Initial target:** Claude Code / Agent Skills 形式。ほかの Agent Skills 対応環境でも使える構造を優先する。
 - **Release goal:** 動く `SKILL.md`、日英 README、再現性のある例、検証手順を備えた GitHub 公開用 MVP。
-- **Status:** v0.5.0 公開済み（2026-11-13）。未完了は各フェーズのチェック欄を参照（X投稿向け紹介文、Issue ラベルの作成）。
+- **Status:** v0.5.0 公開済み（2026-11-13）。未完了は各フェーズのチェック欄を参照（Issue ラベルの作成）。
 - **Reference implementation:** 既存の `trump-style/SKILL.md`（v1.0.0）は実装環境で入手できなかったため、本計画から新規作成した。
 
 ---
@@ -300,7 +300,7 @@ Turn boring text into outrageous Trump-style parody in seconds.
 - [x] インストール・実行例を実環境で確認する。（Claude Code 2.1.322 で、プラグインと単体スキルの両方の起動を確認）
 - [x] MIT ライセンス案を採用するか確認して `LICENSE` を追加する。
 - [x] `CONTRIBUTING.md`、免責・クレジットを追加する。
-- [ ] X投稿向けの紹介文（日本語・英語）を用意する。（未作成）
+- [x] X投稿向けの紹介文（日本語・英語）を用意する。（2026-11-13 に作成しオーナーへ提出。リポジトリには含めない。投稿はオーナーが行う）
 
 **成果物:** 公開できる README 一式。
 
