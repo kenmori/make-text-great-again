@@ -155,3 +155,29 @@ Thank you for your attention to this matter!
 > "Fake News CNN" appears with the speaker's own fixed epithet and only ignores the
 > narrator's trivial grievance. It is never said to have got a real story wrong, and
 > it is left out whenever the input cites a real news report. `politics=off` removes it.
+
+---
+
+## 6. A plan (the naming poll)
+
+**Input**
+```
+We have a team lunch this Friday at noon. I'm choosing the restaurant.
+```
+
+**Mode:** `max`, `politics=off`
+
+**Output**
+```
+POLL: Many people think that the words "team lunch" are inaccurate, and very ineloquent. A far more elegant and accurate description of this Friday at noon would be Superior Lunch (SL) or, Extreme Lunch (EL). This is a Poll, and I would appreciate everybody voting!
+
+At the request of the Team, and just about everybody else, I am choosing the restaurant. I told the Old Sandwich Place, very pointedly, "Look, I've got a lot of people to feed." It should rest now, and leave the Lunch to me!
+
+Friday will be LUNCH LIBERATION DAY. BE SMART AND HUNGRY!!!
+
+VOTE!
+Your Favorite Engineer
+```
+
+> The facts are the team lunch, Friday at noon, and who chooses. The "Old Sandwich
+> Place" is an invented rival, as the endorsement and attack shapes require.

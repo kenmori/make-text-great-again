@@ -9,7 +9,7 @@
 - **Primary language:** 日本語（英語にも対応）
 - **Initial target:** Claude Code / Agent Skills 形式。ほかの Agent Skills 対応環境でも使える構造を優先する。
 - **Release goal:** 動く `SKILL.md`、日英 README、再現性のある例、検証手順を備えた GitHub 公開用 MVP。
-- **Status:** v0.4.0 公開済み（2026-11-12）。未完了は各フェーズのチェック欄を参照（X投稿向け紹介文、Issue ラベルの作成）。
+- **Status:** v0.4.0 公開済み（2026-11-12）。その後の変更（下記「v0.4.0 公開後の変更」）は未リリース。未完了は各フェーズのチェック欄を参照（X投稿向け紹介文、Issue ラベルの作成）。
 - **Reference implementation:** 既存の `trump-style/SKILL.md`（v1.0.0）は実装環境で入手できなかったため、本計画から新規作成した。
 
 ---
@@ -181,6 +181,13 @@ description: Rewrite user-provided Japanese or English text as an exaggerated, h
 - Claude Code 2.1.322 で実機テストを実施（23件）。結果は `tests/results.md`。
 - `closing=off` のとき、最後の文を判定語で終えないよう説明を明確化した。
 - 英語版 README から日本語の見本を削除した。
+
+### v0.4.0 公開後の変更（2026-11-13、未リリース。メタデータ上は 0.5.0）
+
+- オーナーの X 公式 API を使い、2023年以降の「リポスト以外・画像なし・リンクなし」の投稿 330 件すべてを取得して頻度分析した。投稿そのものはリポジトリに含めない。
+- 装置を約120種類に拡張（「皆さんへ」の通告、名前の世論調査、敵も含めた挨拶、指名、「専業にすべきか」など）。
+- `authentic` モードを最近の実態に合わせた。「SAD!」を使わず、締めの定型文は通告・要求・警告・発表のときだけ。
+- 集計を再現する `scripts/analyze_posts.py` を追加した。
 
 ### 変換フロー
 

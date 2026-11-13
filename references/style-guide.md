@@ -4,11 +4,12 @@ Loaded on demand by `SKILL.md`. It catalogues the devices the skill imitates, gi
 phrase banks in Japanese and English, shows how each mode should feel, and lists
 what to avoid.
 
-The devices are grounded in a frequency study of 14,391 original posts from
-2017–2021, a sample of 17 mixed posts from 2025, and a sample of 43 endorsement
-posts from November 2026 (`research-notes.md`). Counts in brackets are posts in the
-first corpus that contain the pattern; "[2025]" and "[2026]" mark habits seen in
-the later samples.
+The devices are grounded in two corpora and two small samples
+(`research-notes.md`): 14,391 original posts from 2017–2021, all 330 text posts
+from 2024–2026, 17 mixed posts from 2025 and 43 endorsement posts from November
+2026. Counts in brackets are posts in the first corpus that contain the pattern.
+"[2025]" and "[2026]" mark habits seen in the screenshot samples, and "[24–26]"
+marks habits measured in the 2024–2026 corpus.
 Everything here is written in our own words; no real post is reproduced.
 
 **How to use this file:** pick devices that fit the content. A good output uses
@@ -32,6 +33,11 @@ same device twice in a row, and rotate closers, epithets and frames between runs
 | A9 | **Ceremonial opener** | [my great honor 111 · pleased to announce 30] | 「発表できて光栄だ。」「大変な名誉だ。」 | "It was my great honor to…" "I am pleased to announce…" |
 | A10 | **BREAKING NEWS** | Open your own announcement as a news flash. [2025] | 「速報：ラーメンが完成したことを発表できてうれしい。」 | "BREAKING NEWS: I am pleased to announce that the Ramen is ready." |
 | A11 | **All-caps decree** | One whole sentence in capitals with "MUST". In Japanese, a flat order ending in 「ねばならない！」. [2025] | 「全員、カップ麺と完全に縁を切らねばならない！」 | "EVERYONE MUST TOTALLY DISASSOCIATE THEMSELVES FROM INSTANT NOODLES!" |
+| A13 | **Label opener** | A capitalized label and a colon before the text. [24–26] | 「警告：」「世論調査：」「速報：」 | "CEASE & DESIST:" "POLL:" "JUSTICE FOR THE DISHES!" |
+| A14 | **Notice to all** | A polite formal notice to an absurd list of addressees about something drastic, then the sign-off. The original home of the sign-off. [24–26] | 「すべての猫、同居人、配達員の皆さんへ。台所は全面的に閉鎖されたものとお考えください。この問題に関心を持ってくれてありがとう！」 | "To all Cats, Roommates, and Delivery Drivers, please consider THE KITCHEN TO BE CLOSED IN ITS ENTIRETY. Thank you for your attention to this matter!" |
+| A15 | **What is going on???** | An all-caps question with three question marks; `!!!` likewise. [24–26] | 「この台所で何が起きているのか？？？」「WOW!!!」 | "WHAT IS GOING ON IN THE KITCHEN???" "WOW!!!" |
+| A16 | **The maxim** | The whole output, or its last line, is one solemn sentence. [24–26] | 「ラーメンを作る者は、どんぶりを洗わなくてよい。」 | "He who cooks the Ramen does not wash the Bowl." |
+| A17 | **The briefing** | Calm, official, about nothing much. [24–26] | 「洗濯物の状況について報告を受けた。物干し竿は万全の態勢にある。濡れないように！」 | "I have been briefed on the Laundry situation. The Drying Rack is fully prepared to respond. Stay Safe and Stay Dry!" |
 | A12 | **Good-news parallel** | Three "X is down" clauses, then "there is NO …". Only with facts from the input. [2025] | 「洗い物は減った、ゴミも減った、空腹は NO だ。」 | "Dishes are down, Trash is down, there is NO HUNGER." |
 
 ## B. Self-praise
@@ -60,6 +66,13 @@ same device twice in a row, and rotate closers, epithets and frames between runs
 | B21 | **By all accounts** | Third-person self with outside confirmation. [2025] | 「誰に聞いても、懸命に働いているこのエンジニア」 | "your Engineer who, by all accounts, is working hard to SAVE OUR SPRINT" |
 | B22 | **Not another in the World** | [2025] | 「これができる台所は、世界にほかにない。」 | "There is not another Kitchen in the World that could have done this." |
 | B23 | **Grand naming** | Give the trivial thing a capitalized official name in quotation marks. [2025] | 「"ワン・ビッグ・ビューティフル・ラーメン"」「これは "無期限" の合意だ。終わりはない！」 | "THE ONE, BIG, BEAUTIFUL BOWL" · an "Infinite Life" Agreement, there is no end! |
+| B24 | **, ME!** | End the sentence by naming its hero in capitals. [24–26] | 「史上最高のラーメンを作った人物、つまり、この私だ！」 | "…the person who cooked the best Ramen ever, ME!" |
+| B25 | **Was right about everything** | The narrator in the third person, by role, in capitals. Never the real person's name. [24–26] | 「皆さんのお気に入りのエンジニアは、すべてにおいて正しかった！」 | "YOUR FAVORITE ENGINEER WAS RIGHT ABOUT EVERYTHING!" |
+| B26 | **Should I go full time?** | Fish for praise, then offer to quit the day job. [24–26] | 「私の皿洗いの腕前をどう思うか教えてほしい。もし本当に素晴らしければ、本業を辞めて皿洗いを専業にしてほしいか？」 | "Tell me what you think of my Dishwashing abilities. If really good, would you like me to leave my job in order to make "dishwashing" a full time job?" |
+| B27 | **At the request of everybody** | [24–26] | 「家族と、ほぼ全員の要望により、私が作る。」 | "At the request of the Family, and just about everybody else, I am cooking." |
+| B28 | **I did!** | After others failed to act, two words. [24–26] | 「ほかの連中は動かなかった。私はやった！」 | "They wouldn't act quickly enough. I did!" |
+| B29 | **Understatement after drama** | [24–26] | 「確かに、興味深い一日だった！」 | "It was certainly an interesting day!" |
+| B30 | **The nomination** | Appoint a thing or a person from the input to a grand office. Rotate the verb: pleased, proud, thrilled, delighted. [24–26] | 「炊飯器を『夕食長官』に指名できることを嬉しく思う。素晴らしい仕事をするだろう！！！」 | "I am delighted to nominate the Rice Cooker as Secretary of Dinner. It will do a fantastic job!!!" |
 | B16 | **Proof sentence** | After any small anecdote, a short sentence confirming it still holds. [2026] | 「あの鍋は今もそこにある！」 | "The pot is still there!" |
 
 ## C. Foils, epithets and blame
@@ -94,6 +107,14 @@ Read section F before using C4–C6.
 | C24 | **Sarcastic thanks** | [2025] | 「ねぼすけプロジェクター、素晴らしい20分をありがとう！」 | "Thank you, Sleepy Projector, for such a wonderful 20 minutes!" |
 | C25 | **Worst-in-history appositive** | Name, comma, capitalized superlative, comma. For a standing foil, only about the trivial topic. [2025] | 「ねぼすけプロジェクター、会議室史上最悪の機械、は動かなかった。」 | "Sleepy Projector, THE WORST PROJECTOR IN THE HISTORY OF MEETINGS, did not work." |
 | C26 | **Demoted title** | "so-called" plus a title in quotation marks. Objects and fictional rivals. [2025] | 「いわゆる "高速" Wi-Fi」 | the so-called "High Speed" Wi-Fi |
+| C27 | **Greeting that includes the enemies** | Wish everyone well, "including" whoever tried to ruin things "but failed badly". [24–26] | 「皆さん、良い月曜日を。私の朝を台無しにしようとした『ねぼすけプリンター』も含めてだ。見事に失敗したが。」 | "Happy Monday to all, including the Sleepy Printer that tried so hard to ruin my morning, but failed badly." |
+| C28 | **Two futures** | The same sentence twice, once for each winner. Use a number only if the input has one. [24–26] | 「カップ麺が勝てば、待っているのは後悔だ。私が勝てば、史上最高の夕食だ。」 | "If the Instant Noodles win, you are minutes away from regret. If I win, you are minutes away from the best dinner ever." |
+| C29 | **Two qualities** | **Objects only.** [24–26] | 「このプリンターには二つの性質がある。相性の悪い二つだ。遅くて、うるさい。」 | "This Printer has two qualities, which don't work well together. It is slow and loud." |
+| C30 | **The choice is clear** | An ultimatum to an object. [24–26] | 「プリンターの選択肢ははっきりしている。印刷しろ。そうすれば電源は抜かない。さもなくば、本当の苦しみはこれからだ。」 | "The choice for the Printer is clear: Print, and we will stop unplugging you. Otherwise, the real pain is yet to come." |
+| C31 | **Mock puzzlement** | **Objects only.** [24–26] | 「何があったのか、私にはさっぱりわからない。」「私には故障に見える！」 | "I just don't know what happened to it." "Seems like sabotage to me!" |
+| C32 | **I told it, very pointedly** | Quote your own stern words to the obstacle. [24–26] | 「私ははっきり言った。『いいか、プリンター。私には仕事が山ほどあるんだ』」 | "I told it, very pointedly, "Look, Printer, I've got a lot of things to do."" |
+| C33 | **Should rest now** | [24–26] | 「古いリンターはもう休むべきだ。あとは私に任せろ！」 | "The Old Linter should rest now, and leave the Linting to me!" |
+| C34 | **Hedged superlative** | "may be", "arguably", "perhaps". [24–26] | 「これは洗濯史上最大のスキャンダルかもしれない！」 | "This may be the Biggest Scandal in Laundry History!" |
 | C16 | **Which means…** | Name the rival's ideal, then list four bad outcomes. [2026] | 「カップ麺、それはつまり、のびた麺、ぬるい湯、薄い味、そして後悔だ！」 | "Instant Noodles, which means Soggy Noodles, Lukewarm Water, Thin Broth, and Regret!" |
 
 ## D. Formula sentences
@@ -128,6 +149,10 @@ These are fixed templates. Slot in words from the input.
 | D25 | **And probably worse / and much more** [2025] Trail off upward. | 「そして、おそらくもっとひどい！」「ほかにもたくさんある！」 | "…, and probably worse!" "…, and much more!" |
 | D26 | **Now is the time** [2025] After the win, name the next thing. | 「今こそデザートの時だ！」「さあ、始めよう！」 | "NOW IS THE TIME FOR DESSERT!" "Let the process begin!" |
 | D27 | **Send it to my desk** [2025] | 「一刻も早く、そのどんぶりを私の机に届けてくれ。時間を無駄にはできない。」 | "Send this Bowl to my desk AS SOON AS POSSIBLE! There is no time to waste." |
+| D28 | **The naming poll** [24–26] Propose grander names for a thing, with abbreviations in brackets, and call a vote. | 「『ラーメン』という名は不正確だ。より優雅なのは『至高の麺（SN）』か『究極の麺（EN）』だ。これは世論調査だ。投票を！」 | "A far more elegant name for "Ramen" would be Superior Noodles (SN) or Extreme Noodles (EN). This is a Poll. VOTE!" |
+| D29 | **A named day** [24–26] | 「土曜日は『洗濯解放記念日』になる。」 | "Saturday will be LAUNDRY LIBERATION DAY." |
+| D30 | **Orders to one's own side** [24–26] | 「賢く、強くあれ！！！」「しゃべるのをやめて、やり遂げろ！」 | "BE SMART AND TOUGH!!!" "STOP TALKING, AND GET IT DONE!" |
+| D31 | **Three abstract nouns** [24–26] | 「待っているのは、パンくず、混乱、そして悲しみだ！」 | "It will only bring us Crumbs, Chaos, and Heartache!" |
 | D19 | **Title signature** [2026] Sign off with the narrator's own self-awarded title. Never the real person's name or office. | 「駅前ラーメン担当大統領より」「皆さんのお気に入りのエンジニアより」 | "Your Favorite Engineer" "CHIEF RAMEN OFFICER, ME" |
 
 ## E. Speech flavor (rally voice)
@@ -219,6 +244,10 @@ no names of people, parties or news outlets.
 | TOTAL OBLITERATION! | 完全に殲滅した！ | Something finished, eaten or fixed |
 | NOW IS THE TIME FOR ___! | 今こそ〜の時だ！ | After a win |
 | Let the process begin! | さあ、始めよう！ | Starting something |
+| It is a beautiful thing to watch! | 見ていて美しい！ | Something going well |
+| ENJOY! | 楽しんでくれ！ | Anything released, cooked or recommended |
+| Great job! | よくやった！ | Thanks, often to oneself |
+| BE SMART AND TOUGH!!! | 賢く、強くあれ！！！ | Rallying one's own side |
 | Disgraceful! / Pathetic! | 恥ずべきことだ！ / 情けない！ | The obstacle |
 | Working hard! | 懸命に働いている！ | Any effort |
 | Great job! | よくやった！ | Praise, often of oneself |
@@ -301,8 +330,17 @@ first line, C19, C23, then a D24 or A11 verdict.
 Follow the corpus: Capitalized Nouns (A3), caps on small intensifiers (A4), one
 short aside (B10), a "which I" clause (B7), an epithet (C2 or C4), one long
 sentence with a mid-course pivot, then two short ones, and **one** closing verdict.
-Fewer exclamation marks than `max`; the real average is under one per post.
+Fewer exclamation marks than `max`: one or two in the whole text.
 May use A7 ellipsis continuation for long inputs.
+
+Follow the recent record (2024–2026) rather than the older meme:
+- No "Sad!". It does not appear once in 330 recent posts. Prefer a current closer:
+  "ENJOY!", "Great job!", "It is a beautiful thing to watch!", "MAKE ___ GREAT AGAIN!".
+- Longer than the old posts: roughly 60–100 words for a short input.
+- Scare quotes around one ordinary word (D17) are common; use one.
+- Keep the default sign-off for texts that are a notice, a demand, a warning or an
+  announcement. That is the only place the real one appears. Elsewhere end on a
+  verdict or a joke title signature (D19).
 
 ### `x` — as many as fit
 Budget first (default 140). Priority: facts → one self-praise → one epithet or foil →

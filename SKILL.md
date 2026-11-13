@@ -4,7 +4,7 @@ description: Rewrite user-provided Japanese or English text as an exaggerated, h
 license: MIT
 metadata:
   author: kenmori
-  version: "0.4.0"
+  version: "0.5.0"
   homepage: https://github.com/kenmori/make-text-great-again
 ---
 
@@ -65,7 +65,11 @@ phrasings: `references/style-guide.md`.
   (NEVER, NOTHING, VERY, ZERO) · triples ("Noodles, Noodles, Noodles!") ·
   echo-and-upgrade · news-flash and ceremonial openers ("Just finished…",
   「発表できて光栄だ。」, "BREAKING NEWS: I am pleased to announce…") · one all-caps
-  decree ("EVERYONE MUST…!" 「全員〜ねばならない！」).
+  decree ("EVERYONE MUST…!" 「全員〜ねばならない！」) · label openers ("CEASE &
+  DESIST:", "POLL:") · the notice to all ("To all Cats, Roommates, and Delivery
+  Drivers, please consider THE KITCHEN TO BE CLOSED IN ITS ENTIRETY.") · "WHAT IS
+  GOING ON IN THE KITCHEN???" · a one-sentence maxim · the calm briefing ("I have
+  been briefed on the Laundry situation.").
 - **Self-praise:** history frame ("in the history of this Kitchen", 「我が家の歴史上」) ·
   "the likes of which nobody has ever seen" · "by far" / "not even close" · record and
   ratings talk without invented figures · "nobody knows more about X than me" ·
@@ -77,7 +81,12 @@ phrasings: `references/style-guide.md`.
   "At my direction," · nobody-before-me ("For decades people knew about this Sink,
   but NONE of them could do anything. I did.") · grand naming ("THE ONE, BIG,
   BEAUTIFUL BOWL") · "If it didn't go well, I would say so now" · "Sorry, but it's
-  my job. THAT'S WHAT I GOT ELECTED TO DO." 「悪いが、これが私の仕事だ」.
+  my job. THAT'S WHAT I GOT ELECTED TO DO." 「悪いが、これが私の仕事だ」 · ending on
+  ", ME!" · "YOUR FAVORITE ENGINEER WAS RIGHT ABOUT EVERYTHING!" · "Tell me what
+  you think of my Dishwashing abilities. Should I make it a full time job?" · "At
+  the request of just about everybody" · "I did!" · understatement ("It was
+  certainly an interesting day!") · the nomination ("I am delighted to nominate
+  the Rice Cooker as Secretary of Dinner.").
 - **Foils and blame:** the vague inferior "them" · an **epithet for the obstacle**
   ("Sleepy Projector", 「ねぼすけプロジェクター」, "Do Nothing Compiler") · "so-called
   experts" · the **standing foil** ("Sleepy Joe could never make this Ramen",
@@ -92,7 +101,14 @@ phrasings: `references/style-guide.md`.
   worst-in-history appositive ("Sleepy Projector, THE WORST PROJECTOR IN THE
   HISTORY OF MEETINGS,") · the catastrophe ladder ("could very well lead to the
   destruction of our Kitchen! STOP IT NOW, BEFORE IT IS TOO LATE.") · sarcastic
-  thanks ("Thank you, Sleepy Projector, for such a wonderful 20 minutes!").
+  thanks ("Thank you, Sleepy Projector, for such a wonderful 20 minutes!") ·
+  a greeting that includes the enemies ("Happy Monday to all, including the
+  Sleepy Printer that tried to ruin my morning, but failed badly.") · two futures
+  ("If the Instant Noodles win… If I win…") · "two qualities, which don't work
+  well together" · "The choice for the Printer is clear:" · mock puzzlement ("I
+  just don't know what happened to it.") · "I told it, very pointedly," · "should
+  rest now, and leave it to me!" · hedged superlatives ("This may be the Biggest
+  Scandal in Laundry History!").
 - **Formula sentences:** "has my Complete and Total Endorsement!" 「完全かつ全面的に
   支持する！」 · "strong on X, strong on Y, and loves Z" · "the Great State of …"
   「偉大なる埼玉県」 · "MAKE ___ GREAT AGAIN!" · "PROMISES MADE, PROMISES KEPT!" ·
@@ -105,7 +121,10 @@ phrasings: `references/style-guide.md`.
   DOWN!") · a blunt gloss in brackets ("finish the Noodles (eat!)") · the pep talk
   ("Don't be Weak! Don't be Hungry! Be Strong… and GREATNESS will be the result!") ·
   total verdicts ("TOTAL OBLITERATION!" 「完全に殲滅した！」) · "and probably worse!" ·
-  "NOW IS THE TIME FOR DESSERT!".
+  "NOW IS THE TIME FOR DESSERT!" · the naming poll ("Superior Noodles (SN) or
+  Extreme Noodles (EN). This is a Poll. VOTE!") · a named day ("LAUNDRY
+  LIBERATION DAY") · orders to one's own side ("BE SMART AND TOUGH!!!") · three
+  abstract nouns ("Crumbs, Chaos, and Heartache!").
 - **Speech flavor:** "Believe me." 「本当だ。」 · "Many people are saying it." ·
   the "Sir" story (big, strong, anonymous men in tears: 「サー、こんなラーメンは見た
   ことがありません」) · the weave (drift off, snap back) · self-answered questions
@@ -119,8 +138,10 @@ Sad! · Wow! · Too bad! · Not good! · So true! · Stay tuned! · Working hard
 It never ends! · A total Witch Hunt! · We'll see what happens. · TOTAL
 OBLITERATION! · NOW IS THE TIME FOR ___! · MAKE ___ GREAT AGAIN!
 
-The default sign-off is funniest after a solemn announcement or warning about
-something trivial; that is how the real one is used.
+The default sign-off is funniest after a solemn notice, demand or warning about
+something trivial; that is the only place the real one appears. In `authentic`,
+keep it for those texts, end other texts on a verdict or a joke title, and do not
+use "Sad!", which has vanished from recent posts. The meme modes keep both.
 
 ## The endorsement structure
 
@@ -224,9 +245,9 @@ with politics. That is the point, and it has firm limits.
 
 ## Reference material
 
-- `references/style-guide.md` — full device catalogue (about 95 devices), foil rules,
+- `references/style-guide.md` — full device catalogue (about 120 devices), foil rules,
   closer and epithet banks, per-mode recipes, the endorsement structure, things to avoid.
-- `references/research-notes.md` — frequency study of 14,391 posts from 2017–2021, plus
-  samples of 17 mixed posts from 2025 and 43 endorsement posts from November 2026.
+- `references/research-notes.md` — frequency studies of 14,391 posts from 2017–2021 and all
+  330 text posts from 2024–2026, plus two small screenshot samples.
 - `examples/japanese.md`, `examples/english.md` — Before/After samples per mode.
 - `tests/cases.md`, `tests/checklist.md` — test inputs and the quality rubric.

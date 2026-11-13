@@ -161,8 +161,8 @@ The skill is plain Markdown and follows the [Agent Skills specification](https:/
 
 ### The pattern catalogue
 
-About 95 devices, grounded in a frequency study of 14,391 real posts from 2017–2021
-and two later samples (17 mixed posts from 2025, 43 endorsement posts from November 2026)
+About 120 devices, grounded in frequency studies of 14,391 real posts from 2017–2021
+and all 330 text posts from 2024–2026, plus two small screenshot samples
 ([`references/research-notes.md`](references/research-notes.md)). A few favorites:
 
 - **Epithets for obstacles:** Sleepy Projector, Crooked Weather App, Do Nothing Compiler.
@@ -171,6 +171,9 @@ and two later samples (17 mixed posts from 2025, 43 endorsement posts from Novem
 - **Announcements:** "BREAKING NEWS: I am pleased to announce… At my direction… For decades NONE of them could do anything about it. I did."
 - **Catastrophe ladder:** "This could very well lead to the destruction of our Office! STOP THE OUTAGES NOW, BEFORE IT IS TOO LATE."
 - **Non-answers:** "We'll see what happens."
+- **Notice to all:** "To all Cats, Roommates, and Delivery Drivers, please consider THE KITCHEN TO BE CLOSED IN ITS ENTIRETY. Thank you for your attention to this matter!"
+- **The naming poll:** "A far more elegant name would be Superior Lunch (SL) or Extreme Lunch (EL). This is a Poll. VOTE!"
+- **Should I go full time?** "Tell me what you think of my Dishwashing abilities. If really good, would you like me to leave my job?"
 - **Formula sentences:** "has my Complete and Total Endorsement!", "strong on Noodles, strong on Broth", "the Great State of My Kitchen", "MAKE ___ GREAT AGAIN!".
 - **The "Sir" story:** big, strong men, tears in their eyes, "Sir, we've never seen Ramen like this."
 - **Grievance:** WITCH HUNT! Rigged! Treated very unfairly. By a projector.
@@ -204,8 +207,10 @@ The opponent is always an object or an invented rival, never a real product,
 company or person. The skill does not write endorsements for real candidates
 or elections.
 
-Fun fact from the data: "believe me" appears in zero of those posts. It is a rally
-habit. Written posts lean on Capitalized Nouns and a two-word verdict at the end.
+Fun facts from the data: "believe me" appears in zero of those posts; it is a rally
+habit. "Sad!" appears in 55 posts from 2017–2021 and in none from 2024–2026. And the
+famous sign-off only ever closes a notice, a demand or a warning. The `authentic`
+mode follows the recent record; the other modes keep the classics.
 
 ---
 
@@ -231,12 +236,13 @@ See [`SKILL.md`](SKILL.md) for the full rules and [`references/style-guide.md`](
 
 ```
 SKILL.md                 the skill
-references/style-guide.md  ~95 rhetorical devices, phrase banks, foil rules, mode recipes
-references/research-notes.md  frequency study of 14,391 posts plus 2025 and 2026 samples
+references/style-guide.md  ~120 rhetorical devices, phrase banks, foil rules, mode recipes
+references/research-notes.md  frequency studies of posts from 2017–2021 and 2024–2026
 references/sources.md      references and their access status
 examples/                  Before/After samples (ja / en)
 tests/                     test cases, rubric, latest results
 scripts/build-zip.sh       builds the ZIP for claude.ai
+scripts/analyze_posts.py   reproduces the study's counts from your own copy of the posts
 .claude-plugin/            plugin and marketplace manifests for Claude Code
 plan.md                    implementation plan
 ```

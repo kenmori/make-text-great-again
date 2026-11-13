@@ -11,9 +11,9 @@ style guide is grounded in counts instead of memory of the meme.
 - **Method:** plain counting with a short script: closing sentences, capitalized
   runs, opening words, parentheticals, epithet + name pairs, n-grams, and a list
   of candidate phrases. Counts below are "posts containing the phrase".
-- **Not in the corpus:** posts after January 2021. Two small later samples, from
-  2025 and from November 2026, are described separately below. Anything else about
-  later habits is general public observation and marked as such.
+- **Not in the corpus:** posts after January 2021. Those are covered by a second
+  corpus of 330 posts from 2024–2026, fetched through the official X API, and by
+  two small screenshot samples. All three are described separately below.
 - No post is reproduced here. Only short recurring phrases and their counts.
 
 ## Shape of a post
@@ -129,9 +129,127 @@ Finding: the aside is short, three words on average, and either inflates
 | "folks" | 6 |
 | "people are saying" | 2 |
 
+In the 2024–2026 corpus "believe me" is again absent (0 of 330), and so, by then,
+is "Sad!" (0 of 330, against 55 posts in 2017–2021).
+
 These are **spoken** habits from rallies and interviews, or older posts. They are
 still recognizable and the skill keeps them, but as speech flavor. Written posts
 lean on capitalized nouns, epithets, formula sentences, and a short verdict at the end.
+
+## 2024–2026 corpus: 330 text posts via the X API
+
+**Data.** Every post by the account from 2023-01-01 to 2026-11-13 that is not a
+repost and carries no media and no link: 330 posts, fetched once through the
+official X API (full-archive search) on 2026-11-13. Long posts were read in full.
+In the same period the account made 980 non-repost posts in total; the other 650
+carry an image, a video or a link, most often a picture of text posted elsewhere,
+and have little or no text of their own. So this corpus is "everything written as
+plain text", not a sample of it. The posts are not redistributed.
+
+**What is in it**
+
+| Kind | 2024 | 2025 | 2026 | Total |
+|---|---|---|---|---|
+| Endorsements and get-out-the-vote posts | 8 | 5 | 195 | 208 |
+| Everything else | 77 | 32 | 13 | 122 |
+
+The 122 "everything else" posts are the useful part: campaign attacks (2024),
+announcements, nominations, warnings, greetings and a few oddities (2025–2026).
+Percentages below are of those 122 unless stated.
+
+**Then and now**
+
+| Feature | 2017–2021 (14,391) | 2024–2026 (122) |
+|---|---|---|
+| Median length | 27 words | 70 words |
+| Ends with `!` | 44.6% | 59% |
+| Exclamation marks per post | 0.9 | 1.7 |
+| Contains an ALL-CAPS word of 4+ letters | 32.1% | 64% |
+| Entirely in capitals | 1.7% | 5% |
+| Contains a parenthetical | 10.0% | 12% |
+| Contains a question mark | 6.7% | 8% |
+| Scare quotes around a word or short phrase | not counted | 16% |
+| "Sad!" | 55 posts | 0 |
+| "Thank you for your attention to this matter" | 1 post | 7 posts (6%) |
+| Signed with initials or title and name | rare | 15% (46% of all 330) |
+
+Posts are two and a half times longer, louder, and more often signed. "Sad!" is
+gone from the written record: not one of the 330 posts uses it.
+
+**The sign-off, measured.** All seven uses of "Thank you for your attention to
+this matter" close a demand, a formal notice or a policy statement. The purest
+case is a one-sentence notice addressed "To all" of a list of parties, asking them
+to "please consider" something closed "IN ITS ENTIRETY", followed by the
+sign-off and a full signature. Politeness wrapped around something drastic is
+the whole effect.
+
+**Closers now in use** (final short sentence): `MAKE AMERICA GREAT AGAIN!` 6 ·
+`Thank you!` 3 · `VOTE!` 2 · `MAGA!` 2 · and once each `ENJOY!`, `Great job!`,
+`It is a beautiful thing to watch!`, `WOW!!!`, `BE SMART AND TOUGH!!!`.
+Triple exclamation marks appear in 9 posts. With so few repeats, the old stock
+of two-word verdicts has thinned out: most posts now end on a full sentence.
+
+**Epithets now in use.** The formula is unchanged, the cast rotates:
+`Comrade …` 12 · `Crooked Joe …` 5 · `Lyin' …` 5 · `Sleepy Joe …` 4 ·
+`Fake News Media / CNN` 5 · `Radical Left Lunatics / Scum / Losers / Judges` 6.
+In the endorsement posts `Radical Left` appears in 137 of 208 and the respelling
+`Dumocrats` in 128. Variants on "Failing" appear too ("the soon to be out of business …").
+
+**The endorsement template, measured** (208 posts): `Complete and Total
+Endorsement` 158 · `NEVER LET YOU DOWN` 108 · `always under siege` 104 ·
+`Reckless, Radical, and Dangerous` 92 · `DOMINANCE` 87 · `MADE IN THE U.S.A.` 75 ·
+`tirelessly` 74 · `It is my Great Honor` 50 · `TO THE GREAT PEOPLE OF` 49.
+Median length 138 words. This confirms the screenshot sample below.
+
+**Shapes not seen before**
+
+- **Notice to all.** "To all A, B, C, and D, please consider … CLOSED IN ITS ENTIRETY."
+- **Label opener.** A capitalized label and a colon before the text: "CEASE &
+  DESIST:", "POLL:", "BREAKING NEWS:", or a slogan with `!`. 9 posts.
+- **The naming poll.** A proposal to rename something, with candidate names and
+  their abbreviations in brackets, "This is a Poll", then a bare "VOTE!" post,
+  then a results post in which the trailing option is "taken OUT" and "a fresh
+  Vote begins now!".
+- **Greeting that includes the enemies.** A holiday greeting "to all, including
+  the …" who tried to do harm "but are failing badly".
+- **The nomination.** "I am thrilled / delighted / pleased / proud to announce /
+  nominate …" plus a stack of credentials and "will do a fantastic job!!!".
+  The announcing verb rotates; 7 posts.
+- **", ME".** A sentence that ends by naming its hero in capitals: "…their
+  Political Opponent, ME."; "…the man who had the best … ever, …, ME!" 4 posts.
+- **The name in the third person, in capitals.** 16 posts, including a
+  five-word post that the name "WAS RIGHT ABOUT EVERYTHING!".
+- **Two futures.** "If she wins, you are 3 days away from …. If I win, you are 3
+  days away from …."
+- **Two qualities.** "This guy had two qualities, which don't work well together."
+- **The choice is clear.** "The choice for … is clear: Stop …, and we will stop
+  …. Otherwise, … the real pain is yet to come."
+- **Should I go full time?** After announcing he will host an event "at the
+  request of the Board, and just about everybody else": "Tell me what you think
+  of my … abilities. If really good, would you like me to leave the Presidency in
+  order to make 'hosting' a full time job?"
+- **Understatement after drama.** "It was certainly an interesting day!"
+- **Mock puzzlement.** "I just don't know what happened to him." "Seems like
+  corruption to me!"
+- **Quoted self-speech.** "I told him, very pointedly, 'Look …, I've got a lot of
+  things to do…'"
+- **Should rest now.** "She should rest now, and leave the Campaigning to me!"
+- **Hedged superlative.** "This may be the Biggest Scandal in … History!";
+  "arguably the most significant …"; "perhaps like never before".
+- **A named day.** A date is declared "LIBERATION DAY".
+- **The maxim.** A whole post that is one solemn sentence about law and country.
+- **The briefing.** "I have been briefed on …. … is fully prepared to respond.
+  Stay Safe and Stay Warm!"
+- **Three abstract nouns.** "Poverty, Chaos, and Heartache!"; "Hatred, Abuse, and Distrust".
+- **Orders to one's own side.** "BE SMART AND TOUGH!!!"; "STOP TALKING, AND GET IT DONE!"
+- **A small matter, treated as policy.** A two-sentence post commits a whole
+  party to ending daylight saving time because it is "inconvenient, and very
+  costly to our Nation". The skill's central joke, in the wild.
+
+**What the skill takes from this, and what it does not.** Shapes and counts
+only. Most of these posts are campaign attacks on named people, or statements
+about war, immigration and courts. None of that content is used, and the
+epithets for real people stay limited as described in the style guide.
 
 ## 2026 sample: the endorsement template
 
@@ -265,9 +383,8 @@ As with the 2026 sample, only the shapes. The subjects of these posts are wars,
 immigration, courts and named officials. None of that content is reused, and the
 skill does not apply these shapes to such subjects.
 
-## Later habits (general observation, not in any sample)
+## Other habits (general observation, not measured here)
 
-- Long posts with whole sentences in capitals.
 - "…the likes of which nobody has ever seen before" as an all-purpose amplifier.
 - "would never have happened if I were President" as the standard counterfactual.
 - Rally stories in which large, tough men approach in tears and begin with "Sir".
