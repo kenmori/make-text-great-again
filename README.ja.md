@@ -166,7 +166,7 @@ Skill は Markdown のみで、[Agent Skills 仕様](https://agentskills.io/spec
 
 ### パターン集
 
-2017〜2021年の投稿 14,391 件と、2024〜2026年の文章だけの投稿 330 件すべての頻度調査（[`references/research-notes.md`](references/research-notes.md)）をもとにした約120種類の装置があります。一部を紹介します。
+2017〜2021年の投稿 14,391 件と、2024〜2026年の文章だけの投稿 330 件すべての頻度調査（[`references/research-notes.md`](references/research-notes.md)）をもとにした約120種類の言い回しのパターンがあります。一部を紹介します。
 
 - **障害物へのあだ名:** 「ねぼすけプロジェクター」「いんちき天気予報」「何もしないコンパイラ」
 - **いつもの敵役:** 「スリーピー・ジョーにこのラーメンは作れない。」「これはバイデンから引き継いだ咳だ。」
@@ -237,7 +237,7 @@ Skill は Markdown のみで、[Agent Skills 仕様](https://agentskills.io/spec
 
 ```
 SKILL.md                     Skill 本体
-references/style-guide.md    約120種類の文体装置、フレーズ集、敵役のルール、モード別レシピ
+references/style-guide.md    約120種類の言い回しのパターン、フレーズ集、敵役のルール、モード別レシピ
 references/research-notes.md 2017〜2021年と2024〜2026年の投稿の頻度調査
 references/sources.md        参考資料と確認状況
 examples/                    Before/After（日・英）

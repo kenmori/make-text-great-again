@@ -161,7 +161,7 @@ The skill is plain Markdown and follows the [Agent Skills specification](https:/
 
 ### The pattern catalogue
 
-About 120 devices, grounded in frequency studies of 14,391 real posts from 2017–2021
+About 120 patterns, grounded in frequency studies of 14,391 real posts from 2017–2021
 and all 330 text posts from 2024–2026, plus two small screenshot samples
 ([`references/research-notes.md`](references/research-notes.md)). A few favorites:
 
@@ -236,7 +236,7 @@ See [`SKILL.md`](SKILL.md) for the full rules and [`references/style-guide.md`](
 
 ```
 SKILL.md                 the skill
-references/style-guide.md  ~120 rhetorical devices, phrase banks, foil rules, mode recipes
+references/style-guide.md  ~120 writing patterns, phrase banks, foil rules, mode recipes
 references/research-notes.md  frequency studies of posts from 2017–2021 and 2024–2026
 references/sources.md      references and their access status
 examples/                  Before/After samples (ja / en)
