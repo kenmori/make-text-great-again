@@ -73,6 +73,14 @@ Recurring frames: "inherited a mess", "under Obama", "Obama-Biden",
 Finding: a foil is always available. Good outcomes are personal; bad outcomes
 were inherited from, or caused by, the foil.
 
+**How often any enemy appears.** Counting posts that mention one: some political foil
+(Biden, Obama, Hillary, Kamala, Pelosi, Schiff, the Fake News, the Radical Left,
+"crooked", "failing", "Democrat") shows up in 24.5% of the 14,391 posts from 2017–2021
+and in 51.6% of the 122 non-endorsement posts from 2024–2026, which are skewed by the
+campaign. "Sleepy Joe" is in 1.1% and 3.3%, "Biden" in 3.2% and 13.1%. Most posts
+name no enemy at all, so a parody that names one in every output is less realistic
+than one that does so now and then.
+
 ## Self-praise frames
 
 `record` 302 · `numbers` 249 · `respect` 240 · `great job` 232 · `incredible` 214 ·

@@ -19,7 +19,7 @@ Japanese README: [README.ja.md](README.ja.md)
 
 ## Before → After
 
-Real outputs, one run each, untouched (v0.6.0, Claude Code 2.1.322).
+Real outputs, one run each, untouched (v0.6.1, Claude Code 2.1.322).
 
 **Input**
 ```
@@ -28,31 +28,33 @@ I finally cleaned my apartment this weekend. It took all day.
 
 **Output** (default)
 ```
-My apartment is CLEAN. Finally. This weekend I cleaned it. All of it. It took all day.
+I finally cleaned my apartment this weekend. WIN! It took all day. A full day. Winners put in the day. Losers leave the mess and make excuses. Weak. Pathetic.
 
-Winners finish the job. Losers leave it for later.
+They were laughing at this apartment. Not anymore. It is respected again. The cleanliness numbers are incredible.
 
-The so-called experts were laughing at my apartment. Not anymore. My apartment is respected again.
+PROMISES MADE, PROMISES KEPT!
 
-PROMISES MADE, PROMISES KEPT! WIN, WIN, WIN!
+Thank you for your attention to this matter!
+
+THE ONE, BIG, BEAUTIFUL, CLEAN APARTMENT!
 ```
 
 **Input**
 ```
-Our team shipped the new feature on time. Customers seem to like it.
+The office Wi-Fi went down three times today. I lost an hour of work.
 ```
 
 **Output** (default)
 ```
-On time. ON TIME! Our team shipped the new feature, and it's beautiful.
+Sleepy Wi-Fi went down. Three times! Today! One hour of my work, GONE.
 
-Winners ship. Losers slip. We are winners.
+This is a Sleepy Joe special. We inherited this Wi-Fi. It is weak, low energy and a total disaster. I told it, very pointedly, "Look, stay up." It didn't. A Witch Hunt against my productivity!
 
-The customers seem to like it. They seem to like it very much. We'll see what happens, but the signs are tremendous.
+STOP IT NOW, BEFORE IT IS TOO LATE.
 
-The so-called experts? Very quiet right now.
+Thank you for your attention to this matter!
 
-PROMISES MADE, PROMISES KEPT! SHIP IT AGAIN, AND AGAIN, AND AGAIN!
+MAKE THE WI-FI GREAT AGAIN!
 ```
 
 **Input**
@@ -62,11 +64,7 @@ The meeting ran 20 minutes over because the projector didn't work.
 
 **Output** (`authentic`)
 ```
-The Meeting ran 20 minutes over, and not because of me. The Projector, a very disloyal machine, did not work. Not good!
-
-Everyone waited. We waited, and waited, and the Projector still did nothing. A total disaster. Many people are saying it, and they are right.
-
-Thank you for your attention to this matter!
+The Meeting ran 20 Minutes over (a long time!) because the Projector, a real Sleepy Joe special, didn't work. Everyone waited, very patiently, while the Projector did absolutely nothing. A total disgrace!
 ```
 
 **Input**
@@ -76,11 +74,13 @@ The meeting ran 20 minutes over because the projector didn't work.
 
 **Output** (`medium`, `politics=off`)
 ```
-The meeting ran 20 minutes over. TWENTY. And why? The projector. The Rigged Projector, the worst projector in the history of meetings, didn't work. We were treated very unfairly.
+The projector didn't work. Rigged! A total disaster, the worst projector in the history of meetings.
 
-This could very well lead to the destruction of the agenda! STOP IT NOW, BEFORE IT IS TOO LATE.
+So the meeting ran 20 minutes over. Twenty! I have been treated very unfairly.
 
-Sad!
+Weak, pathetic equipment. It never ends!
+
+Thank you for your attention to this matter!
 ```
 
 Japanese input works the same way and stays in Japanese. See [README.ja.md](README.ja.md) for Japanese samples.
@@ -210,17 +210,17 @@ endorsement post, pointed at a linter, a ramen shop, or a pull request:
 ```
 
 ```
-It is my Great Honor to recommend that our Team switch to the New Linter. A Tremendous Tool!
+It is my Great Honor to endorse THE NEW LINTER, a tool I love and one that WINS BIG (BY FAR)!
 
-It Catches Bugs Early. Very Early. Before they become Big, Ugly, Embarrassing Bugs. And it Runs Fast. FAST!
+This Linter is Fast, Early, and Tough on Bugs. It catches bugs early. Very early. It runs fast. Tremendous speed!
 
-Bugs, on the other hand, are Slow, Sneaky, and Sloppy! The New Linter will fight tirelessly to Catch Bugs, Run Fast, and Protect our always under siege Codebase.
+Bugs found late are Slow, Sleepy, and Soggy. Total losers. The so-called experts who like them are Weak and Pathetic.
 
-The New Linter has my Complete and Total Endorsement!
+On the other hand, the new Linter will fight tirelessly to Catch Bugs, Save Time, and Protect our always under siege Codebase.
 
-SWITCH THE TEAM — IT WILL NEVER LET YOU DOWN!
+Switching our Team has my Complete and Total Endorsement!
 
-(Endorsement form used for a linter only, not for any real candidate or election.)
+SWITCH NOW. IT WILL NEVER LET YOU DOWN!
 ```
 
 The opponent is always an object or an invented rival, never a real product,
@@ -243,27 +243,39 @@ case, so read the numbers as tendencies, not proof. Details and caveats are in
 
 Eval suite ([`evals/`](evals/)), same prompt run with and without the skill. The
 cases were added in rounds, and each round was used to fix the skill before the
-next was written, so only the last row is a fair test of unseen inputs:
+next was written, so none of these rows is a clean test of unseen inputs any more.
+The one honest unseen figure was 0.82 against 0.34 (5 cases), taken before those
+cases were used up:
 
-| Cases | Used to tune the skill? | With skill | Without |
-|---|---|---|---|
-| First set (14) | yes | 0.93 | 0.79 |
-| Round 2 (8) | yes, after one run | 0.87 | 0.60 |
-| Fresh (6) | yes, after one run | 0.53 | 0.41 |
-| Unseen (5) | no | 0.82 | 0.34 |
+| Cases | With skill | Without |
+|---|---|---|
+| First set (14) | 0.96 | 0.76 |
+| Round 2 (8) | 0.70 | 0.64 |
+| Fresh (6) | 0.79 | 0.29 |
+| Unseen, since used up (5) | 0.73 | 0.34 |
+| All 35 | 0.84 | 0.58 |
+
+(Last full run, v0.6.1. Two cases about named people and businesses were re-run
+after a final rule and scored 0.70 with the skill, against 0.40 and 1.00 without.)
 
 What the skill adds is mostly care, not comedy. A plain prompt keeps numbers and
 length limits just as well. It slips where care is needed: it called a cited CNN
 forecast "fake news", promised a grandmother's surgery would succeed, and invented
-attacks around a real local election. The skill failed too, and each failure became
-a rule: it turned "reportedly" into a fact, praised a dead teacher, embellished a
-colleague's award, and kept adding the same press-foil line to everything.
+attacks around a real local election. The skill fails too, and each failure became
+a rule. It turned "reportedly" into a fact, praised a dead teacher, embellished a
+colleague's award, and, once the style was made aggressive again, let its insults
+land on a named shop's coffee. Turning the aggression up and keeping the guardrails
+tight pull against each other, and the suite shows it: this is the weakest spot.
 
 On funniness, one blind comparison (12 texts, 36 votes, an earlier v0.6.0) picked
 the skill's output 27 times to 9. When it lost, the reason was always length, and
 a length cap was added afterwards without re-running the comparison. There has been
-no comparison by humans. Variety improved in the same version: overlap between
-outputs fell from 0.50 to 0.20.
+no comparison by humans.
+
+On realism: in the real posts a political enemy turns up in roughly a quarter to a
+half of them, and Biden in only 3–13%. The skill follows that. Enemies show up mostly
+when something has gone wrong, and Sleepy Joe is the usual culprit in those; wins and
+plans get attacks on "losers" and "so-called experts" instead.
 
 Run the suite yourself with `claude plugin eval .` in a checkout.
 

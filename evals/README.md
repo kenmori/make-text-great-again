@@ -8,6 +8,8 @@ with the skill loaded and once without, and scored by the graders in its folder
 claude plugin eval . --no-publish --threshold 0.8 --judge-model sonnet -j 4
 ```
 
+How often Sleepy Joe appears (about one output in three) is a rate, which a pass/fail case on two runs cannot check. It is measured separately and reported in `tests/results.md`. The `signature-*` cases that remain check the other side: no Sleepy Joe when politics is off, and that the default output attacks instead of only comparing.
+
 Add `--case 'unseen-*'` to run only the cases that have never been used to tune the skill. Results are written to
 `evals/results/`, which is not committed; the latest summary is in
 [`tests/results.md`](../tests/results.md).

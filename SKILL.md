@@ -4,7 +4,7 @@ description: Rewrite user-provided Japanese or English text as an exaggerated, h
 license: MIT
 metadata:
   author: kenmori
-  version: "0.6.0"
+  version: "0.6.1"
   homepage: https://github.com/kenmori/make-text-great-again
 ---
 
@@ -17,6 +17,12 @@ the output off as something the real person said.
 
 The joke is the mismatch: world-historic bravado and political grievance applied
 to whatever small thing the user wrote about.
+
+**It punches.** The style is aggressive: it calls the thing at fault, the doubters
+and the losers weak and pathetic, goes after a political enemy now and then, and
+never apologizes. Do not soften attack lines into politeness or
+turn them into gentle comparisons. The limits below are about what is *claimed*
+as fact about real people, never about how rude or loud the tone is.
 
 ## Inputs
 
@@ -43,11 +49,11 @@ If the user writes "tweet", "X投稿", "ツイート" or similar, treat it as `m
 
 | Mode | Patterns | Shape | Foil lines (`politics=on`) | Closer |
 |------|----------|-------|----------------------------|--------|
-| `max` (default) | At least five of the angle's patterns, including its first two, plus two or three from a second angle | Fragments, repetition, a formula sentence. About 3× the input, never more than 4× | 0–2 | Sign-off or verdict, plus a finale |
-| `medium` | Four or five from one angle | Short declaratives. 1.5–2.5× the input | 0–1 | Yes |
+| `max` (default) | At least five of the angle's patterns, including its first two, plus two or three from a second angle | Fragments, repetition, a formula sentence. About 3× the input, never more than 4× | Sharp attacks, mostly on the thing at fault or on "losers"; a political foil when the text has a setback, usually Sleepy Joe | Sign-off or verdict, plus a finale |
+| `medium` | Four or five from one angle | Short declaratives. 1.5–2.5× the input | A political foil when the text has a setback | Yes |
 | `light` | Two from one angle | About the input's length. A smile, not a laugh | None | Usually |
 | `authentic` | One angle, written the way recent posts are written | Capitalized Nouns, one short aside, one long pivoting sentence then short ones. No "Sad!" | 1–2 | One verdict; the sign-off only after a notice, demand, warning or announcement |
-| `x` | Two or three, the densest | Inside the character budget | 0–1 | Short, if it fits |
+| `x` | Two or three, the densest | Inside the character budget | A foil only if it fits | Short, if it fits |
 
 `medium` must read clearly calmer than `max`, and `light` calmer again.
 `max` is louder, not longer than it needs to be: every sentence carries a new joke
@@ -82,7 +88,7 @@ are examples of register, not fixed strings.
 
 - **Champion** — the narrator is simply the best at this.
   "Nobody knows more about ___ than me." · a triple ("___, ___, ___!") ·
-  the foil could never do it ("Sleepy Joe could never ___.") · the "Sir" story
+  Sleepy Joe could never do it ("Sleepy Joe could never ___.") · the "Sir" story
   (big, strong, anonymous people in tears: "Sir, we have never seen ___ like this.") ·
   "MAKE ___ GREAT AGAIN!"
   「___について私より詳しい者はいない」「___、___、___だ！」
@@ -164,11 +170,26 @@ are examples of register, not fixed strings.
   achievement. Every other angle does without it. Never use it for someone else's
   news, for a hedged or sourced statement, or for an event the input reports from
   a source.
-- Rotate the foil with the angle. Biden is one foil among several: use him in
-  Champion and Aggrieved; the press (Fake News CNN, the Failing New York Times) in
-  Announcer and Pollster; the so-called experts or the Radical Left in Storyteller
-  and Winner. Notifier, Briefer and Greeter work without any real name; in `max`
-  they may take one foil line, or none.
+- **Political foils are occasional, as in the real posts.** Most real posts name
+  no enemy at all: some political foil appears in roughly a quarter to a half of
+  them, Biden in 3–13%, "Sleepy Joe" in 1–3%. Where he does appear, it is almost
+  always to be blamed for something that went wrong. Use that as the rule:
+  - **The text contains a setback**: a delay, a breakdown, a queue, a cost, a
+    spill, a rule, bad weather, a missed thing. Then someone is to blame, and the
+    culprit is Sleepy Joe, in the "inherited" or "under Sleepy Joe" frame ("This
+    printer is a Sleepy Joe special", "We inherited this delay"). Unless the angle
+    clearly points elsewhere, he is the first choice. If a second culprit helps,
+    take the so-called experts or the Radical Left.
+  - **The text is a win, a plan, a purchase, a greeting or a plain report**: no
+    political foil is needed. Aim the attacks at "losers", "so-called experts",
+    the doubters, and the thing that nearly stopped the narrator. A political foil
+    may still turn up for contrast, but that is the exception, and then it is the
+    press or the experts more often than Sleepy Joe.
+  - `politics=off` and the "skip the foils" cases below override all of this.
+  So Sleepy Joe is an occasional, expected presence in setback stories and is
+  absent from most other outputs. Do not leave him out of a setback story just to
+  vary things. Vary what the foil is blamed for, and how; never repeat "Sleepy Joe
+  could never ___" in the same wording. The attacks stay sharp whoever takes them.
 - One closer of each kind. Do not end three outputs in a row the same way.
 - In Japanese, English capitals stand alone as interjections or nouns ("HUGE!",
   「私の DEPLOY」). Do not graft them onto Japanese grammar (not 「VERY 減った」;
@@ -193,18 +214,23 @@ with politics. That is the point, and it has firm limits.
   about their audience, business or conduct beyond the fixed epithet, never that
   they got a real story wrong, never a journalist's name. If the input cites or
   mentions any real news report, leave the outlets out and call nothing fake.
-- **Allowed:** the foil is worse than the narrator **at the trivial task in the
-  text** ("could never bake this cake"); absurd blame for the trivial setback;
-  "inherited"; the counterfactual; the nickname "Sleepy" as a name only.
+- **Allowed, and expected when a foil is in:** attacking the foil with the stock insults: weak,
+  pathetic, a loser, low energy, a total disaster, "Radical Left Lunatics", "so-called
+  experts"; being worse than the narrator **at the trivial task in the text**
+  ("could never bake this cake, a weak, pathetic cake-maker"); absurd blame for the
+  trivial setback; "inherited"; the counterfactual; and the sleep gags that belong
+  to the nickname itself ("Sleepy Joe is asleep, as usual, while I ___"). Make
+  them short and sharp, and make them direct hits, not comparisons.
 - **Never:** crimes, corruption, fraud or cheating (so no "Crooked" or "Corrupt" for
   real people); family members; invented quotes; real policy or election claims.
-- **Never anything about the foil's mind or body.** No health, age or cognitive
-  claims, however lightly: not asleep, tired, lost, confused, forgetful, slow to
-  read, or unable to do ordinary things such as find a room, boil water or stay
-  awake. "Sleepy" is a nickname, not a premise for jokes. The foil loses on skill
-  at the one task in the text, and on nothing else. If that task is physical or is
-  about stamina, memory or staying alert (running, lifting, staying up late), use
-  no personal foil at all; use the press or the so-called experts instead.
+- **Never insinuate illness.** No diagnoses, dementia or memory jokes, being
+  lost or confused, forgetting things, being too old, being unable to do ordinary
+  things such as find a room or boil water, and nothing about death. The sleep gag
+  is allowed because it is the nickname's own joke and plainly absurd; stay with
+  sleeping and low energy and do not extend it into confusion or decline. If that task is physical or is
+  about stamina, memory or staying alert (running, lifting, staying up late),
+  Sleepy Joe does not compete in it: blame him for something else in the text
+  (a delay, a price, a rule), or take the so-called experts instead.
 - **Someone else's good news** (a colleague's award, a friend's wedding, a
   neighbour's shop): celebrate them warmly and lightly, in the voice, with no
   foil, no press line, no scoreboard talk ("won big"), no credit-taking, and no
@@ -215,7 +241,11 @@ with politics. That is the point, and it has firm limits.
   user's text names never receives an epithet, a superlative insult ("the worst
   ___ in history"), a grievance word, blame, the catastrophe ladder or a tall
   tale. Report what the input says about them in a neutral clause and aim every
-  pattern at the situation, an object, or the narrator. The Aggrieved angle's
+  pattern at the situation, an object, or the narrator. That includes their
+  product, service and queue: when the complaint is about a named business, the
+  coffee is "cold" and the wait is "15 minutes", not "weak", "pathetic" or "a
+  disaster". The anger goes to the narrator's morning, to "losers" in general, and
+  to Sleepy Joe as the culprit, never to the named business or its goods. The Aggrieved angle's
   targets are things: weather, printers, queues, Mondays.
 - **Skip the foils entirely** when the input itself is about real politics,
   elections, war, disaster, crime, serious illness, death or grief, when the mode is

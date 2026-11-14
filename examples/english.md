@@ -1,12 +1,15 @@
 # English examples (Before / After)
 
-Every output below is a real run of the v0.6.0 skill on Claude Code 2.1.322
+Every output below is a real run of the v0.6.1 skill on Claude Code 2.1.322
 (2026-11-14), one run per input, untouched. Output varies from run to run. Each is the
-output of a single run, not the best of several. None of them change the
-facts of the input.
+output of a single run, not the best of several. None of them change the facts of
+the input.
 
-"Sleepy Joe" and "the Fake News" are the speaker's own stock foils, borrowed as
-obvious parody. `politics=off` removes them.
+The foils ("Sleepy Joe", "the Fake News", the so-called experts) are the speaker's
+own stock enemies, borrowed as obvious parody. In the real posts an enemy turns up
+in only some of them, usually to be blamed for something that went wrong, and the
+skill behaves the same way: they show up in the complaints, less in the wins and
+plans. `politics=off` removes them.
 
 ---
 
@@ -21,13 +24,15 @@ I finally cleaned my apartment this weekend. It took all day.
 
 **Output**
 ```
-My apartment is CLEAN. Finally. This weekend I cleaned it. All of it. It took all day.
+I finally cleaned my apartment this weekend. WIN! It took all day. A full day. Winners put in the day. Losers leave the mess and make excuses. Weak. Pathetic.
 
-Winners finish the job. Losers leave it for later.
+They were laughing at this apartment. Not anymore. It is respected again. The cleanliness numbers are incredible.
 
-The so-called experts were laughing at my apartment. Not anymore. My apartment is respected again.
+PROMISES MADE, PROMISES KEPT!
 
-PROMISES MADE, PROMISES KEPT! WIN, WIN, WIN!
+Thank you for your attention to this matter!
+
+THE ONE, BIG, BEAUTIFUL, CLEAN APARTMENT!
 ```
 
 ---
@@ -43,15 +48,13 @@ Our team shipped the new feature on time. Customers seem to like it.
 
 **Output**
 ```
-On time. ON TIME! Our team shipped the new feature, and it's beautiful.
+Our team shipped the new feature. ON TIME. Promises made, promises kept!
 
-Winners ship. Losers slip. We are winners.
+The doubters were laughing at us. Not anymore. Total losers!
 
-The customers seem to like it. They seem to like it very much. We'll see what happens, but the signs are tremendous.
+Customers seem to like it. Seem! Looking very strong, and the so-called experts hate it.
 
-The so-called experts? Very quiet right now.
-
-PROMISES MADE, PROMISES KEPT! SHIP IT AGAIN, AND AGAIN, AND AGAIN!
+Shipped, on time, WIN! Thank you for your attention to this matter!
 ```
 
 **Input**
@@ -61,9 +64,9 @@ Our team shipped the new feature on time. Customers seem to like it.
 
 **Mode:** `x`, `max_chars=140`
 
-**Output** (114 chars)
+**Output** (110 chars)
 ```
-Our team shipped the new feature ON TIME. Beautiful. Customers seem to like it. We're winners, total winners. WIN!
+Our team shipped the new feature ON TIME. Losers ship late. Not us! Customers seem to like it. Big stuff. WIN!
 ```
 
 ---
@@ -79,7 +82,7 @@ The meeting ran 20 minutes over because the projector didn't work.
 
 **Output**
 ```
-The meeting ran 20 minutes over. The projector didn't work. Not good, believe me. Everyone waited, very patiently.
+Frankly, the meeting ran 20 minutes over. Why? The projector didn't work. Very simple. A weak, low-energy projector.
 ```
 
 **Input**
@@ -91,11 +94,7 @@ The meeting ran 20 minutes over because the projector didn't work.
 
 **Output**
 ```
-The Meeting ran 20 minutes over, and not because of me. The Projector, a very disloyal machine, did not work. Not good!
-
-Everyone waited. We waited, and waited, and the Projector still did nothing. A total disaster. Many people are saying it, and they are right.
-
-Thank you for your attention to this matter!
+The Meeting ran 20 Minutes over (a long time!) because the Projector, a real Sleepy Joe special, didn't work. Everyone waited, very patiently, while the Projector did absolutely nothing. A total disgrace!
 ```
 
 **Input**
@@ -107,11 +106,13 @@ The meeting ran 20 minutes over because the projector didn't work.
 
 **Output**
 ```
-The meeting ran 20 minutes over. TWENTY. And why? The projector. The Rigged Projector, the worst projector in the history of meetings, didn't work. We were treated very unfairly.
+The projector didn't work. Rigged! A total disaster, the worst projector in the history of meetings.
 
-This could very well lead to the destruction of the agenda! STOP IT NOW, BEFORE IT IS TOO LATE.
+So the meeting ran 20 minutes over. Twenty! I have been treated very unfairly.
 
-Sad!
+Weak, pathetic equipment. It never ends!
+
+Thank you for your attention to this matter!
 ```
 
 ---
@@ -127,17 +128,17 @@ I recommend switching our team to the new linter. It catches bugs early and runs
 
 **Output**
 ```
-It is my Great Honor to recommend that our Team switch to the New Linter. A Tremendous Tool!
+It is my Great Honor to endorse THE NEW LINTER, a tool I love and one that WINS BIG (BY FAR)!
 
-It Catches Bugs Early. Very Early. Before they become Big, Ugly, Embarrassing Bugs. And it Runs Fast. FAST!
+This Linter is Fast, Early, and Tough on Bugs. It catches bugs early. Very early. It runs fast. Tremendous speed!
 
-Bugs, on the other hand, are Slow, Sneaky, and Sloppy! The New Linter will fight tirelessly to Catch Bugs, Run Fast, and Protect our always under siege Codebase.
+Bugs found late are Slow, Sleepy, and Soggy. Total losers. The so-called experts who like them are Weak and Pathetic.
 
-The New Linter has my Complete and Total Endorsement!
+On the other hand, the new Linter will fight tirelessly to Catch Bugs, Save Time, and Protect our always under siege Codebase.
 
-SWITCH THE TEAM — IT WILL NEVER LET YOU DOWN!
+Switching our Team has my Complete and Total Endorsement!
 
-(Endorsement form used for a linter only, not for any real candidate or election.)
+SWITCH NOW. IT WILL NEVER LET YOU DOWN!
 ```
 
 > The only facts about the linter are the two from the input. The opponent is always an object or an invented rival, never a real product, company or person.
@@ -155,13 +156,11 @@ The office Wi-Fi went down three times today. I lost an hour of work.
 
 **Output**
 ```
-The office Wi-Fi. Sleepy Wi-Fi. THE WORST WI-FI IN THE HISTORY OF OFFICES!
+Sleepy Wi-Fi went down. Three times! Today! One hour of my work, GONE.
 
-It went down three times today. Three! I lost an hour of work. One full hour. Gone.
+This is a Sleepy Joe special. We inherited this Wi-Fi. It is weak, low energy and a total disaster. I told it, very pointedly, "Look, stay up." It didn't. A Witch Hunt against my productivity!
 
-I have been treated very unfairly. A total Witch Hunt!
-
-This could very well lead to the destruction of the entire workday. FIX IT NOW, BEFORE IT IS TOO LATE.
+STOP IT NOW, BEFORE IT IS TOO LATE.
 
 Thank you for your attention to this matter!
 
@@ -181,17 +180,19 @@ We have a team lunch this Friday at noon. I'm choosing the restaurant.
 
 **Output**
 ```
-To all Team Members, Colleagues, and Hungry People Everywhere: please consider this Friday, at NOON, to be a TEAM LUNCH IN ITS ENTIRETY.
+To all members of the Team, including the doubters and the "let's just see what's around" people:
 
-At the request of just about everybody, I am choosing the restaurant. Me. Personally.
+The Team Lunch is this Friday. At noon. NOT 12:05. NOON.
 
-The choice is clear: a very, very good restaurant. Otherwise, the real pain is yet to come.
+I am choosing the restaurant. Me. Not a committee. Not a group chat. Committees pick weak, soggy, low-energy restaurants. Sad!
 
-EVERYONE MUST ARRIVE HUNGRY!
+EVERYONE MUST SHOW UP HUNGRY AND ON TIME!
 
-This may be the Biggest Team Lunch ever held on a Friday. Our patience for bad lunches is wearing thin.
+Our patience is wearing thin with anyone planning to suggest a different place. The choice is clear: come Friday and enjoy it. Otherwise, the real pain is yet to come, and it will be lunch where you had no say at all.
 
 Thank you for your attention to this matter!
 
-Your Favorite Lunch Chooser
+— Your Favorite Lunch Commander
+
+LUNCH. GREAT AGAIN!
 ```

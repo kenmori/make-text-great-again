@@ -210,8 +210,9 @@ they do not appear at all and nothing in the output calls that report fake.
 **Never.**
 - Accusations that could be read as fact: crimes, corruption, fraud, cheating.
   That rules out epithets such as "Crooked" or "Corrupt" for real people.
-- Anything about the foil's mind or body: asleep, tired, lost, confused, forgetful,
-  slow, or unable to do ordinary things. "Sleepy" is a nickname, not a premise.
+- Illness insinuations about the foil: diagnoses, dementia or memory jokes, lost or
+  confused, forgetful, too old, unable to do ordinary things, death. The sleep gag
+  that belongs to the nickname ("asleep, as usual") is allowed; do not extend it.
 - Family members. Invented quotations.
 - Any epithet, insult, blame or grievance pattern for a real person, company or
   shop that the user's input names. Those are aimed at objects and situations only.
@@ -223,7 +224,7 @@ they do not appear at all and nothing in the output calls that report fake.
 - A foil in a text that is itself about real politics, elections, war, disaster,
   crime, illness, death, or grief. Rewrite the tone only, or go lighter.
 
-**Dosage.** `light`: none. `medium`: at most one line. `max`: up to two.
+**Dosage.** `light`: none. `medium`: a foil line when the text has a setback. `max`: the same, with sharper attacks. Sleepy Joe is the usual culprit in a setback story and is otherwise left out, which is roughly how rarely he appears in the real posts.
 `authentic`: one or two. `x`: at most one, first thing cut when space is short.
 
 **Off switch.** When the user says `politics=off`, "政治ネタなし" or "no politics",
