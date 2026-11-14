@@ -9,7 +9,7 @@
 - **Primary language:** 日本語（英語にも対応）
 - **Initial target:** Claude Code / Agent Skills 形式。ほかの Agent Skills 対応環境でも使える構造を優先する。
 - **Release goal:** 動く `SKILL.md`、日英 README、再現性のある例、検証手順を備えた GitHub 公開用 MVP。
-- **Status:** v0.5.0 公開済み（2026-11-13）。その後の変更（下記「v0.5.0 公開後の変更」）は未リリース。未完了は各フェーズのチェック欄を参照（Issue ラベルの作成）。
+- **Status:** v0.6.0 公開済み（2026-11-14）。未完了は各フェーズのチェック欄を参照（Issue ラベルの作成）。
 - **Reference implementation:** 既存の `trump-style/SKILL.md`（v1.0.0）は実装環境で入手できなかったため、本計画から新規作成した。
 
 ---
@@ -189,7 +189,7 @@ description: Rewrite user-provided Japanese or English text as an exaggerated, h
 - `authentic` モードを最近の実態に合わせた。「SAD!」を使わず、締めの定型文は通告・要求・警告・発表のときだけ。
 - 集計を再現する `scripts/analyze_posts.py` を追加した。
 
-### v0.5.0 公開後の変更（2026-11-13、未リリース。メタデータ上は 0.6.0）
+### v0.6.0 の変更（2026-11-14、公開済み）
 
 - 既定のモードを `max` に変更。弱めたいときは `mode=medium`（旧 `standard`、どちらの名前でも可）か `mode=light`。
 - 出力が似通う問題に対処。出力ごとに10種類の「切り口」から1つを選ぶ仕組みを入れ、使いすぎていた定番の言い回しに上限を設けた。本文の例から特定の名詞（ラーメン、台所など）を外した。
