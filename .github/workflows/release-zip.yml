@@ -2,6 +2,9 @@ name: Attach skill ZIP to release
 
 # Builds make-text-great-again.zip (the format claude.ai accepts under
 # Customize > Skills) and attaches it to the release.
+#
+# The build job has read-only access and no stored credentials. Only the
+# publish job can write, and it runs no code from the repository.
 
 on:
   release:
@@ -9,31 +12,55 @@ on:
   workflow_dispatch:
     inputs:
       tag:
-        description: "Existing release tag to attach the ZIP to (for example v0.3.0)"
+        description: "Existing release tag to attach the ZIP to (for example v0.6.0)"
         required: true
 
-permissions:
-  contents: write
+permissions: {}
 
 jobs:
-  zip:
+  build:
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
     env:
       TAG: ${{ github.event.release.tag_name || inputs.tag }}
     steps:
-      - uses: actions/checkout@v4
-        with:
-          ref: ${{ env.TAG }}
-      - name: Build ZIP
+      - name: Check the tag name
         run: |
-          if [ -x scripts/build-zip.sh ]; then
-            scripts/build-zip.sh "$PWD/make-text-great-again.zip"
-          else
-            mkdir -p pkg/make-text-great-again
-            cp SKILL.md LICENSE pkg/make-text-great-again/
-            cp -R references examples tests pkg/make-text-great-again/
-            (cd pkg && zip -q -r -X ../make-text-great-again.zip make-text-great-again)
+          if ! printf '%s' "$TAG" | grep -Eq '^v[0-9]+\.[0-9]+\.[0-9]+$'; then
+            echo "Refusing to build: '$TAG' is not a version tag like v1.2.3" >&2
+            exit 1
           fi
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          ref: refs/tags/${{ env.TAG }}
+          persist-credentials: false
+      - name: Build ZIP
+        # Inline on purpose: the packaging steps come from this workflow file,
+        # not from a script inside the tag being packaged.
+        run: |
+          mkdir -p pkg/make-text-great-again/references
+          cp SKILL.md LICENSE pkg/make-text-great-again/
+          cp references/style-guide.md pkg/make-text-great-again/references/
+          (cd pkg && zip -q -r -X -y ../make-text-great-again.zip make-text-great-again)
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
+        with:
+          name: skill-zip
+          path: make-text-great-again.zip
+          if-no-files-found: error
+          retention-days: 7
+
+  publish:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    env:
+      TAG: ${{ github.event.release.tag_name || inputs.tag }}
+    steps:
+      - uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093 # v4.3.0
+        with:
+          name: skill-zip
       - name: Upload to release
         env:
           GH_TOKEN: ${{ github.token }}

@@ -14,7 +14,8 @@ style guide is grounded in counts instead of memory of the meme.
 - **Not in the corpus:** posts after January 2021. Those are covered by a second
   corpus of 330 posts from 2024–2026, fetched through the official X API, and by
   two small screenshot samples. All three are described separately below.
-- No post is reproduced here. Only short recurring phrases and their counts.
+- No post is reproduced in full. Counts are given for recurring phrases, and a few
+  short fragments are quoted where a shape cannot be shown without them.
 
 ## Shape of a post
 
@@ -173,8 +174,14 @@ Percentages below are of those 122 unless stated.
 | "Thank you for your attention to this matter" | 1 post | 7 posts (6%) |
 | Signed with initials or title and name | rare | 15% (46% of all 330) |
 
-Posts are two and a half times longer, louder, and more often signed. "Sad!" is
-gone from the written record: not one of the 330 posts uses it.
+In this corpus posts are two and a half times longer, louder, and more often
+signed, and "Sad!" does not appear once in the 330 posts.
+
+**How far this goes.** This is the X account only, and only its plain-text posts:
+122 of them outside endorsements, 13 from 2026. Most of the account's posts in
+this period are pictures of text first posted elsewhere, which were not read. So
+these numbers describe a slice, and statements such as "Sad! is gone" mean "gone
+from this slice".
 
 **The sign-off, measured.** All seven uses of "Thank you for your attention to
 this matter" close a demand, a formal notice or a policy statement. The purest
@@ -219,15 +226,15 @@ Median length 138 words. This confirms the screenshot sample below.
   Political Opponent, ME."; "…the man who had the best … ever, …, ME!" 4 posts.
 - **The name in the third person, in capitals.** 16 posts, including a
   five-word post that the name "WAS RIGHT ABOUT EVERYTHING!".
-- **Two futures.** "If she wins, you are 3 days away from …. If I win, you are 3
-  days away from …."
+- **Two futures.** The same sentence twice, once for each possible winner, each
+  beginning "you are 3 days away from".
 - **Two qualities.** "This guy had two qualities, which don't work well together."
 - **The choice is clear.** "The choice for … is clear: Stop …, and we will stop
   …. Otherwise, … the real pain is yet to come."
 - **Should I go full time?** After announcing he will host an event "at the
-  request of the Board, and just about everybody else": "Tell me what you think
-  of my … abilities. If really good, would you like me to leave the Presidency in
-  order to make 'hosting' a full time job?"
+  request of the Board, and just about everybody else", he asks readers to rate
+  his hosting and whether, if it is really good, he should give up his office to
+  do it full time.
 - **Understatement after drama.** "It was certainly an interesting day!"
 - **Mock puzzlement.** "I just don't know what happened to him." "Seems like
   corruption to me!"
@@ -253,7 +260,8 @@ epithets for real people stay limited as described in the style guide.
 
 ## 2026 sample: the endorsement template
 
-A second sample: 43 posts from the same account, all dated 2026-11-04 (election
+A second sample: 43 posts from the same account, all shown as 4 November 2026 in
+Japan time, which is 3 November, election day, in the United States (election
 day), read from screenshots supplied by the repository owner. Small and
 one-sided by construction: every one of the 43 is a candidate endorsement.
 It says nothing about how other kinds of posts are written, but it shows one
@@ -342,9 +350,10 @@ with the content is the joke.
 **News outlets as foils.** Two posts name outlets with their fixed epithets:
 "Fake News CNN" and "the Failing New York Times". This matches the first
 corpus, where `CNN` appears in 201 posts, `Fake News CNN` in 29 and
-`Failing New York Times` in 42. Typical moves: the outlets "teamed up", tried to
-"demean" a success, are "getting slammed by the public", and "you would think
-they would be proud". Other outlets get one-off labels in scare quotes.
+`Failing New York Times` in 42. In the posts the outlets are accused of joining
+forces, of belittling a success and of losing the public; the skill uses none of
+those moves for real outlets (see the style guide, section F). Other outlets get
+one-off labels in scare quotes.
 
 **Habits not seen in the first corpus, or much stronger here**
 

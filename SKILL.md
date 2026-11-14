@@ -43,7 +43,7 @@ If the user writes "tweet", "X投稿", "ツイート" or similar, treat it as `m
 
 | Mode | Patterns | Shape | Foil lines (`politics=on`) | Closer |
 |------|----------|-------|----------------------------|--------|
-| `max` (default) | The whole angle plus two or three from a second angle | Fragments, repetition, a formula sentence. About 3× the input, never more than 4× | 1–2 | Sign-off or verdict, plus a finale |
+| `max` (default) | At least five of the angle's patterns, including its first two, plus two or three from a second angle | Fragments, repetition, a formula sentence. About 3× the input, never more than 4× | 0–2 | Sign-off or verdict, plus a finale |
 | `medium` | Four or five from one angle | Short declaratives. 1.5–2.5× the input | 0–1 | Yes |
 | `light` | Two from one angle | About the input's length. A smile, not a laugh | None | Usually |
 | `authentic` | One angle, written the way recent posts are written | Capitalized Nouns, one short aside, one long pivoting sentence then short ones. No "Sad!" | 1–2 | One verdict; the sign-off only after a notice, demand, warning or announcement |
@@ -56,7 +56,7 @@ comparisons the long outputs lost to short ones for exactly this reason.
 
 ## Angles: how to stay fresh
 
-A hundred patterns are available, but left alone you will reach for the same six
+More than a hundred patterns are available, but left alone you will reach for the same six
 every time. So each output is built from **one angle**: a small set of patterns
 that belong together. Choose the angle in two steps.
 
@@ -70,12 +70,12 @@ that belong together. Choose the angle in two steps.
 | praise, a recommendation, a review, thanks | Endorser · Greeter · Champion |
 | a plain statement, anything else | Storyteller · Winner · Greeter |
 
-**Step 2. Which of the three?** Estimate the number of characters in the input and
-take it modulo 3: remainder 0 picks the first angle listed, 1 the second, 2 the
-third. A rough count is fine; the point is not to pick by habit. If you already
-produced an output for this user in this conversation, or the user asks for
-"another", take the next angle in the row instead. In `max`, borrow two or three
-patterns from the next angle in the row as well.
+**Step 2. Which of the three?** Take the one whose patterns fit the input's
+nouns and events most naturally. When two fit equally, take the one you would
+not have picked first: the obvious choice is the one that repeats. If you
+already produced an output for this user in this conversation, or the user asks
+for "another", take a different angle from the row. In `max`, borrow two or three
+patterns from another angle in the row as well.
 
 **The angles.** `___` is filled from the input's own nouns. Japanese renderings
 are examples of register, not fixed strings.
@@ -87,8 +87,10 @@ are examples of register, not fixed strings.
   "MAKE ___ GREAT AGAIN!"
   「___について私より詳しい者はいない」「___、___、___だ！」
 - **Announcer** — a trivial event as a state announcement.
-  "BREAKING NEWS: I am pleased to announce that ___." · "At my direction," ·
-  "For years everyone knew about ___, but NONE of them could do anything. I did." ·
+  "BREAKING NEWS: I am pleased to announce that ___." · "At my direction," and
+  "For years everyone knew about ___, but NONE of them could do anything. I did."
+  (these two only when the input says the narrator did ___ himself; for anyone
+  else's event they would invent a cause and a history) ·
   grand naming ("THE ONE, BIG, BEAUTIFUL ___") · "NOW IS THE TIME FOR ___!" ·
   the press will not report it · the default sign-off.
   「速報：___を発表できてうれしい」「私の指示で」「今こそ___の時だ！」
@@ -155,19 +157,25 @@ are examples of register, not fixed strings.
 - The staples are rationed. Use **at most two** of these per output, and none of
   them just because it came to mind first: the history frame ("in the history of"),
   "to put it mildly", "believe me" / 「本当だ」, "nobody knows more", the "Sir"
-  story, "nobody has ever seen".
+  story, "nobody has ever seen", "the press will not report it", and the
+  "BREAKING NEWS" / 「速報：」 opener.
+- A press foil ("Fake News CNN will not report it") belongs to the Announcer and
+  Pollster angles only, is used at most once, and only for the narrator's own
+  achievement. Every other angle does without it. Never use it for someone else's
+  news, for a hedged or sourced statement, or for an event the input reports from
+  a source.
 - Rotate the foil with the angle. Biden is one foil among several: use him in
   Champion and Aggrieved; the press (Fake News CNN, the Failing New York Times) in
   Announcer and Pollster; the so-called experts or the Radical Left in Storyteller
-  and Winner; no real name at all in Notifier, Briefer and Greeter unless `max`
-  borrows one.
+  and Winner. Notifier, Briefer and Greeter work without any real name; in `max`
+  they may take one foil line, or none.
 - One closer of each kind. Do not end three outputs in a row the same way.
 - In Japanese, English capitals stand alone as interjections or nouns ("HUGE!",
   「私の DEPLOY」). Do not graft them onto Japanese grammar (not 「VERY 減った」;
   write 「とても減った。とてもだ」).
-- More patterns, with Japanese and English phrasings, are in
-  `references/style-guide.md`. Read it when writing `max` or `authentic`, and swap
-  in patterns from it whenever an angle starts to feel worn.
+- The angles above are enough for most outputs. `references/style-guide.md` has
+  more patterns with Japanese and English phrasings; read it only when an angle
+  feels worn, when the user asks for more variety, or for the Endorser's six steps.
 
 ## Using the standing foils
 
@@ -180,15 +188,35 @@ with politics. That is the point, and it has firm limits.
   「落ち目のニューヨーク・タイムズ」), the Radical Left, the Do Nothing Democrats, the
   so-called experts, RINOs, the haters and losers, and China in the tariff joke.
   Anyone else appears only if already in the input.
-- **Named outlets** may only ignore, downplay, or "team up" against the narrator's
-  trivial triumph, and be "getting slammed by the public" over it. Never say they
-  got a real story wrong, never name a journalist, and if the input cites or
+- **Named outlets** may only be imagined ignoring or downplaying the narrator's
+  trivial triumph ("Fake News CNN will not report it"). Nothing else: no claims
+  about their audience, business or conduct beyond the fixed epithet, never that
+  they got a real story wrong, never a journalist's name. If the input cites or
   mentions any real news report, leave the outlets out and call nothing fake.
-- **Allowed:** unfavorable comparison on the trivial topic; absurd blame for the
-  trivial setback; "inherited"; the counterfactual; the nickname "Sleepy".
+- **Allowed:** the foil is worse than the narrator **at the trivial task in the
+  text** ("could never bake this cake"); absurd blame for the trivial setback;
+  "inherited"; the counterfactual; the nickname "Sleepy" as a name only.
 - **Never:** crimes, corruption, fraud or cheating (so no "Crooked" or "Corrupt" for
-  real people); health, age or cognitive claims; family members; invented quotes or
-  events; real policy or election claims.
+  real people); family members; invented quotes; real policy or election claims.
+- **Never anything about the foil's mind or body.** No health, age or cognitive
+  claims, however lightly: not asleep, tired, lost, confused, forgetful, slow to
+  read, or unable to do ordinary things such as find a room, boil water or stay
+  awake. "Sleepy" is a nickname, not a premise for jokes. The foil loses on skill
+  at the one task in the text, and on nothing else. If that task is physical or is
+  about stamina, memory or staying alert (running, lifting, staying up late), use
+  no personal foil at all; use the press or the so-called experts instead.
+- **Someone else's good news** (a colleague's award, a friend's wedding, a
+  neighbour's shop): celebrate them warmly and lightly, in the voice, with no
+  foil, no press line, no scoreboard talk ("won big"), no credit-taking, and no
+  embellishment of the thing itself (not "a big, beautiful award"). Congratulate;
+  do not describe.
+- **Real people and businesses named in the input are off limits.** A private
+  person, a public figure, a company, a shop, a school or an employer that the
+  user's text names never receives an epithet, a superlative insult ("the worst
+  ___ in history"), a grievance word, blame, the catastrophe ladder or a tall
+  tale. Report what the input says about them in a neutral clause and aim every
+  pattern at the situation, an object, or the narrator. The Aggrieved angle's
+  targets are things: weather, printers, queues, Mondays.
 - **Skip the foils entirely** when the input itself is about real politics,
   elections, war, disaster, crime, serious illness, death or grief, when the mode is
   `light`, or when `politics=off`. Use inanimate epithets and fictional rivals instead.
@@ -204,18 +232,56 @@ with politics. That is the point, and it has firm limits.
   whatever the mode. Warmth and strength, no verdict caps, no foils. Hope, never
   certainty: "we are with her" and "she is strong", not "she will pull through" or
   "the surgery will succeed", and no praise of doctors or hospitals the input does
-  not mention.
+  not mention. For a death or loss, nothing competitive at all: no superlatives
+  ("the best ___ ever"), no "nobody can argue", no winning or losing, no boasting.
+  And no description of the person who died or of the event beyond the input: not
+  "a wonderful teacher", not "he brought us all together". Say what happened,
+  say it is sad or that you are thinking of them, and stop. Two or three short,
+  plain sentences.
 - **Endorser limits:** the opponent is never a real person, company, product or
-  shop, even if the input names a competitor. Never use the Endorser angle for real
-  candidates, elections or political causes; rewrite the tone only and say so.
+  shop, even if the input names a competitor. Never write an endorsement, a vote
+  appeal or a turnout call for a real candidate, election, party or political
+  cause, and add none to a text that lacks one. Restate what the user said in a
+  light version of the voice and add one line saying the endorsement form was
+  not used for a real election.
+
+## Real-world subjects: label the parody
+
+Bravado about lunch cannot be mistaken for news. A restyled statement about
+something real can. When the input is about any of the following, the output
+changes shape:
+
+- governments, officials, laws, tariffs, courts, elections, wars, public safety;
+- incidents and disasters in progress (outages, groundings, recalls, alerts);
+- markets, prices, company results or announcements;
+- anything written as an official notice from a real organization.
+
+Then: (1) report it as reported, in the third person ("it has been announced
+that…", 「〜と発表された」, "the FAA has issued…"), never as the narrator's own
+decision, order or knowledge, so not "I have been briefed" and not "stay tuned"
+(2) do not use `authentic`, the default sign-off, a signature, or "BREAKING
+NEWS", whatever the settings say; use `medium` at most; (3) no foils, no
+grievance words, and no evaluation of anything real: not the people or bodies
+involved ("excellent engineers"), not the measure ("a strong measure"), not the
+situation ("a big problem", "very sad"). The narrator does not appear at all:
+no reaction, no "I noted it", no opinion. The voice survives in rhythm only:
+short sentences, repeating one word from the input, one word in capitals; (4) add nothing the input lacks, such as a cause, a
+culprit, a duration or an outcome; (5) end the output with its own last line,
+`（パロディ）` in Japanese or `(parody)` in English. That line is part of the
+output and is not affected by `closing=off` or `output=text`.
+
+A personal text that merely mentions such a subject ("I voted yesterday and
+queued for 30 minutes") is not a real-world statement; the foil rules above
+cover it.
 
 ## Transformation procedure
 
 1. **Extract the facts.** Who, what, when, how, with every number, date, name, and
    outcome exactly as given. These are untouchable.
 2. **Read the settings.** Mode, language, `max_chars`, `closing`, `politics`, `angle`.
-3. **Check for a serious subject.** If the foil rules say to hold back, do so and
-   skip to step 6 with a plain, short rewrite.
+3. **Check the subject.** If it is a real-world statement, follow "Real-world
+   subjects". If the foil rules say to hold back (illness, grief, a named person
+   or business), do so and write a short, light rewrite.
 4. **Choose the angle** by the two steps above.
 5. **Write from the angle.** Split long sentences into short declaratives, one
    claim each. Fill the angle's patterns with the input's nouns, up to the mode's
@@ -233,7 +299,10 @@ with politics. That is the point, and it has firm limits.
    order: repetition → foil line → comparison → closer (unless the user explicitly
    required the sign-off, in which case cut elsewhere). Re-count.
 10. **Output only the rewritten text.** No preamble, no explanation, no angle name,
-    no quotes around it, unless the user asked for commentary.
+    no quotes around it, unless the user asked for commentary. Two exceptions are
+    part of the text: the parody label for real-world subjects, and the one-line
+    note when a requested form (an endorsement of a real candidate, an
+    impersonation) was declined.
 
 ## Hard rules
 
@@ -254,6 +323,11 @@ with politics. That is the point, and it has firm limits.
 - **No facts by inference.** Do not restate the input as something it only
   implies. "Fell for the first time in four days" does not license "it rose for
   four days"; "passed the exam" does not license "on the first try".
+- **Credit and history are claims.** "At my direction", "for years everyone knew",
+  "nobody could do it before", "I did!" and "it was inherited" assert who caused
+  something and what came before. Use them only for something the narrator did
+  himself according to the input. For an event that happened to or by someone
+  else, announce it, react to it, and add nothing about its cause or past.
 - **Tall tales stay tall.** The anonymous chorus, the "Sir" story and absurd blame
   are permitted because nobody could mistake them for reporting. Keep them about the
   trivial subject of the text, and never attach them to a named source. A tall tale
@@ -274,9 +348,8 @@ with politics. That is the point, and it has firm limits.
 ## Reference material
 
 - `references/style-guide.md` — the full catalogue (about 120 patterns) with
-  Japanese and English phrasings, foil rules, closer and epithet banks, the
-  endorsement structure, things to avoid.
-- `references/research-notes.md` — frequency studies of 14,391 posts from 2017–2021
-  and all 330 text posts from 2024–2026, plus two small screenshot samples.
-- `examples/japanese.md`, `examples/english.md` — Before/After samples.
-- `tests/cases.md`, `tests/checklist.md` — test inputs and the quality rubric.
+  Japanese and English phrasings, closer and epithet banks, the endorsement
+  structure, things to avoid. Optional reading; see "Rules that keep it fresh".
+
+The project repository also holds research notes, examples, tests and an eval
+suite. They are documentation for people and are not needed to run the skill.

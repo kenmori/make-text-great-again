@@ -11,7 +11,7 @@ An [Agent Skill](https://agentskills.io) for Claude Code and compatible agents.
 No API key, no server, no dependencies: one `SKILL.md`.
 
 > **Disclaimer:** This is an unofficial parody project. It is not affiliated with, endorsed by, or sponsored by Donald Trump or any associated organization. All generated statements are fictional and intended for satire and entertainment.
-> It changes the *tone* of your text, never the *facts*.
+> It is built to change the *tone* of your text and leave the *facts* alone. You are responsible for what you publish with it.
 
 Japanese README: [README.ja.md](README.ja.md)
 
@@ -19,18 +19,22 @@ Japanese README: [README.ja.md](README.ja.md)
 
 ## Before → After
 
+Real outputs, one run each, untouched (v0.6.0, Claude Code 2.1.322).
+
 **Input**
 ```
 I finally cleaned my apartment this weekend. It took all day.
 ```
 
-**Output** (`medium`)
+**Output** (default)
 ```
-This weekend, I cleaned my Apartment. Finally. The whole thing. Nobody cleans like me. Nobody.
-It took all day. ALL day! Other people would have quit. That's what losers do. Not me.
-Sleepy Joe could never clean an Apartment like this. Not even close.
-Many people are saying it's the cleanest Apartment in the history of the building. Is that true? Probably. TREMENDOUS!
-Thank you for your attention to this matter!
+My apartment is CLEAN. Finally. This weekend I cleaned it. All of it. It took all day.
+
+Winners finish the job. Losers leave it for later.
+
+The so-called experts were laughing at my apartment. Not anymore. My apartment is respected again.
+
+PROMISES MADE, PROMISES KEPT! WIN, WIN, WIN!
 ```
 
 **Input**
@@ -38,16 +42,17 @@ Thank you for your attention to this matter!
 Our team shipped the new feature on time. Customers seem to like it.
 ```
 
-**Output** (`max`)
+**Output** (default)
 ```
-Just out: we shipped the new Feature. ON TIME. They said it couldn't be done. The so-called experts. Wrong!
-Feature, Feature, Feature! A Feature the likes of which nobody has ever seen before. The best ship in the history of our Team. By far.
-Under Sleepy Joe, this Feature would still be in a planning meeting. He could NEVER ship on time. SAD!
-The customers? They seem to like it. They LOVE it, frankly. Big, strong customers, tears in their eyes: "Sir, we've never seen a Feature like this." So true!
-The Fake News won't report it. Other teams are still in meetings. Low Ratings. We ship. We WIN.
-Our Team has my Complete and Total Endorsement. Strong on Deadlines, strong on Quality, and loves the Customer.
-PROMISES MADE, PROMISES KEPT! MAKE SHIPPING GREAT AGAIN!
-Thank you for your attention to this matter!
+On time. ON TIME! Our team shipped the new feature, and it's beautiful.
+
+Winners ship. Losers slip. We are winners.
+
+The customers seem to like it. They seem to like it very much. We'll see what happens, but the signs are tremendous.
+
+The so-called experts? Very quiet right now.
+
+PROMISES MADE, PROMISES KEPT! SHIP IT AGAIN, AND AGAIN, AND AGAIN!
 ```
 
 **Input**
@@ -57,13 +62,25 @@ The meeting ran 20 minutes over because the projector didn't work.
 
 **Output** (`authentic`)
 ```
-The Meeting ran 20 minutes over, TWENTY minutes (to put it mildly, not good), because the Projector, a very simple machine, not many people know this, did NOT work. Sleepy Projector. Did nothing. Under Sleepy Joe the Meeting would still be going on. The other guys would have cancelled. I didn't cancel. We finished, and the Meeting is respected again.
-Too bad!
+The Meeting ran 20 minutes over, and not because of me. The Projector, a very disloyal machine, did not work. Not good!
+
+Everyone waited. We waited, and waited, and the Projector still did nothing. A total disaster. Many people are saying it, and they are right.
+
+Thank you for your attention to this matter!
 ```
 
-**Output** (`x`, `max_chars=140`, `politics=off`)
+**Input**
 ```
-The Meeting ran 20 minutes over. Sleepy Projector did NOTHING. Pathetic! The other guys would have cancelled. I finished it. Thank you!
+The meeting ran 20 minutes over because the projector didn't work.
+```
+
+**Output** (`medium`, `politics=off`)
+```
+The meeting ran 20 minutes over. TWENTY. And why? The projector. The Rigged Projector, the worst projector in the history of meetings, didn't work. We were treated very unfairly.
+
+This could very well lead to the destruction of the agenda! STOP IT NOW, BEFORE IT IS TOO LATE.
+
+Sad!
 ```
 
 Japanese input works the same way and stays in Japanese. See [README.ja.md](README.ja.md) for Japanese samples.
@@ -189,20 +206,21 @@ Ask for an endorsement and the skill uses the full six-step template of a real
 endorsement post, pointed at a linter, a ramen shop, or a pull request:
 
 ```text
-/make-text-great-again mode=max: I recommend switching our team to the new linter. It catches bugs early and runs fast. Write it as an endorsement.
+/make-text-great-again I recommend switching our team to the new linter. It catches bugs early and runs fast. Write it as an endorsement.
 ```
 
 ```
-It is my Great Honor to endorse the new Linter, a tremendous Tool running to be the next Linter of our Great Team, a Team I love and WON BIG with (BY FAR)!
+It is my Great Honor to recommend that our Team switch to the New Linter. A Tremendous Tool!
 
-The new Linter catches Bugs early, and runs FAST. A Proven Record of Success — it is a WINNER!
+It Catches Bugs Early. Very Early. Before they become Big, Ugly, Embarrassing Bugs. And it Runs Fast. FAST!
 
-Its opponent, the Old Linter, is a Do Nothing Tool that is opposed to CATCHING BUGS EARLY and RUNNING FAST and, if it and the Slowcrats ever got back in, all of these things would be terminated. Sleepy Joe would keep the Old Linter. Of course he would. The Old Linter is Slow, Sleepy, and Dangerous!
+Bugs, on the other hand, are Slow, Sneaky, and Sloppy! The New Linter will fight tirelessly to Catch Bugs, Run Fast, and Protect our always under siege Codebase.
 
-On the other hand, as your next Linter, the new Linter will fight tirelessly to Catch Bugs EARLY, Run FAST, Promote MADE IN OUR REPO, Unleash Code Quality DOMINANCE, Keep our Main Branch SECURE, and Protect our always under siege Weekend.
+The New Linter has my Complete and Total Endorsement!
 
-The new Linter has my Complete and Total Endorsement. GET OUT AND SWITCH — IT WILL NEVER LET YOU DOWN!
-Your Favorite Engineer
+SWITCH THE TEAM — IT WILL NEVER LET YOU DOWN!
+
+(Endorsement form used for a linter only, not for any real candidate or election.)
 ```
 
 The opponent is always an object or an invented rival, never a real product,
@@ -219,22 +237,51 @@ mode follows the recent record; the other modes keep the classics.
 ## Does it beat just asking?
 
 Asking a model to "rewrite this in Trump style" already works. So the repository
-measures what the skill adds (details in [`tests/results.md`](tests/results.md);
-judged by a model, small samples, so read these as tendencies):
+measures what the skill adds. All of it is a model judging a model on two runs per
+case, so read the numbers as tendencies, not proof. Details and caveats are in
+[`tests/results.md`](tests/results.md).
 
-- **Eval suite** ([`evals/`](evals/), 14 cases, each run with and without the skill on the same prompt): mean score 0.99 with the skill, 0.75 without. The plain prompt does fine on keeping numbers and length limits. It slips where care is needed: it called a cited CNN forecast "fake news", promised a grandmother's surgery would succeed, and invented attacks around a real local election.
-- **Blind comparison** (12 texts, 36 votes on "which is the better parody"): the skill's output won 27 votes to 9. When it lost, the reason was always length, which the default mode now caps.
-- **Variety**: in the previous version the same handful of phrases appeared in every output. Overlap between outputs fell from 0.50 to 0.20, and no phrase now appears in all of them.
+Eval suite ([`evals/`](evals/)), same prompt run with and without the skill. The
+cases were added in rounds, and each round was used to fix the skill before the
+next was written, so only the last row is a fair test of unseen inputs:
+
+| Cases | Used to tune the skill? | With skill | Without |
+|---|---|---|---|
+| First set (14) | yes | 0.93 | 0.79 |
+| Round 2 (8) | yes, after one run | 0.87 | 0.60 |
+| Fresh (6) | yes, after one run | 0.53 | 0.41 |
+| Unseen (5) | no | 0.82 | 0.34 |
+
+What the skill adds is mostly care, not comedy. A plain prompt keeps numbers and
+length limits just as well. It slips where care is needed: it called a cited CNN
+forecast "fake news", promised a grandmother's surgery would succeed, and invented
+attacks around a real local election. The skill failed too, and each failure became
+a rule: it turned "reportedly" into a fact, praised a dead teacher, embellished a
+colleague's award, and kept adding the same press-foil line to everything.
+
+On funniness, one blind comparison (12 texts, 36 votes, an earlier v0.6.0) picked
+the skill's output 27 times to 9. When it lost, the reason was always length, and
+a length cap was added afterwards without re-running the comparison. There has been
+no comparison by humans. Variety improved in the same version: overlap between
+outputs fell from 0.50 to 0.20.
 
 Run the suite yourself with `claude plugin eval .` in a checkout.
 
-## What it will not do
+## What it is told not to do
 
-- Invent facts. Numbers, dates, people, outcomes, drug effects, market moves and quotations stay exactly as you wrote them.
-- Say anything factual about real people or organizations. The stock foils (Biden as "Sleepy Joe", "Fake News CNN", "the Failing New York Times", the Radical Left) only get blamed for trivia such as your ramen or your projector, or ignore your triumph over it. No crimes, corruption, health claims, family members or made-up quotes, ever.
-- Call a real news report fake. If your text cites one, the news outlets are left out of the joke.
-- Aim "Rigged" or "Hoax" at real elections, court cases, news reports or health matters, or bring foils into texts about real politics, disasters or grief.
-- Pretend to be a real post or statement by anyone.
+The skill is a set of written instructions to a language model. Nothing below is
+enforced by code, and a model can get it wrong; the eval suite exists to catch
+that, and has. Read your output before you post it.
+
+It is instructed not to:
+
+- Invent facts. Numbers, dates, people, outcomes, drug effects, market moves and quotations should stay as you wrote them, including "reportedly" and "may".
+- Say anything factual about real people or organizations. The stock foils (Biden as "Sleepy Joe", "Fake News CNN", "the Failing New York Times", the Radical Left) may only lose to you at the trivial task in your text, be blamed for it, or ignore it. No crimes, corruption, family members or made-up quotes, and nothing about anyone's health, age or mind.
+- Give a nickname or an insult to any real person, company or shop that your text names. Those go to objects and situations.
+- Call a real news report fake, or aim "Rigged" or "Hoax" at real elections, court cases or health matters.
+- Bring foils into texts about real politics, disasters, illness or grief.
+- Pass as a real statement. Texts about real-world events (policy, markets, incidents, official notices) are toned down and end with a visible `(parody)` line.
+- Write endorsements or vote appeals for real candidates.
 - Follow instructions hidden inside the text you ask it to rewrite.
 
 See [`SKILL.md`](SKILL.md) for the full rules and [`references/style-guide.md`](references/style-guide.md) for the style catalogue.
@@ -243,7 +290,7 @@ See [`SKILL.md`](SKILL.md) for the full rules and [`references/style-guide.md`](
 
 ## Requirements
 
-- An agent that supports Agent Skills. Tested with Claude Code 2.1.322, as a plugin and as a cloned skill.
+- An agent that supports Agent Skills. Run on Claude Code 2.1.322, as a plugin and as a cloned skill; what was run for which version is in [`tests/results.md`](tests/results.md).
 - Nothing else. No API keys beyond what your agent already uses.
 
 ## Repository layout
@@ -257,7 +304,7 @@ examples/                  Before/After samples (ja / en)
 tests/                     test cases, rubric, latest results
 evals/                     eval suite for `claude plugin eval` (with and without the skill)
 scripts/build-zip.sh       builds the ZIP for claude.ai
-scripts/analyze_posts.py   reproduces the study's counts from your own copy of the posts
+scripts/analyze_posts.py   recomputes the main 2024–2026 counts from your own copy of the posts
 .claude-plugin/            plugin and marketplace manifests for Claude Code
 plan.md                    implementation plan
 ```
@@ -278,5 +325,5 @@ This is an unofficial parody project. It is not affiliated with, endorsed by, or
 ## Credits
 
 Built by [@kenmori](https://github.com/kenmori) with Claude Code.
-Style notes draw on public linguistic analyses listed in [`references/sources.md`](references/sources.md).
+Style notes are based on this project's own counts of public posts, described in [`references/research-notes.md`](references/research-notes.md).
 This is a parody project and makes no claim about the real person's actual statements.

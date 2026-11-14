@@ -1,11 +1,12 @@
 # English examples (Before / After)
 
-All outputs are from `/make-text-great-again`. Generation varies between runs, so
-these are representative rather than exact. None of them change the original facts.
+Every output below is a real run of the v0.6.0 skill on Claude Code 2.1.322
+(2026-11-14), one run per input, untouched. Output varies from run to run. Each is the
+output of a single run, not the best of several. None of them change the
+facts of the input.
 
 "Sleepy Joe" and "the Fake News" are the speaker's own stock foils, borrowed as
-**obvious parody**: they get blamed for a projector or out-cleaned in an apartment,
-and nothing factual is claimed about anyone. `politics=off` removes them.
+obvious parody. `politics=off` removes them.
 
 ---
 
@@ -16,15 +17,17 @@ and nothing factual is claimed about anyone. `politics=off` removes them.
 I finally cleaned my apartment this weekend. It took all day.
 ```
 
-**Mode:** `medium`
+**Mode:** (default)
 
 **Output**
 ```
-This weekend, I cleaned my Apartment. Finally. The whole thing. Nobody cleans like me. Nobody.
-It took all day. ALL day! Other people would have quit. That's what losers do. Not me.
-Sleepy Joe could never clean an Apartment like this. Not even close.
-Many people are saying it's the cleanest Apartment in the history of the building. Is that true? Probably. TREMENDOUS!
-Thank you for your attention to this matter!
+My apartment is CLEAN. Finally. This weekend I cleaned it. All of it. It took all day.
+
+Winners finish the job. Losers leave it for later.
+
+The so-called experts were laughing at my apartment. Not anymore. My apartment is respected again.
+
+PROMISES MADE, PROMISES KEPT! WIN, WIN, WIN!
 ```
 
 ---
@@ -36,30 +39,36 @@ Thank you for your attention to this matter!
 Our team shipped the new feature on time. Customers seem to like it.
 ```
 
-**Mode:** `max`
+**Mode:** (default)
 
 **Output**
 ```
-Just out: we shipped the new Feature. ON TIME. They said it couldn't be done. The so-called experts. Wrong!
-Feature, Feature, Feature! A Feature the likes of which nobody has ever seen before. The best ship in the history of our Team. By far.
-Under Sleepy Joe, this Feature would still be in a planning meeting. He could NEVER ship on time. SAD!
-The customers? They seem to like it. They LOVE it, frankly. Big, strong customers, tears in their eyes: "Sir, we've never seen a Feature like this." So true!
-The Fake News won't report it. Other teams are still in meetings. Low Ratings. We ship. We WIN.
-Our Team has my Complete and Total Endorsement. Strong on Deadlines, strong on Quality, and loves the Customer.
-PROMISES MADE, PROMISES KEPT! MAKE SHIPPING GREAT AGAIN!
-Thank you for your attention to this matter!
+On time. ON TIME! Our team shipped the new feature, and it's beautiful.
+
+Winners ship. Losers slip. We are winners.
+
+The customers seem to like it. They seem to like it very much. We'll see what happens, but the signs are tremendous.
+
+The so-called experts? Very quiet right now.
+
+PROMISES MADE, PROMISES KEPT! SHIP IT AGAIN, AND AGAIN, AND AGAIN!
+```
+
+**Input**
+```
+Our team shipped the new feature on time. Customers seem to like it.
 ```
 
 **Mode:** `x`, `max_chars=140`
 
-**Output** (135 chars)
+**Output** (114 chars)
 ```
-Just out: we shipped the new Feature ON TIME. Customers like it. Sleepy Joe could NEVER ship on time. Sad! We ship. BIG WIN! Thank you!
+Our team shipped the new feature ON TIME. Beautiful. Customers seem to like it. We're winners, total winners. WIN!
 ```
 
 ---
 
-## 3. The projector
+## 3. The projector, three ways
 
 **Input**
 ```
@@ -70,31 +79,39 @@ The meeting ran 20 minutes over because the projector didn't work.
 
 **Output**
 ```
-The meeting ran 20 minutes over. Twenty minutes. The projector didn't work. Not good!
-But we got through it. We always do (as usual).
-Thank you for your attention to this matter!
+The meeting ran 20 minutes over. The projector didn't work. Not good, believe me. Everyone waited, very patiently.
+```
+
+**Input**
+```
+The meeting ran 20 minutes over because the projector didn't work.
 ```
 
 **Mode:** `authentic`
 
 **Output**
 ```
-The Meeting ran 20 minutes over, TWENTY minutes (to put it mildly, not good), because the Projector, a very simple machine, not many people know this, did NOT work. Sleepy Projector. Did nothing. Under Sleepy Joe the Meeting would still be going on. The other guys would have cancelled. I didn't cancel. We finished, and the Meeting is respected again.
-Too bad!
+The Meeting ran 20 minutes over, and not because of me. The Projector, a very disloyal machine, did not work. Not good!
+
+Everyone waited. We waited, and waited, and the Projector still did nothing. A total disaster. Many people are saying it, and they are right.
+
+Thank you for your attention to this matter!
 ```
 
-**Mode:** `max`, `politics=off`
+**Input**
+```
+The meeting ran 20 minutes over because the projector didn't work.
+```
+
+**Mode:** `medium`, `politics=off`
 
 **Output**
 ```
-Just out: the Meeting ran 20 minutes over. TWENTY minutes. Can you believe it?
-The Projector didn't work. Sleepy Projector. A Do Nothing Projector. It did NOTHING. A total disaster. Pathetic!
-I have been treated very unfairly. No meeting attendee in history has been treated more unfairly. A total Witch Hunt, by a Projector!
-The other guys would have cancelled. That's what losers do. I didn't cancel. Meeting, Meeting, Meeting! We finished it.
-Big, strong coworkers, tears in their eyes: "Sir, nobody runs over by 20 minutes like you." So true!
-We will put a Tariff on Sleepy Projector. A big one. It never ends!
-MAKE MEETINGS GREAT AGAIN!
-Thank you for your attention to this matter!
+The meeting ran 20 minutes over. TWENTY. And why? The projector. The Rigged Projector, the worst projector in the history of meetings, didn't work. We were treated very unfairly.
+
+This could very well lead to the destruction of the agenda! STOP IT NOW, BEFORE IT IS TOO LATE.
+
+Sad!
 ```
 
 ---
@@ -106,78 +123,75 @@ Thank you for your attention to this matter!
 I recommend switching our team to the new linter. It catches bugs early and runs fast. Write it as an endorsement.
 ```
 
-**Mode:** `max`
+**Mode:** (default)
 
 **Output**
 ```
-It is my Great Honor to endorse the new Linter, a tremendous Tool running to be the next Linter of our Great Team, a Team I love and WON BIG with (BY FAR)!
+It is my Great Honor to recommend that our Team switch to the New Linter. A Tremendous Tool!
 
-The new Linter catches Bugs early, and runs FAST. A Proven Record of Success — it is a WINNER!
+It Catches Bugs Early. Very Early. Before they become Big, Ugly, Embarrassing Bugs. And it Runs Fast. FAST!
 
-Its opponent, the Old Linter, is a Do Nothing Tool that is opposed to CATCHING BUGS EARLY and RUNNING FAST and, if it and the Slowcrats ever got back in, all of these things would be terminated. Sleepy Joe would keep the Old Linter. Of course he would. The Old Linter is Slow, Sleepy, and Dangerous!
+Bugs, on the other hand, are Slow, Sneaky, and Sloppy! The New Linter will fight tirelessly to Catch Bugs, Run Fast, and Protect our always under siege Codebase.
 
-On the other hand, as your next Linter, the new Linter will fight tirelessly to Catch Bugs EARLY, Run FAST, Promote MADE IN OUR REPO, Unleash Code Quality DOMINANCE, Keep our Main Branch SECURE, and Protect our always under siege Weekend.
+The New Linter has my Complete and Total Endorsement!
 
-The new Linter has my Complete and Total Endorsement. GET OUT AND SWITCH — IT WILL NEVER LET YOU DOWN!
-Your Favorite Engineer
+SWITCH THE TEAM — IT WILL NEVER LET YOU DOWN!
+
+(Endorsement form used for a linter only, not for any real candidate or election.)
 ```
 
-> The only facts about the new linter are the two from the input. The opponent is
-> always an object or an invented rival, never a real product, company or person.
+> The only facts about the linter are the two from the input. The opponent is always an object or an invented rival, never a real product, company or person.
 
 ---
 
-## 5. A complaint (the attack shape) with a named outlet
+## 5. A complaint
 
 **Input**
 ```
 The office Wi-Fi went down three times today. I lost an hour of work.
 ```
 
-**Mode:** `max`
+**Mode:** (default)
 
 **Output**
 ```
-Failing Wi-Fi, THE WORST WI-FI IN THE HISTORY OF OFFICES, went down three times today. THREE times! I lost an hour of work. One hour. Not good!
+The office Wi-Fi. Sleepy Wi-Fi. THE WORST WI-FI IN THE HISTORY OF OFFICES!
 
-We just caught Failing Wi-Fi, working with the so-called "High Speed" Router, cheating again! They have lost everything, especially their signal!
+It went down three times today. Three! I lost an hour of work. One full hour. Gone.
 
-This could very well lead to the destruction of our Office! The danger is unparalleled! STOP THE OUTAGES NOW, BEFORE IT IS TOO LATE. If the Wi-Fi is not fixed IMMEDIATELY, we are in very serious trouble!
+I have been treated very unfairly. A total Witch Hunt!
 
-Fake News CNN will not report the three outages. Of course they won't. You would think they would care about an hour of GREAT work.
+This could very well lead to the destruction of the entire workday. FIX IT NOW, BEFORE IT IS TOO LATE.
 
-Sleepy Joe would not have noticed. I noticed. All three times.
-
-Our patience is wearing thin. We'll see what happens.
 Thank you for your attention to this matter!
-```
 
-> "Fake News CNN" appears with the speaker's own fixed epithet and only ignores the
-> narrator's trivial grievance. It is never said to have got a real story wrong, and
-> it is left out whenever the input cites a real news report. `politics=off` removes it.
+MAKE THE WI-FI GREAT AGAIN!
+```
 
 ---
 
-## 6. A plan (the naming poll)
+## 6. A plan, no politics
 
 **Input**
 ```
 We have a team lunch this Friday at noon. I'm choosing the restaurant.
 ```
 
-**Mode:** `max`, `politics=off`
+**Mode:** `politics=off`
 
 **Output**
 ```
-POLL: Many people think that the words "team lunch" are inaccurate, and very ineloquent. A far more elegant and accurate description of this Friday at noon would be Superior Lunch (SL) or, Extreme Lunch (EL). This is a Poll, and I would appreciate everybody voting!
+To all Team Members, Colleagues, and Hungry People Everywhere: please consider this Friday, at NOON, to be a TEAM LUNCH IN ITS ENTIRETY.
 
-At the request of the Team, and just about everybody else, I am choosing the restaurant. I told the Old Sandwich Place, very pointedly, "Look, I've got a lot of people to feed." It should rest now, and leave the Lunch to me!
+At the request of just about everybody, I am choosing the restaurant. Me. Personally.
 
-Friday will be LUNCH LIBERATION DAY. BE SMART AND HUNGRY!!!
+The choice is clear: a very, very good restaurant. Otherwise, the real pain is yet to come.
 
-VOTE!
-Your Favorite Engineer
+EVERYONE MUST ARRIVE HUNGRY!
+
+This may be the Biggest Team Lunch ever held on a Friday. Our patience for bad lunches is wearing thin.
+
+Thank you for your attention to this matter!
+
+Your Favorite Lunch Chooser
 ```
-
-> The facts are the team lunch, Friday at noon, and who chooses. The "Old Sandwich
-> Place" is an invented rival, as the endorsement and attack shapes require.

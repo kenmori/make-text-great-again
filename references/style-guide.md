@@ -10,7 +10,8 @@ from 2024–2026, 17 mixed posts from 2025 and 43 endorsement posts from Novembe
 2026. Counts in brackets are posts in the first corpus that contain the pattern.
 "[2025]" and "[2026]" mark habits seen in the screenshot samples, and "[24–26]"
 marks habits measured in the 2024–2026 corpus.
-Everything here is written in our own words; no real post is reproduced.
+Everything here is written in our own words. No real post is reproduced in full;
+many examples deliberately keep the shape of a real sentence and swap its nouns.
 
 **How to use this file:** `SKILL.md` chooses an angle for each output; section H
 maps the angles to the patterns below. Variety beats volume: never use the same
@@ -27,7 +28,7 @@ shape with the input's own nouns; do not carry the examples' nouns into an outpu
 | A1 | **One claim per sentence** | Chop on every conjunction. | 「デプロイした。成功した。大成功だ。」 | "We shipped it. It worked. Big win." |
 | A2 | **Verdict fragment** | A 1–3 word judgment right after a fact. [Too bad! 38 · Not good! 39 · So true! 60] | 「良くない！」「残念だ！」「その通り！」 | "Not good!" "Too bad!" "So true!" "Wrong!" |
 | A3 | **Capitalized Nouns** | Promote ordinary nouns to proper nouns. In 23.5% of posts. In Japanese, render as an English caps word or 「」. | 「私の RAMEN」「我が偉大なる『キッチン』」 | "my Kitchen", "the Deploy", "our great Team" |
-| A4 | **Caps on small intensifiers** | Capitals go on NEVER, NOTHING, VERY, ZERO, MUCH, EVER, BIG, not on the obvious noun. | 「NEVER だ。一度もない。」「VERY 熱い。」 | "It has NEVER been done." "They did NOTHING." |
+| A4 | **Caps on small intensifiers** | Capitals go on NEVER, NOTHING, VERY, ZERO, MUCH, EVER, BIG, not on the obvious noun. | 「NEVER だ。一度もない。」「ZERO だ！」（日本語の文法に英語を接ぎ木しない） | "It has NEVER been done." "They did NOTHING." |
 | A5 | **Triple** | Same word three times, then `!`. [JOBS, JOBS, JOBS! 19] | 「麺、麺、麺だ！」 | "Noodles, Noodles, Noodles!" |
 | A6 | **Echo and upgrade** | Repeat, then intensify. | 「大きな勝利だ。とても大きな勝利だ。」 | "A big win. A very, very big win." |
 | A7 | **Ellipsis continuation** | Long thoughts break with "…." and resume. In 20.6% of posts. `authentic` only. | 「……そして私はラーメンを作った。」 | "….and then I made the Ramen." |
@@ -100,7 +101,7 @@ Read section F before using C4–C6.
 | C14 | **If they ever got in** | The rival's victory would end everything good just listed. [2026] | 「もしカップ麺の連中が勝てば、これらすべてが打ち切られる。」 | "If the Instant Noodles ever got in, all of these things would be terminated." |
 | C15 | **Insulting respelling** | Misspell the obstacle's name as a jab. **Objects and fictional rivals only.** [2026] | 「プロジェク"鈍"ー」「カップ"麺倒"」 | "the Slowjector", "the Slowcrats" |
 | C17 | **Caught working together** | Two obstacles are in league. **Objects only.** [2025] | 「ねぼすけプロジェクターが、落ち目の Wi-Fi と組んで、またズルをしているのを捕まえた！」 | "We just caught the Sleepy Projector, working with Failing Wi-Fi, cheating again!" |
-| C18 | **Getting slammed** | The rival is losing public favor, in capitals. [2025] | 「カップ麺は世間から猛烈に叩かれている！」 | "The Old Linter is GETTING SLAMMED BY THE PUBLIC!" |
+| C18 | **Getting slammed** | The rival is losing public favor, in capitals. **Objects and fictional rivals only.** [2025] | 「カップ麺は世間から猛烈に叩かれている！」 | "The Old Linter is GETTING SLAMMED BY THE PUBLIC!" |
 | C19 | **You would think they'd be proud** | Wounded disbelief at the doubters. [2025] | 「誇りに思うべきところを、足を引っ張ろうとしている。」 | "You would think they would be proud of this Ramen, instead of trying to make it look bad." |
 | C20 | **Coined insult with a definition** | Invent a word for the doubters and define it in brackets. Fictional groups only. [2025] | 「"カップ麺派"（弱くて腹ぺこな人々の新しい派閥だ！）になるな。」 | "Don't be a NOODLEPHOBE (a new group based on Weak and Hungry people!)." |
 | C21 | **Lost everything, especially…** | **Objects only.** [2025] | 「あのプリンターはすべてを失った。特に正気を！」 | "The Printer has lost everything, especially its mind!" |
@@ -193,23 +194,27 @@ well-known repertoire:
 Anyone else, public or private, appears only if they are already in the input.
 
 **Allowed moves.**
-- Unfavorable comparison on the trivial topic: could never cook / deploy / park like this.
+- Unfavorable comparison on skill at the trivial task in the text: could never cook / deploy / park like this.
 - Absurd blame for the trivial setback, or "inherited" framing.
 - The counterfactual: it would never have happened under the narrator.
-- The epithet "Sleepy". No other epithet for a real person.
+- The epithet "Sleepy", as a name only. No other epithet for a real person.
 
-**Named outlets: what they may do.** They may fail to report the narrator's
-trivial triumph, be imagined downplaying it ("Fake News CNN will say it was only
-Ramen"), "team up" against it, and be "getting slammed by the public" over it.
-They may not be said to have got any real story wrong, and no journalist is named.
+**Named outlets: what they may do.** They may be imagined ignoring or
+downplaying the narrator's trivial triumph ("Fake News CNN will not report it").
+Nothing else: no claims about their audience, business or conduct beyond the
+fixed epithet. They may not be said to have got any real story wrong, and no
+journalist is named.
 If the input cites or mentions a real news report, from these outlets or any other,
 they do not appear at all and nothing in the output calls that report fake.
 
 **Never.**
 - Accusations that could be read as fact: crimes, corruption, fraud, cheating.
   That rules out epithets such as "Crooked" or "Corrupt" for real people.
-- Health, age, or cognitive claims beyond the bare nickname.
-- Family members. Invented quotations. Invented events.
+- Anything about the foil's mind or body: asleep, tired, lost, confused, forgetful,
+  slow, or unable to do ordinary things. "Sleepy" is a nickname, not a premise.
+- Family members. Invented quotations.
+- Any epithet, insult, blame or grievance pattern for a real person, company or
+  shop that the user's input names. Those are aimed at objects and situations only.
 - Real policy or election claims. The foil is blamed for the *ramen*, not for the economy.
 - In texts about markets, money or business results: blaming or crediting a foil for
   a real price move, index level, economic figure or company result. There the foil
@@ -218,12 +223,12 @@ they do not appear at all and nothing in the output calls that report fake.
 - A foil in a text that is itself about real politics, elections, war, disaster,
   crime, illness, death, or grief. Rewrite the tone only, or go lighter.
 
-**Dosage.** `light`: none. `medium`: at most one line. `max`: two or three.
+**Dosage.** `light`: none. `medium`: at most one line. `max`: up to two.
 `authentic`: one or two. `x`: at most one, first thing cut when space is short.
 
-**Off switch.** When the user says `politics=off`, "政治ネタなし", "no politics",
-or the context is clearly a workplace, use fictional or object targets only, and
-no names of people, parties or news outlets.
+**Off switch.** When the user says `politics=off`, "政治ネタなし" or "no politics",
+use fictional or object targets only, and no names of people, parties or news
+outlets. The skill does not guess that a text is for work; say so to switch it off.
 
 ---
 
